@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NICAI Intelligence Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #0f0f14;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            border-bottom: 2px solid #0f3460;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            color: #00d4ff;
+            letter-spacing: 2px;
+        }
+
+        header span {
+            font-size: 0.75rem;
+            color: #888;
+            margin-left: auto;
+        }
+
+        .badge {
+            background: #00d4ff22;
+            border: 1px solid #00d4ff55;
+            color: #00d4ff;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+
+        .container { padding: 24px 32px; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .stat-card {
+            background: #1a1a2e;
+            border: 1px solid #0f3460;
+            border-radius: 10px;
+            padding: 18px 20px;
+            text-align: center;
+        }
+
+        .stat-card .num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00d4ff;
+        }
+
+        .stat-card .label {
+            font-size: 0.72rem;
+            color: #888;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-card.high .num { color: #ff4757; }
+        .stat-card.medium .num { color: #ffa502; }
+        .stat-card.low .num { color: #2ed573; }
+
+        h2 {
+            font-size: 1rem;
+            color: #aaa;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #13131f;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.85rem;
+        }
+
+        thead tr {
+            background: #1a1a2e;
+            border-bottom: 2px solid #0f3460;
+        }
+
+        th {
+            padding: 14px 14px;
+            text-align: left;
+            color: #00d4ff;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #1a1a2e;
+            vertical-align: top;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover td { background: #1a1a2e55; }
+
+        .risk-high {
+            background: #ff475720;
+            color: #ff4757;
+            border: 1px solid #ff475740;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .risk-medium {
+            background: #ffa50220;
+            color: #ffa502;
+            border: 1px solid #ffa50240;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .risk-low {
+            background: #2ed57320;
+            color: #2ed573;
+            border: 1px solid #2ed57340;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .explanation { color: #bbb; max-width: 280px; line-height: 1.5; }
+
+        .conf-bar {
+            height: 6px;
+            background: #222;
+            border-radius: 3px;
+            overflow: hidden;
+            width: 80px;
+            margin-top: 4px;
+        }
+
+        .conf-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+            border-radius: 3px;
+        }
+
+        .btn {
+            padding: 6px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover { opacity: 0.82; }
+
+        .btn-escalate { background: #ff4757; color: white; }
+        .btn-review   { background: #ffa502; color: #111; }
+        .btn-monitor  { background: #2ed573; color: #111; }
+        .btn-default  { background: #555; color: white; }
+
+        .btn-done { background: #333; color: #888; cursor: default; font-style: italic; }
+
+        .toast {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #1a1a2e;
+            border: 1px solid #00d4ff55;
+            color: #00d4ff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        .toast.show { opacity: 1; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <div class="badge">TASK 5</div>
+    </div>
+    <h1>NICAI INTELLIGENCE DASHBOARD</h1>
+    <span id="clock"></span>
+</header>
+
+<div class="container">
+
+    <!-- Stats row -->
+    <div class="stats">
+        <div class="stat-card">
+            <div class="num">{{ data|length }}</div>
+            <div class="label">Total Signals</div>
+        </div>
+        <div class="stat-card high">
+            <div class="num" id="cnt-high">
+                {{ data | selectattr('risk_level', 'equalto', 'HIGH') | list | length }}
+            </div>
+            <div class="label">High Risk</div>
+        </div>
+        <div class="stat-card medium">
+            <div class="num">
+                {{ data | selectattr('risk_level', 'equalto', 'MEDIUM') | list | length }}
+            </div>
+            <div class="label">Medium Risk</div>
+        </div>
+        <div class="stat-card low">
+            <div class="num">
+                {{ data | selectattr('risk_level', 'equalto', 'LOW') | list | length }}
+            </div>
+            <div class="label">Low Risk</div>
+        </div>
+    </div>
+
+    <h2>Signal Analysis — Powered by Sanskar Engine</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Signal ID</th>
+                <th>Risk Level</th>
+                <th>Anomaly Type</th>
+                <th>Explanation</th>
+                <th>Trend</th>
+                <th>Confidence</th>
+                <th>Recommendation</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr id="row-{{ loop.index }}">
+                <td><code style="color:#00d4ff">{{ row.signal_id }}</code></td>
+
+                <td>
+                    {% if row.risk_level == 'HIGH' %}
+                        <span class="risk-high">HIGH</span>
+                    {% elif row.risk_level == 'MEDIUM' %}
+                        <span class="risk-medium">MEDIUM</span>
+                    {% else %}
+                        <span class="risk-low">LOW</span>
+                    {% endif %}
+                </td>
+
+                <td style="color:#ccc; font-size:0.8rem;">{{ row.anomaly_type }}</td>
+
+                <td class="explanation">{{ row.explanation }}</td>
+
+                <td style="color:#aaa; font-size:0.8rem;">
+                    {{ row.temporal_context }}
+                    {% if row.spatial_context %}
+                        <br><span style="color:#666; font-size:0.75rem;">{{ row.spatial_context }}</span>
+                    {% endif %}
+                </td>
+
+                <td>
+                    {% set pct = (row.confidence * 100) | int %}
+                    <span style="color:#00d4ff; font-size:0.8rem;">{{ pct }}%</span>
+                    <div class="conf-bar">
+                        <div class="conf-fill" style="width:{{ pct }}%"></div>
+                    </div>
+                </td>
+
+                <td style="color:#aaa; font-size:0.8rem;">
+                    {{ (row.recommendation_signal or 'monitor').replace('_', ' ').title() }}
+                </td>
+
+                <td>
+                    {% set rec = row.recommendation_signal or 'monitor' %}
+                    {% if rec == 'eligible_for_escalation' %}
+                        <button class="btn btn-escalate"
+                            onclick="sendAction('{{ row.trace_id }}', '{{ rec }}', '{{ row.signal_id }}', {{ loop.index }})">
+                            Escalate
+                        </button>
+                    {% elif rec == 'requires_review' %}
+                        <button class="btn btn-review"
+                            onclick="sendAction('{{ row.trace_id }}', '{{ rec }}', '{{ row.signal_id }}', {{ loop.index }})">
+                            Review
+                        </button>
+                    {% else %}
+                        <button class="btn btn-monitor"
+                            onclick="sendAction('{{ row.trace_id }}', '{{ rec }}', '{{ row.signal_id }}', {{ loop.index }})">
+                            Monitor
+                        </button>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="toast" id="toast">Action logged successfully</div>
+
+<script>
+    // Clock
+    function tick() {
+        document.getElementById('clock').textContent =
+            'Last updated: ' + new Date().toLocaleTimeString();
+    }
+    tick();
+    setInterval(tick, 1000);
+
+    // Action logger (Phase 6 - action_logs.json updated with trace_id)
+    async function sendAction(trace_id, action_type, signal_id, row_idx) {
+        try {
+            const resp = await fetch("/action", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    trace_id: trace_id,
+                    action_type: action_type,
+                    signal_id: signal_id,
+                    context: { source: "dashboard", row: row_idx }
+                })
+            });
+            const data = await resp.json();
+
+            if (data.status === "SUCCESS") {
+                // Disable button after click
+                const row = document.getElementById("row-" + row_idx);
+                if (row) {
+                    const btn = row.querySelector("button");
+                    if (btn) {
+                        btn.className = "btn btn-done";
+                        btn.textContent = "Logged";
+                        btn.onclick = null;
+                    }
+                }
+                showToast("Action logged: " + action_type.replace(/_/g, ' '));
+            } else {
+                showToast("Error: " + (data.reason || "Unknown"));
+            }
+        } catch (err) {
+            showToast("Network error: " + err.message);
+        }
+    }
+
+    function showToast(msg) {
+        const t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        setTimeout(() => t.classList.remove("show"), 3000);
+    }
+</script>
+
+</body>
+</html>
