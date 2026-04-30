@@ -23,6 +23,7 @@ from fastapi.templating import Jinja2Templates
 from datetime import datetime, timezone
 import json
 import os
+import uuid
 
 from integration_adapter import run_engine
 from samachar_input_adapter import load_data, convert_to_signals
@@ -61,15 +62,39 @@ def validate_signal(signal: dict):
 
     if signal.get("value") is None:
         return {"status": "ERROR", "reason": "Missing value"}
+    value = signal.get("value")
 
+# must be dict
+    if not isinstance(value, dict):
+        return {
+            "status": "ERROR",
+            "reason": "Invalid value format"
+        }
+
+# must contain required keys
+    if "temperature" not in value or "aqi" not in value:
+        return {
+            "status": "ERROR",
+            "reason": "Missing temperature or aqi"
+        }
+
+# must be numeric
+    try:
+        float(value.get("temperature"))
+        float(value.get("aqi"))
+    except ValueError:
+        return {
+            "status": "ERROR",
+            "reason": "Invalid numeric values"
+        }
     if not signal.get("location") and not signal.get("city"):
         return {"status": "ERROR", "reason": "Missing location"}
-
+    trace_id = signal.get("trace_id") or f"trace_{uuid.uuid4().hex[:8]}"
     return {
         "signal_id": signal.get("signal_id"),
         "status": "VALID",
         "confidence_score": signal.get("confidence_score", 0.5),
-        "trace_id": signal.get("trace_id", "trace_auto"),
+        "trace_id": trace_id,
         "reason": signal.get("reason", ""),
         "value": signal.get("value"),
         "timestamp": signal.get("timestamp"),
@@ -148,7 +173,7 @@ def run_pipeline(signal: dict):
             return validation
 
         # FIXED: was checking ALLOW/FLAG — now correctly passes VALID
-        analytics = run_engine(signal)
+        analytics = run_engine(validation)
 
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
@@ -192,7 +217,7 @@ def evaluate_signal(signal: dict):
         if validation.get("status") == "ERROR":
             return validation
 
-        analytics = run_engine(signal)
+        analytics = run_engine(validation)
 
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
@@ -245,7 +270,7 @@ def run_full_pipeline():
             if validation.get("status") == "ERROR":
                 continue
 
-            analytics = run_engine(signal)
+            analytics = run_engine(validation)
 
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue

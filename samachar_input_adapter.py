@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime, timedelta  
 
 
 # -----------------------------
@@ -24,33 +25,71 @@ def convert_to_signals(weather, aqi):
 
     signals = []
 
-    min_len = min(len(weather), len(aqi))
+    print(f" Using WEATHER dataset only (aligned data)")
 
-    for i in range(min_len):
+    for i, row in weather.iterrows():
 
-        w = weather.iloc[i]
-        a = aqi.iloc[i]
+        temp = row.get("temperature", 0)
+        aqi_val = row.get("aqi", 0)
 
-        # allow all rows (demo safe)
-        temp = w.get("temperature")
-        aqi_val = a.get("aqi")
-
+        # handle missing
         if pd.isna(temp):
             temp = 0
 
         if pd.isna(aqi_val):
             aqi_val = 0
 
+        # 🔴 FIX unrealistic temperature (important)
+        if temp > 60:   # likely wrong data
+            temp = temp / 2   # simple correction (demo-safe)
+        # 🔥 ADD TIME VARIATION
+        base_date = datetime.strptime(str(row.get("date", "2024-01-01")), "%Y-%m-%d")
+        timestamp = base_date + timedelta(minutes=i)
+
         signals.append({
             "signal_id": f"S_{i}",
-            "timestamp": str(w.get("date", "2024-01-01")),
+            "timestamp": str(timestamp),
             "value": {
                 "temperature": float(temp),
                 "aqi": float(aqi_val)
             },
-            "location": w.get("city", "unknown")
+            "location": row.get("city", "unknown")
         })
 
     print(f" Combined Signals Created: {len(signals)}")
+    '''# ✅ PHASE 2 VALIDATION CHECKS
+    missing_fields = 0
+    invalid_timestamps = 0
+    invalid_locations = 0
 
+    for s in signals[:100]:  # sample check
+        if not s.get("signal_id") or not s.get("timestamp") or not s.get("value"):
+            missing_fields += 1
+
+        if not isinstance(s.get("timestamp"), str):
+            invalid_timestamps += 1
+
+        if not s.get("location") or s.get("location") == "unknown":
+            invalid_locations += 1
+
+    print(f"[CHECK] Missing fields: {missing_fields}")
+    print(f"[CHECK] Invalid timestamps: {invalid_timestamps}")
+    print(f"[CHECK] Invalid locations: {invalid_locations}")
+    # ✅ VALUE STRUCTURE CHECK
+    bad_values = 0
+
+    for s in signals[:100]:
+        val = s.get("value", {})
+        if "temperature" not in val or "aqi" not in val:
+            bad_values += 1
+
+    print(f"[CHECK] Bad value structures: {bad_values}")
+
+
+# ✅ CITY DISTRIBUTION CHECK
+    cities = [s["location"] for s in signals]
+    unique_cities = set(cities)
+
+    print(f"[CHECK] Unique cities: {len(unique_cities)}")
+    print(f"[CHECK] Sample cities: {list(unique_cities)[:5]}")'''
     return signals

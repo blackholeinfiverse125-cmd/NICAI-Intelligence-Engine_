@@ -43,7 +43,7 @@ class SanskarEngine:
             temporal = self.analyze_temporal(processed)
             spatial = self.analyze_spatial(processed)
             risk = self.calculate_risk(processed, anomaly, temporal)
-            confidence = self.calculate_confidence(processed)
+            confidence = self.calculate_confidence(processed,anomaly)
             explanation = self.generate_explanation(processed, anomaly, temporal, spatial)
 
             if risk == "HIGH":
@@ -105,6 +105,12 @@ class SanskarEngine:
 
         if pollution >= 150:
             return "moderate_pollution"
+        
+        if temp >= 40:
+            return "heat_risk"
+
+        if temp >= 35:
+            return "elevated_temperature"
 
         return "normal"
 
@@ -136,11 +142,12 @@ class SanskarEngine:
             "severe_environmental_risk",
             "severe_pollution",
             "high_pollution_with_heat",
+            "heat_risk",  
         }
 
         if anomaly in severe_anomalies:
             base = "HIGH"
-        elif anomaly in ("high_pollution", "moderate_pollution"):
+        elif anomaly in ("high_pollution", "moderate_pollution", "elevated_temperature"):
             base = "MEDIUM"
         else:
             base = "LOW"
@@ -156,7 +163,7 @@ class SanskarEngine:
 
         return base
 
-    def calculate_confidence(self, signals: dict) -> float:
+    def calculate_confidence(self, signals: dict, anomaly: str) -> float:
         """Confidence score based on signal severity."""
         pollution = signals.get("pollution", 0)
         temp = signals.get("temperature", 0)
@@ -164,37 +171,59 @@ class SanskarEngine:
 
         if pollution >= 300 and temp >= 35:
             return 0.95
+        
+        if anomaly == "high_pollution_with_heat":
+            return 0.90
+        
+        if anomaly == "heat_risk":
+            return 0.85
+        
         if pollution >= 200:
             return 0.90 if trend > 0.5 else 0.85
         if pollution >= 150:
             return 0.75
+        
         return 0.60
 
     def generate_explanation(self, signals: dict, anomaly: str, temporal: str, spatial: str) -> str:
-        """Human-readable explanation string for dashboard display."""
         pollution = signals.get("pollution", 0)
         temp = signals.get("temperature", 0)
+
+        location = spatial if spatial != "unknown" else "the area"
 
         reasons = []
 
         if pollution >= 150:
-            reasons.append(f"high pollution (AQI={int(pollution)})")
+            reasons.append(f"AQI {int(pollution)} (high pollution)")
 
-        if temp >= 35:
-            reasons.append(f"elevated temperature ({int(temp)}°C)")
+        if temp >= 40:
+            reasons.append(f"{int(temp)}°C (extreme heat)")
+        elif temp >= 35:
+            reasons.append(f"{int(temp)}°C (elevated temperature)")
 
         if temporal == "RISING":
-            reasons.append("increasing trend")
+            reasons.append("conditions are worsening")
         elif temporal == "FALLING":
-            reasons.append("decreasing trend")
+            reasons.append("conditions are improving")
 
         if spatial == "CLUSTERED":
-            reasons.append("multi-zone impact")
+            reasons.append("impact across multiple areas")
 
-        reason_text = " and ".join(reasons) if reasons else "normal conditions"
+        reason_text = ", ".join(reasons) if reasons else "normal conditions"
 
-        return f"{anomaly} detected in {spatial} with {temporal} trend due to {reason_text}."
+        #  HUMANIZED OUTPUTS
 
+        if anomaly == "heat_risk":
+            return f"Extreme heat in {location} ({int(temp)}°C) may cause health stress. Stay hydrated and limit outdoor exposure."
+
+        if anomaly == "high_pollution_with_heat":
+            return f"Air quality in {location} is unhealthy (AQI {int(pollution)}) along with high temperature ({int(temp)}°C). This combination can impact health. Caution is advised."
+
+        if anomaly == "severe_environmental_risk":
+            return f"Air quality in {location} is extremely poor (AQI {int(pollution)}), combined with high temperature ({int(temp)}°C). This poses a serious health risk. Immediate attention is recommended."
+
+        # fallback
+        return f"Conditions in {location} show {reason_text}. Currently stable but should be monitored."
 
 # -------------------------------------------------------
 # Module-level pattern analysis (used by run_demo_full.py)
