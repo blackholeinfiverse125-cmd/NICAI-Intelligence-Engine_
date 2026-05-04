@@ -128,7 +128,7 @@ def run_demo():
             "explanation": analysis.get("explanation", "—"),
             "temporal_context": analysis.get("temporal_context"),
             "spatial_context": analysis.get("spatial_context"),
-            "confidence": analysis.get("confidence_score"),
+            "confidence_score": analysis.get("confidence_score"),
             "recommendation_signal": analysis.get("recommendation_signal"),
         }
 

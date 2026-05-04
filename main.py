@@ -24,8 +24,8 @@ from datetime import datetime, timezone
 import json
 import os
 import uuid
-
-from integration_adapter import run_engine
+from integration_orchestrator import orchestrate_intelligence
+#from integration_adapter import run_engine
 from samachar_input_adapter import load_data, convert_to_signals
 from error_handler import error_response, validate_basic_input
 
@@ -106,7 +106,7 @@ def validate_signal(signal: dict):
 # -------------------------------------------------------
 # INTERNAL: Logging
 # -------------------------------------------------------
-def log_data(filename: str, log_type: str, data: dict):
+'''def log_data(filename: str, log_type: str, data: dict):
     """Append a JSON log entry to logs/<filename>. Never crashes."""
     try:
         entry = {
@@ -117,6 +117,38 @@ def log_data(filename: str, log_type: str, data: dict):
         }
         with open(f"logs/{filename}", "a") as f:
             f.write(json.dumps(entry, default=str) + "\n")
+    except Exception:
+        pass'''
+
+
+def log_data(filename: str, log_type: str, data: dict):
+    """Store logs as proper JSON array (submission-friendly)."""
+    try:
+        filepath = f"logs/{filename}"
+
+        entry = {
+            "trace_id": data.get("trace_id", "N/A"),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "type": log_type,
+            "data": data,
+        }
+
+        # Load existing logs
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, "r") as f:
+                    logs = json.load(f)
+            except:
+                logs = []
+        else:
+            logs = []
+
+        logs.append(entry)
+
+        # Write back
+        with open(filepath, "w") as f:
+            json.dump(logs, f, indent=2)
+
     except Exception:
         pass
 
@@ -173,8 +205,8 @@ def run_pipeline(signal: dict):
             return validation
 
         # FIXED: was checking ALLOW/FLAG — now correctly passes VALID
-        analytics = run_engine(validation)
-
+        #analytics = run_engine(validation)
+        analytics = orchestrate_intelligence(signal)
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
 
@@ -186,7 +218,7 @@ def run_pipeline(signal: dict):
             "explanation": analytics.get("explanation"),
             "temporal_context": analytics.get("temporal_context"),
             "spatial_context": analytics.get("spatial_context"),
-            "confidence": analytics.get("confidence_score"),
+            "confidence_score": analytics.get("confidence_score"),
             "recommendation_signal": analytics.get("recommendation_signal"),
         }
 
@@ -217,8 +249,8 @@ def evaluate_signal(signal: dict):
         if validation.get("status") == "ERROR":
             return validation
 
-        analytics = run_engine(validation)
-
+        #analytics = run_engine(validation)
+        analytics = orchestrate_intelligence(signal)
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
 
@@ -231,8 +263,12 @@ def evaluate_signal(signal: dict):
             "explanation": analytics.get("explanation"),
             "temporal_context": analytics.get("temporal_context"),
             "spatial_context": analytics.get("spatial_context"),
-            "confidence": analytics.get("confidence_score"),
+            "confidence_score": analytics.get("confidence_score"),
             "recommendation_signal": analytics.get("recommendation_signal"),
+            # 🔥 ADD THESE (IMPORTANT)
+            "region_insight": analytics.get("region_insight"),
+            "spatial_risk": analytics.get("spatial_risk"),
+            "domain_note": analytics.get("domain_note"),
         }
 
         log_data("anomaly_logs.json", "ANALYSIS", output)
@@ -270,7 +306,8 @@ def run_full_pipeline():
             if validation.get("status") == "ERROR":
                 continue
 
-            analytics = run_engine(validation)
+            #analytics = run_engine(validation)
+            analytics = orchestrate_intelligence(signal)
 
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
@@ -283,7 +320,7 @@ def run_full_pipeline():
                 "explanation": str(analytics.get("explanation", "No issue")),
                 "temporal_context": analytics.get("temporal_context"),
                 "spatial_context": analytics.get("spatial_context"),
-                "confidence": analytics.get("confidence_score"),
+                "confidence_score": analytics.get("confidence_score"),
                 "recommendation_signal": analytics.get("recommendation_signal"),
             }
 
@@ -337,8 +374,8 @@ def dashboard(request: Request):
             if validation.get("status") == "ERROR":
                 continue
 
-            analytics = run_engine(signal)
-
+            #analytics = run_engine(signal)
+            analytics = orchestrate_intelligence(signal)
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
 
@@ -349,7 +386,7 @@ def dashboard(request: Request):
                 "explanation": analytics.get("explanation", "—"),
                 "temporal_context": analytics.get("temporal_context", "STABLE"),
                 "spatial_context": analytics.get("spatial_context", "—"),
-                "confidence": analytics.get("confidence_score", 0.5),
+                "confidence_score": analytics.get("confidence_score", 0.5),
                 "recommendation_signal": analytics.get("recommendation_signal", "monitor"),
                 "trace_id": validation.get("trace_id"),
             })
