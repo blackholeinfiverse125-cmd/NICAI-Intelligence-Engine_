@@ -25,7 +25,41 @@ def orchestrate_intelligence(signal: dict) -> dict:
             "domain_note": "no context available"
         }
 
-    # Step 3: Merge outputs
-    final_output = {**sanskar_output, **nupur_output}
+    
+    # Step 3: INTELLIGENCE FUSION (REAL ORCHESTRATION)
+
+    risk = sanskar_output.get("risk_level", "LOW")
+    explanation = sanskar_output.get("explanation", "")
+    recommendation = sanskar_output.get("recommendation_signal", "monitor")
+
+    spatial_risk = nupur_output.get("spatial_risk")
+    region = nupur_output.get("region_insight")
+    domain = nupur_output.get("domain_note")
+
+# 🔴 1. MODIFY RISK BASED ON CONTEXT
+    if spatial_risk == "critical_zone" and risk != "HIGH":
+        risk = "HIGH"
+    elif spatial_risk == "polluted_zone" and risk == "LOW":
+        risk = "MEDIUM"
+
+# 🔴 2. MODIFY EXPLANATION (FUSION)
+    explanation = f"{explanation} | Context: {region} classified as {spatial_risk}, {domain}."
+
+# 🔴 3. MODIFY RECOMMENDATION
+    if domain == "extreme heat zone":
+        recommendation = "urgent_attention"
+    elif spatial_risk == "critical_zone":
+        recommendation = "eligible_for_escalation"
+
+# 🔴 FINAL OUTPUT (NO EXTRA FIELDS)
+    final_output = {
+        "risk_level": risk,
+        "anomaly_type": sanskar_output.get("anomaly_type"),
+        "explanation": explanation,
+        "temporal_context": sanskar_output.get("temporal_context"),
+        "spatial_context": sanskar_output.get("spatial_context"),
+        "confidence_score": sanskar_output.get("confidence_score"),
+        "recommendation_signal": recommendation,
+    }
 
     return final_output

@@ -1,0 +1,3 @@
+{"cluster_result":{"trace_id":"trace_674397ed","risk_level":"MEDIUM","anomaly_type":"clustered_moderate_environmental_risk","explanation":"Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.","temporal_context":"CLUSTERED","spatial_context":"Mumbai","confidence":0.9,"recommendation_signal":"requires_review"},"action":{"trace_id":"trace_674397ed","action":"SEND_FOR_REVIEW","status":"TRIGGERED"},"total_signals":50}
+
+"trace_id":"trace_674397ed"

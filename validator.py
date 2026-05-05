@@ -1,10 +1,99 @@
 from schemas import required_top_fields
+import uuid
+
 def generate_trace_id(signal):
-    return "trace_auto"
+    return f"trace_{uuid.uuid4().hex[:8]}"
 
 def validate_output_schema(x):
     return True
 
+# SAFE OPTIONAL IMPORTS
+try:
+    from bucket_emitter import emit_bucket_artifact
+    from telemetry_emitter import emit_telemetry
+except ImportError:
+    def emit_bucket_artifact(x): pass
+    def emit_telemetry(a, b): pass
+
+
+def build_error(reason, trace_id=None, signal=None):
+    return {
+        "signal_id": signal.get("signal_id") if isinstance(signal, dict) else None,
+        "status": "ERROR",
+        "confidence_score": 0.0,
+        "trace_id": trace_id,
+        "reason": reason
+    }
+
+
+def validate_signal(signal):
+    try:
+        if not isinstance(signal, dict):
+            return build_error("Invalid signal format")
+
+        trace_id = generate_trace_id(signal)
+
+        for field in required_top_fields:
+            if field not in signal or signal.get(field) in [None, ""]:
+                return build_error(f"Missing field: {field}", trace_id, signal)
+
+        value = signal.get("value")
+
+        if not isinstance(value, dict):
+            return build_error("Invalid value format", trace_id, signal)
+
+        if "temperature" not in value or "aqi" not in value:
+            return build_error("Missing temperature or aqi", trace_id, signal)
+
+        result = {
+            "signal_id": signal.get("signal_id"),
+            "status": "VALID",
+            "confidence_score": 0.9,
+            "trace_id": trace_id,
+            "reason": "Valid signal"
+        }
+
+        validate_output_schema(result)
+        emit_bucket_artifact(result)
+        emit_telemetry(signal, result)
+
+        return result
+
+    except Exception as e:
+        return build_error(str(e), None, signal)
+
+
+def validate_batch(signals):
+    try:
+        if not isinstance(signals, list):
+            return {"status": "ERROR", "reason": "Input must be list", "trace_id": None}
+
+        signals = sorted(signals, key=lambda x: x.get("signal_id", ""))
+        results = [validate_signal(s) for s in signals]
+
+        return {"results": results}
+
+    except Exception as e:
+        return {"status": "ERROR", "reason": str(e), "trace_id": None}
+
+
+def get_validated_signals(signals):
+    try:
+        batch = validate_batch(signals)
+
+        if batch.get("status") == "ERROR":
+            return batch
+
+        return [r for r in batch.get("results", []) if r.get("status") in ["VALID", "FLAG"]]
+
+    except Exception as e:
+        return {"status": "ERROR", "reason": str(e), "trace_id": None}
+'''from schemas import required_top_fields
+
+import uuid
+
+def generate_trace_id(signal):
+    return f"trace_{uuid.uuid4().hex[:8]}"
 # -------------------------------
 # SAFE OPTIONAL IMPORTS
 # ------------------------------- 
@@ -171,3 +260,4 @@ def get_validated_signals(signals):
             "reason": str(e),
             "trace_id": None
         }
+'''

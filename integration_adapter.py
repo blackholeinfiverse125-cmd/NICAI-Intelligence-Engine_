@@ -19,7 +19,7 @@ OUTPUT CONTRACT (to NICAI dashboard and API):
   {
     "risk_level", "anomaly_type", "explanation",
     "temporal_context", "spatial_context",
-    "confidence_score", "recommendation_signal"
+    "confidence", "recommendation_signal"
   }
 
 RULES:
@@ -94,7 +94,7 @@ def map_engine_to_nicai_output(engine_output: dict) -> dict:
         "explanation": str(explanation),
         "temporal_context": str(temporal),
         "spatial_context": str(spatial),
-        "confidence_score": float(confidence),
+        "confidence": float(confidence),
         "recommendation_signal": str(recommendation),
     }
 

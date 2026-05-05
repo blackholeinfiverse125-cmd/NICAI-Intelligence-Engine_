@@ -57,7 +57,7 @@ def convert_to_signals(weather, aqi):
         })
 
     print(f" Combined Signals Created: {len(signals)}")
-    '''# ✅ PHASE 2 VALIDATION CHECKS
+    # ✅ PHASE 2 VALIDATION CHECKS
     missing_fields = 0
     invalid_timestamps = 0
     invalid_locations = 0
@@ -91,5 +91,5 @@ def convert_to_signals(weather, aqi):
     unique_cities = set(cities)
 
     print(f"[CHECK] Unique cities: {len(unique_cities)}")
-    print(f"[CHECK] Sample cities: {list(unique_cities)[:5]}")'''
+    print(f"[CHECK] Sample cities: {list(unique_cities)[:5]}")
     return signals

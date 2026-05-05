@@ -28,7 +28,8 @@ from integration_orchestrator import orchestrate_intelligence
 #from integration_adapter import run_engine
 from samachar_input_adapter import load_data, convert_to_signals
 from error_handler import error_response, validate_basic_input
-
+from cluster_intelligence import analyze_signal_cluster
+from action_router import route_action
 # -------------------------------------------------------
 # Ensure log directory exists
 # -------------------------------------------------------
@@ -206,6 +207,7 @@ def run_pipeline(signal: dict):
 
         # FIXED: was checking ALLOW/FLAG — now correctly passes VALID
         #analytics = run_engine(validation)
+        signal["trace_id"] = validation.get("trace_id")
         analytics = orchestrate_intelligence(signal)
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
@@ -218,7 +220,7 @@ def run_pipeline(signal: dict):
             "explanation": analytics.get("explanation"),
             "temporal_context": analytics.get("temporal_context"),
             "spatial_context": analytics.get("spatial_context"),
-            "confidence_score": analytics.get("confidence_score"),
+            "confidence": analytics.get("confidence"),
             "recommendation_signal": analytics.get("recommendation_signal"),
         }
 
@@ -250,6 +252,7 @@ def evaluate_signal(signal: dict):
             return validation
 
         #analytics = run_engine(validation)
+        signal["trace_id"] = validation.get("trace_id")
         analytics = orchestrate_intelligence(signal)
         if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
             return analytics
@@ -263,12 +266,12 @@ def evaluate_signal(signal: dict):
             "explanation": analytics.get("explanation"),
             "temporal_context": analytics.get("temporal_context"),
             "spatial_context": analytics.get("spatial_context"),
-            "confidence_score": analytics.get("confidence_score"),
+            "confidence": analytics.get("confidence"),
             "recommendation_signal": analytics.get("recommendation_signal"),
             # 🔥 ADD THESE (IMPORTANT)
-            "region_insight": analytics.get("region_insight"),
-            "spatial_risk": analytics.get("spatial_risk"),
-            "domain_note": analytics.get("domain_note"),
+            #"region_insight": analytics.get("region_insight"),
+            #"spatial_risk": analytics.get("spatial_risk"),
+            #"domain_note": analytics.get("domain_note"),
         }
 
         log_data("anomaly_logs.json", "ANALYSIS", output)
@@ -294,62 +297,49 @@ def run_full_pipeline():
         gate = validate_basic_input(signals)
         if gate:
             return gate
+        
 
-        results = []
+        processed = []
+        trace_ids = []
 
         for signal in signals[:50]:
             validation = validate_signal(signal)
-
+            log_data("validation_logs.json", "VALIDATION", validation)
             if validation is None:
                 continue
 
             if validation.get("status") == "ERROR":
                 continue
-
-            #analytics = run_engine(validation)
+            trace_ids.append(validation.get("trace_id"))
             analytics = orchestrate_intelligence(signal)
-
+            
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
 
-            output = {
-                "signal_id": str(signal.get("signal_id")),
-                "trace_id": str(validation.get("trace_id")),
-                "risk_level": str(analytics.get("risk_level", "LOW")),
-                "anomaly_type": str(analytics.get("anomaly_type", "normal")),
-                "explanation": str(analytics.get("explanation", "No issue")),
-                "temporal_context": analytics.get("temporal_context"),
-                "spatial_context": analytics.get("spatial_context"),
-                "confidence_score": analytics.get("confidence_score"),
-                "recommendation_signal": analytics.get("recommendation_signal"),
-            }
+            processed.append({
+                "trace_id": validation.get("trace_id"),
+                "data": analytics
+            })  
 
-            results.append(output)
-            log_data("anomaly_logs.json", "ANALYSIS", output)
+        # 🔥 CLUSTER INTELLIGENCE
+        cluster_output = analyze_signal_cluster(processed)
+        
+        action = route_action(cluster_output)    
+        log_data("action_logs.json", "ACTION", action)
 
-        # Pattern summary
-        total = len(results)
-        high = sum(1 for r in results if r.get("risk_level") == "HIGH")
-        medium = sum(1 for r in results if r.get("risk_level") == "MEDIUM")
-        low = sum(1 for r in results if r.get("risk_level") == "LOW")
 
-        summary = {
-            "pattern_id": "pattern_batch",
-            "count": total,
-            "type": "risk_distribution",
-            "summary": f"HIGH: {high}, MEDIUM: {medium}, LOW: {low}",
-        }
 
-        log_data("pattern_logs.json", "PATTERN", summary)
+        log_data("pattern_logs.json", "CLUSTER_ANALYSIS", cluster_output)
 
         return {
-            "total_processed": total,
-            "summary": summary,
-            "data": results,
+            "cluster_result": cluster_output,
+            "action": action,
+            "total_signals": len(processed)
         }
 
     except Exception as e:
         return error_response(str(e))
+
 
 
 # -------------------------------------------------------
@@ -375,9 +365,11 @@ def dashboard(request: Request):
                 continue
 
             #analytics = run_engine(signal)
+            signal["trace_id"] = validation.get("trace_id")
             analytics = orchestrate_intelligence(signal)
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
+            
 
             results.append({
                 "signal_id": signal.get("signal_id"),
