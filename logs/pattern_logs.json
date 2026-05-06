@@ -1,112 +1,43 @@
 [
   {
-    "trace_id": "N/A",
-    "timestamp": "2026-05-05T06:32:02.264210+00:00",
-    "type": "PATTERN",
-    "data": {
-      "pattern_id": "pattern_batch",
-      "count": 50,
-      "type": "risk_distribution",
-      "summary": "HIGH: 17, MEDIUM: 14, LOW: 19"
-    }
-  },
-  {
-    "trace_id": "N/A",
-    "timestamp": "2026-05-05T06:33:02.266644+00:00",
+    "trace_id": "trace_313d6961",
+    "timestamp": "2026-05-05T10:14:18.512319+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
+      "trace_id": "trace_313d6961",
+      "risk_level": "LOW",
+      "anomaly_type": "normal_conditions",
+      "explanation": "Cluster analysis: 0/50 HIGH risk signals, 0/50 MEDIUM. Situation classified as LOW. Context: Elevated environmental risk observed in unknown.",
       "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review"
+      "spatial_context": "unknown",
+      "confidence": 0.9,
+      "recommendation_signal": "monitor"
     }
   },
   {
-    "trace_id": "N/A",
-    "timestamp": "2026-05-05T06:41:29.969817+00:00",
+    "trace_id": "trace_21d8542e",
+    "timestamp": "2026-05-06T04:16:40.100854+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
+      "trace_id": "trace_21d8542e",
+      "risk_level": "LOW",
+      "anomaly_type": "normal_conditions",
+      "explanation": "Cluster analysis: 0/50 HIGH risk signals, 0/50 MEDIUM. Situation classified as LOW. Context: Elevated environmental risk observed in unknown.",
       "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review"
+      "spatial_context": "unknown",
+      "confidence": 0.9,
+      "recommendation_signal": "monitor"
     }
   },
   {
-    "trace_id": "trace_3ff230c8",
-    "timestamp": "2026-05-05T06:46:26.410603+00:00",
+    "trace_id": "trace_61649b9c",
+    "timestamp": "2026-05-06T04:22:09.014842+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
+      "trace_id": "trace_61649b9c",
       "risk_level": "MEDIUM",
       "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review",
-      "trace_id": "trace_3ff230c8"
-    }
-  },
-  {
-    "trace_id": "trace_bd9f8b74",
-    "timestamp": "2026-05-05T06:55:54.809145+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_bd9f8b74",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_b8b5f931",
-    "timestamp": "2026-05-05T07:01:22.706577+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_b8b5f931",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_06f03ac7",
-    "timestamp": "2026-05-05T07:04:42.829593+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_06f03ac7",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence_score": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_db12e2aa",
-    "timestamp": "2026-05-05T07:05:03.928426+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_db12e2aa",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai.",
       "temporal_context": "CLUSTERED",
       "spatial_context": "Mumbai",
       "confidence": 0.9,
@@ -114,161 +45,11 @@
     }
   },
   {
-    "trace_id": "trace_674397ed",
-    "timestamp": "2026-05-05T07:06:53.528775+00:00",
+    "trace_id": "trace_0a6f7211",
+    "timestamp": "2026-05-06T04:29:36.628050+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "trace_id": "trace_674397ed",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_4bd9a79f",
-    "timestamp": "2026-05-05T07:31:54.282306+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_4bd9a79f",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_7287e83c",
-    "timestamp": "2026-05-05T07:38:25.849362+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_7287e83c",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_9d976a90",
-    "timestamp": "2026-05-05T07:42:25.757973+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_9d976a90",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_3bbf8f4a",
-    "timestamp": "2026-05-05T07:44:05.342850+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_3bbf8f4a",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_4778ec01",
-    "timestamp": "2026-05-05T07:50:15.293076+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_4778ec01",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_493bc34a",
-    "timestamp": "2026-05-05T07:51:14.673762+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_493bc34a",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_d16e0774",
-    "timestamp": "2026-05-05T08:03:12.376890+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_d16e0774",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in unknown.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_31b497e5",
-    "timestamp": "2026-05-05T08:05:50.202485+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_31b497e5",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in unknown.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_7b5200dd",
-    "timestamp": "2026-05-05T08:10:07.655296+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_7b5200dd",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in unknown.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "trace_id": "trace_195b1b3c",
-    "timestamp": "2026-05-05T08:17:14.272698+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_195b1b3c",
+      "trace_id": "trace_0a6f7211",
       "risk_level": "MEDIUM",
       "anomaly_type": "clustered_moderate_environmental_risk",
       "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai.",

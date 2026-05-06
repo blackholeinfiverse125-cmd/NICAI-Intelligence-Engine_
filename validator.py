@@ -31,7 +31,7 @@ def validate_signal(signal):
         if not isinstance(signal, dict):
             return build_error("Invalid signal format")
 
-        trace_id = generate_trace_id(signal)
+        trace_id = signal.get("trace_id") or generate_trace_id(signal)
 
         for field in required_top_fields:
             if field not in signal or signal.get(field) in [None, ""]:
@@ -54,7 +54,12 @@ def validate_signal(signal):
         }
 
         validate_output_schema(result)
-        emit_bucket_artifact(result)
+        emit_bucket_artifact({
+            "type": "VALIDATION",
+            "trace_id": trace_id,
+            "reason": result.get("reason"),
+            "data": result
+        })
         emit_telemetry(signal, result)
 
         return result

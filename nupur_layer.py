@@ -3,8 +3,6 @@ def get_context_intelligence(signal: dict) -> dict:
     Nupur Layer — Context + Spatial Intelligence
     """
     
-
-
     location = signal.get("location", "unknown")
     value = signal.get("value", {})
 

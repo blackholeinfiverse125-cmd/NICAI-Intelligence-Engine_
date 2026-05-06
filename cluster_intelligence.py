@@ -11,14 +11,14 @@ def analyze_signal_cluster(processed: list) -> dict:
             "explanation": "No signals available.",
             "temporal_context": "UNKNOWN",
             "spatial_context": "UNKNOWN",
-            "confidence_score": 0.0,
+            "confidence": 0.0,
             "recommendation_signal": "monitor",
         }
 
     total = len(processed)
 
     # Extract actual data
-    data_list = [item.get("data", {}) for item in processed]
+    data_list = processed
 
     high_count = sum(1 for d in data_list if d.get("risk_level") == "HIGH")
     medium_count = sum(1 for d in data_list if d.get("risk_level") == "MEDIUM")
@@ -42,9 +42,9 @@ def analyze_signal_cluster(processed: list) -> dict:
     # RULE 3 — explanation
     #region = processed[0].get("spatial_context", "unknown")
     regions = [
-        item.get("data", {}).get("spatial_context")
+        item.get("spatial_context")
         for item in processed
-        if item.get("data", {}).get("spatial_context")  
+        if item.get("spatial_context")
     ]
     region = regions[0] if regions else "unknown"
 
@@ -63,7 +63,10 @@ def analyze_signal_cluster(processed: list) -> dict:
         recommendation = "monitor"
 
     # 🔥 TRACE CONTINUITY (CRITICAL)
-    trace_id = processed[0].get("trace_id", "unknown")
+    trace_id = next(
+        (item.get("trace_id") for item in processed if item.get("trace_id")),
+        "unknown"
+    )
     spatial_context = region
     return {
         "trace_id": trace_id,

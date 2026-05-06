@@ -11,11 +11,10 @@ def orchestrate_intelligence(signal: dict) -> dict:
     # Step 1: Sanskar reasoning
     sanskar_output = run_engine(signal)
 
-    # Safety check
     if not isinstance(sanskar_output, dict) or sanskar_output.get("status") == "ERROR":
         return sanskar_output
 
-    # Step 2: Nupur context (SAFE )
+    # Step 2: Nupur context
     try:
         nupur_output = get_context_intelligence(signal)
     except Exception:
@@ -25,8 +24,9 @@ def orchestrate_intelligence(signal: dict) -> dict:
             "domain_note": "no context available"
         }
 
-    
-    # Step 3: INTELLIGENCE FUSION (REAL ORCHESTRATION)
+    # -------------------------------
+    #  PHASE 1 — REAL FUSION
+    # -------------------------------
 
     risk = sanskar_output.get("risk_level", "LOW")
     explanation = sanskar_output.get("explanation", "")
@@ -36,29 +36,39 @@ def orchestrate_intelligence(signal: dict) -> dict:
     region = nupur_output.get("region_insight")
     domain = nupur_output.get("domain_note")
 
-# 🔴 1. MODIFY RISK BASED ON CONTEXT
+    # 1️MODIFY RISK (STRONG FUSION)
     if spatial_risk == "critical_zone" and risk != "HIGH":
         risk = "HIGH"
     elif spatial_risk == "polluted_zone" and risk == "LOW":
         risk = "MEDIUM"
 
-# 🔴 2. MODIFY EXPLANATION (FUSION)
-    explanation = f"{explanation} | Context: {region} classified as {spatial_risk}, {domain}."
+    # 2️ MODIFY EXPLANATION
+    explanation = (
+        f"{explanation} | Context: {region} classified as {spatial_risk}, {domain}."
+    )
 
-# 🔴 3. MODIFY RECOMMENDATION
+    # 3️ MODIFY RECOMMENDATION (DECISION-LEVEL CHANGE)
     if domain == "extreme heat zone":
-        recommendation = "urgent_attention"
+        recommendation = "eligible_for_escalation"
     elif spatial_risk == "critical_zone":
         recommendation = "eligible_for_escalation"
 
-# 🔴 FINAL OUTPUT (NO EXTRA FIELDS)
+    # -------------------------------
+    # PHASE 4 — TRACE CONTINUITY
+    # -------------------------------
+    trace_id = sanskar_output.get("trace_id", signal.get("trace_id", "unknown"))
+
+    # -------------------------------
+    #  PHASE 5 — CONTRACT LOCK
+    # -------------------------------
     final_output = {
+        "trace_id": trace_id,  #  REQUIRED
         "risk_level": risk,
         "anomaly_type": sanskar_output.get("anomaly_type"),
         "explanation": explanation,
         "temporal_context": sanskar_output.get("temporal_context"),
         "spatial_context": sanskar_output.get("spatial_context"),
-        "confidence_score": sanskar_output.get("confidence_score"),
+        "confidence": sanskar_output.get("confidence", 0.5),
         "recommendation_signal": recommendation,
     }
 

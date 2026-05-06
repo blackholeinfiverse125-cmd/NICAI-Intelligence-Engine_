@@ -1,3 +1,5 @@
+from bucket_emitter import emit_bucket_artifact as log_data
+
 def route_action(output: dict) -> dict:
     """
     Maps NICAI output → real execution action
@@ -12,8 +14,13 @@ def route_action(output: dict) -> dict:
     else:
         action = "MONITOR"
 
-    return {
-        "trace_id": output.get("trace_id"),
+    result = {
+        "trace_id": output.get("trace_id", "unknown"),
         "action": action,
         "status": "TRIGGERED"
     }
+    log_data({
+        "type": "ACTION",
+        "data": result
+    })
+    return result

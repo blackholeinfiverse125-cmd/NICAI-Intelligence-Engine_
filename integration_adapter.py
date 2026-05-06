@@ -56,7 +56,7 @@ def map_nicai_to_engine_input(signal: dict) -> dict:
         temperature = 0.0
 
     try:
-        trend = float(signal.get("trend", signal.get("confidence_score", 0.5)) or 0.5)
+        trend = float(signal.get("trend", 0.5) or 0.5)
     except (TypeError, ValueError):
         trend = 0.5
 
@@ -122,7 +122,12 @@ def run_engine(signal: dict) -> dict:
         if not isinstance(engine_output, dict):
             return {"status": "ERROR", "reason": "SanskarEngine returned invalid output"}
 
-        return map_engine_to_nicai_output(engine_output)
+        output = map_engine_to_nicai_output(engine_output)
+
+        # PHASE 4 — TRACE CONTINUITY
+        output["trace_id"] = signal.get("trace_id", "unknown")
+
+        return output
 
     except Exception as e:
         return {"status": "ERROR", "reason": f"Engine adapter exception: {str(e)}"}

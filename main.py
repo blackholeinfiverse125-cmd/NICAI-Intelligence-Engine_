@@ -316,12 +316,10 @@ def run_full_pipeline():
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
 
-            processed.append({
-                "trace_id": validation.get("trace_id"),
-                "data": analytics
-            })  
+            analytics["trace_id"] = validation.get("trace_id")
+            processed.append(analytics)  
 
-        # 🔥 CLUSTER INTELLIGENCE
+        #  CLUSTER INTELLIGENCE
         cluster_output = analyze_signal_cluster(processed)
         
         action = route_action(cluster_output)    
@@ -355,7 +353,7 @@ def dashboard(request: Request):
         signals = convert_to_signals(weather, aqi)
         results = []
 
-        for signal in signals[:20]:
+        for signal in signals[:50]:
             validation = validate_signal(signal)
 
             if validation is None:
@@ -369,7 +367,7 @@ def dashboard(request: Request):
             analytics = orchestrate_intelligence(signal)
             if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
                 continue
-            
+
 
             results.append({
                 "signal_id": signal.get("signal_id"),
@@ -378,7 +376,7 @@ def dashboard(request: Request):
                 "explanation": analytics.get("explanation", "—"),
                 "temporal_context": analytics.get("temporal_context", "STABLE"),
                 "spatial_context": analytics.get("spatial_context", "—"),
-                "confidence_score": analytics.get("confidence_score", 0.5),
+                "confidence": analytics.get("confidence", 0.5),
                 "recommendation_signal": analytics.get("recommendation_signal", "monitor"),
                 "trace_id": validation.get("trace_id"),
             })
