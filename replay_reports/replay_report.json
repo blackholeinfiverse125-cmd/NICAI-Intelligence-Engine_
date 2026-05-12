@@ -1,0 +1,12 @@
+{
+  "trace_id": "trace_8db5e4bb",
+  "found_stages": [
+    "VALIDATION",
+    "ANALYSIS",
+    "CLUSTER_ANALYSIS",
+    "CONTRACT_VALIDATION",
+    "ACTION"
+  ],
+  "missing_stages": [],
+  "replay_status": "COMPLETE"
+}

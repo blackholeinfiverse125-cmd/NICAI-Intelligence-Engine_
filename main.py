@@ -30,6 +30,7 @@ from samachar_input_adapter import load_data, convert_to_signals
 from error_handler import error_response, validate_basic_input
 from cluster_intelligence import analyze_signal_cluster
 from action_router import route_action
+from contract_validator import validate_contract
 # -------------------------------------------------------
 # Ensure log directory exists
 # -------------------------------------------------------
@@ -94,7 +95,7 @@ def validate_signal(signal: dict):
     return {
         "signal_id": signal.get("signal_id"),
         "status": "VALID",
-        "confidence_score": signal.get("confidence_score", 0.5),
+        "confidence_score": signal.get("confidence_score", 0.9),
         "trace_id": trace_id,
         "reason": signal.get("reason", ""),
         "value": signal.get("value"),
@@ -180,7 +181,7 @@ def validate(signal: dict):
         if validation.get("status") == "ERROR":
             return validation
 
-        log_data("validation_logs.json", "VALIDATION", validation)
+        #log_data("validation_logs.json", "VALIDATION", validation)
         return validation
 
     except Exception as e:
@@ -317,13 +318,45 @@ def run_full_pipeline():
                 continue
 
             analytics["trace_id"] = validation.get("trace_id")
+            log_data(
+                "anomaly_logs.json",
+                "ANALYSIS",
+                analytics
+            )
             processed.append(analytics)  
 
-        #  CLUSTER INTELLIGENCE
-        cluster_output = analyze_signal_cluster(processed)
         
-        action = route_action(cluster_output)    
-        log_data("action_logs.json", "ACTION", action)
+# ---------------------------------
+# CLUSTER INTELLIGENCE
+# ---------------------------------
+
+        cluster_output = analyze_signal_cluster(processed)
+
+# ---------------------------------
+# DOWNSTREAM CONTRACT VALIDATION
+# ---------------------------------
+
+        contract_result = validate_contract(cluster_output)
+
+        log_data(
+            "contract_logs.json",
+            "CONTRACT_VALIDATION",  
+            contract_result
+        )
+
+        if contract_result.get("contract_status") != "VALID":
+            return {
+                "status": "ERROR",
+                "reason": "Invalid downstream contract",
+                "contract_errors": contract_result.get("errors", [])
+            }
+
+# ---------------------------------
+# ACTION ROUTING
+# ---------------------------------
+
+        action = route_action(cluster_output)   
+        #log_data("action_logs.json", "ACTION", action)
 
 
 

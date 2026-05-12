@@ -8,19 +8,20 @@ def route_action(output: dict) -> dict:
     risk = output.get("risk_level", "LOW")
 
     if risk == "HIGH":
-        action = "ESCALATE_TO_AUTHORITY"
+        action = "RECOMMEND_ESCALATION_REVIEW"
     elif risk == "MEDIUM":
-        action = "SEND_FOR_REVIEW"
+        action = "RECOMMEND_ENVIRONMENTAL_REVIEW"
     else:
-        action = "MONITOR"
+        action = "CONTINUE_MONITORING"
 
     result = {
         "trace_id": output.get("trace_id", "unknown"),
         "action": action,
-        "status": "TRIGGERED"
+        "status": "EMITTED"
     }
-    log_data({
-        "type": "ACTION",
-        "data": result
-    })
+    log_data(
+        "action_logs.json",
+        "ACTION",
+        result
+    )
     return result

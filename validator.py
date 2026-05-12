@@ -1,4 +1,5 @@
 from schemas import required_top_fields
+from failure_handler import build_failure
 import uuid
 
 def generate_trace_id(signal):
@@ -28,15 +29,34 @@ def build_error(reason, trace_id=None, signal=None):
 
 def validate_signal(signal):
     try:
+        #if not isinstance(signal, dict):
+            #return build_error("Invalid signal format")
         if not isinstance(signal, dict):
+            failure = build_failure(
+                "unknown",
+                "VALIDATION",
+                "Invalid signal format",
+                "HIGH"
+            )
             return build_error("Invalid signal format")
-
         trace_id = signal.get("trace_id") or generate_trace_id(signal)
 
         for field in required_top_fields:
-            if field not in signal or signal.get(field) in [None, ""]:
-                return build_error(f"Missing field: {field}", trace_id, signal)
 
+            if field not in signal or signal.get(field) in [None, ""]:
+
+                build_failure(
+                    trace_id,
+                    "VALIDATION",
+                    f"Missing field: {field}",
+                    "HIGH"
+                )
+
+                return build_error(
+                    f"Missing field: {field}",
+                    trace_id,
+                    signal
+                )
         value = signal.get("value")
 
         if not isinstance(value, dict):
@@ -54,19 +74,29 @@ def validate_signal(signal):
         }
 
         validate_output_schema(result)
-        emit_bucket_artifact({
-            "type": "VALIDATION",
-            "trace_id": trace_id,
-            "reason": result.get("reason"),
-            "data": result
-        })
+        emit_bucket_artifact(
+            "validation_logs.json",
+            "VALIDATION",
+            result
+        )
         emit_telemetry(signal, result)
 
         return result
 
+    #except Exception as e:
+        #return build_error(str(e), None, signal)
     except Exception as e:
-        return build_error(str(e), None, signal)
 
+        failure = build_failure(
+            signal.get("trace_id", "unknown")
+            if isinstance(signal, dict)
+            else "unknown",
+            "VALIDATION",
+            str(e),
+            "HIGH"
+        )
+
+        return build_error(str(e), None, signal)
 
 def validate_batch(signals):
     try:

@@ -1,0 +1,86 @@
+import json
+import os
+
+LOG_FILES = [
+    "logs/validation_logs.json",
+    "logs/anomaly_logs.json",
+    "logs/pattern_logs.json",
+    "logs/contract_logs.json",
+    "logs/action_logs.json"
+]
+REQUIRED_STAGES = [
+    "VALIDATION",
+    "ANALYSIS",
+    "CLUSTER_ANALYSIS",
+    "CONTRACT_VALIDATION",
+    "ACTION"
+]
+
+def load_logs(filepath):
+
+    if not os.path.exists(filepath):
+        return []
+
+    try:
+        with open(filepath, "r") as f:
+            return json.load(f)
+    except Exception:
+        return []
+    
+def find_trace_entries(trace_id):
+
+    collected = []
+
+    for filepath in LOG_FILES:
+
+        logs = load_logs(filepath)
+
+        for entry in logs:
+
+            if entry.get("trace_id") == trace_id:
+                collected.append(entry)
+
+    return collected
+
+
+
+
+def verify_replay(trace_id):
+
+    entries = find_trace_entries(trace_id)
+
+    found_stages = [
+        entry.get("type")
+        for entry in entries
+    ]
+
+    missing = [
+        stage
+        for stage in REQUIRED_STAGES
+        if stage not in found_stages
+    ]
+
+    return {
+        "trace_id": trace_id,
+        "found_stages": found_stages,
+        "missing_stages": missing,
+        "replay_status": (
+            "COMPLETE"
+            if not missing
+            else "INCOMPLETE"
+        )
+    }
+
+if __name__ == "__main__":
+
+    test_trace = input("Enter trace_id: ")
+
+    replay_entries = find_trace_entries(test_trace)
+
+    print("\nREPLAY ENTRIES\n")
+    print(json.dumps(replay_entries, indent=2))
+
+    summary = verify_replay(test_trace)
+
+    print("\nREPLAY SUMMARY\n")
+    print(json.dumps(summary, indent=2))
