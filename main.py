@@ -31,6 +31,7 @@ from error_handler import error_response, validate_basic_input
 from cluster_intelligence import analyze_signal_cluster
 from action_router import route_action
 from contract_validator import validate_contract
+from bucket_emitter import emit_bucket_artifact
 # -------------------------------------------------------
 # Ensure log directory exists
 # -------------------------------------------------------
@@ -275,7 +276,12 @@ def evaluate_signal(signal: dict):
             #"domain_note": analytics.get("domain_note"),
         }
 
-        log_data("anomaly_logs.json", "ANALYSIS", output)
+        #log_data("anomaly_logs.json", "ANALYSIS", output)
+        emit_bucket_artifact(
+            "anomaly_logs.json",
+            "ANALYSIS",
+            output
+        )
         return output
 
     except Exception as e:
@@ -305,7 +311,12 @@ def run_full_pipeline():
 
         for signal in signals[:50]:
             validation = validate_signal(signal)
-            log_data("validation_logs.json", "VALIDATION", validation)
+            #log_data("validation_logs.json", "VALIDATION", validation)
+            emit_bucket_artifact(
+                "validation_logs.json",
+                "VALIDATION",
+                validation
+            )
             if validation is None:
                 continue
 
@@ -318,7 +329,12 @@ def run_full_pipeline():
                 continue
 
             analytics["trace_id"] = validation.get("trace_id")
-            log_data(
+            #log_data(
+             #   "anomaly_logs.json",
+              #  "ANALYSIS",
+               # analytics
+            #)
+            emit_bucket_artifact(
                 "anomaly_logs.json",
                 "ANALYSIS",
                 analytics
@@ -338,9 +354,14 @@ def run_full_pipeline():
 
         contract_result = validate_contract(cluster_output)
 
-        log_data(
+        '''log_data(
             "contract_logs.json",
             "CONTRACT_VALIDATION",  
+            contract_result
+        )'''
+        emit_bucket_artifact(
+            "contract_logs.json",
+            "CONTRACT_VALIDATION",
             contract_result
         )
 
@@ -360,8 +381,12 @@ def run_full_pipeline():
 
 
 
-        log_data("pattern_logs.json", "CLUSTER_ANALYSIS", cluster_output)
-
+        #log_data("pattern_logs.json", "CLUSTER_ANALYSIS", cluster_output)
+        emit_bucket_artifact(
+            "pattern_logs.json",
+            "CLUSTER_ANALYSIS",
+            cluster_output
+        )
         return {
             "cluster_result": cluster_output,
             "action": action,
@@ -450,7 +475,12 @@ def trigger_action(data: dict):
             "signal_id": data.get("signal_id"),
         }
 
-        log_data("action_logs.json", "ACTION", action_payload)
+        #log_data("action_logs.json", "ACTION", action_payload)
+        emit_bucket_artifact(
+            "action_logs.json",
+            "ACTION",
+            action_payload
+        )
 
         return {"status": "SUCCESS", "action": action_payload}
 

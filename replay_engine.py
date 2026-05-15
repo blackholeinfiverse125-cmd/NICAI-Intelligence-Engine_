@@ -40,6 +40,14 @@ def find_trace_entries(trace_id):
             if entry.get("trace_id") == trace_id:
                 collected.append(entry)
 
+    #return collected
+        # ---------------------------------
+    # IMMUTABLE ORDER RECONSTRUCTION
+    # ---------------------------------
+    collected.sort(
+        key=lambda x: x.get("sequence_id", 0)
+    )
+
     return collected
 
 
@@ -48,6 +56,16 @@ def find_trace_entries(trace_id):
 def verify_replay(trace_id):
 
     entries = find_trace_entries(trace_id)
+    sequence_ids = [
+        entry.get("sequence_id")
+        for entry in entries
+        if entry.get("sequence_id") is not None
+    ]
+
+    ordered_correctly = (
+        sequence_ids ==
+        sorted(sequence_ids)
+    )
 
     found_stages = [
         entry.get("type")
@@ -64,6 +82,8 @@ def verify_replay(trace_id):
         "trace_id": trace_id,
         "found_stages": found_stages,
         "missing_stages": missing,
+        "ordered_replay": ordered_correctly,
+        "sequence_chain": sequence_ids,
         "replay_status": (
             "COMPLETE"
             if not missing

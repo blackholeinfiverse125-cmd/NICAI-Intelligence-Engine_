@@ -298,5 +298,98 @@
       "confidence": 0.9,
       "recommendation_signal": "requires_review"
     }
+  },
+  {
+    "trace_id": "trace_fea5d26e",
+    "timestamp": "2026-05-15T06:44:10.036951+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_fea5d26e",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "trace_id": "trace_0f56f2c8",
+    "timestamp": "2026-05-15T07:01:02.800476+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_0f56f2c8",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "trace_id": "trace_dd8868bc",
+    "timestamp": "2026-05-15T07:06:26.608363+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_dd8868bc",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 106,
+    "trace_id": "trace_206d022a",
+    "timestamp": "2026-05-15T07:20:21.876967+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_206d022a",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 209,
+    "trace_id": "trace_f18f6375",
+    "timestamp": "2026-05-15T09:16:16.770830+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_f18f6375",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 312,
+    "trace_id": "trace_022f93cf",
+    "timestamp": "2026-05-15T10:06:58.820079+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_022f93cf",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
   }
 ]

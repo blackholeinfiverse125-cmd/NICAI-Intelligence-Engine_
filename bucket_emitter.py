@@ -1,7 +1,7 @@
 import json
 import os
 from datetime import datetime, timezone
-
+from sequence_manager import get_next_sequence_id
 LOG_DIR = "logs"
 
 
@@ -15,6 +15,7 @@ def emit_bucket_artifact(filename: str, event_type: str, data: dict):
     filepath = os.path.join(LOG_DIR, filename)
 
     log_entry = {
+        "sequence_id": get_next_sequence_id(),
         "trace_id": data.get("trace_id", "unknown"),
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "type": event_type,
