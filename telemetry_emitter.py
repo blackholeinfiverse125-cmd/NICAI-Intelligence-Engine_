@@ -1,5 +1,15 @@
-def emit_telemetry(a, b):
-    pass
+def emit_telemetry(event_type, payload):
+
+    telemetry_event = {
+        "event_type": event_type,
+        "payload": payload
+    }
+
+    print("\nTELEMETRY EVENT\n")
+
+    print(telemetry_event)
+
+    return telemetry_event
 
 from collections import Counter
 
@@ -13,6 +23,8 @@ def generate_governance_metrics(failures):
         "recoverable_failures": 0,
         "non_recoverable_failures": 0
     }
+
+
 
     severity_counter = Counter()
 

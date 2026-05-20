@@ -347,6 +347,11 @@ def run_full_pipeline():
 # ---------------------------------
 
         cluster_output = analyze_signal_cluster(processed)
+        emit_bucket_artifact(
+            "pattern_logs.json",
+            "CLUSTER_ANALYSIS",
+            cluster_output
+        )
 
 # ---------------------------------
 # DOWNSTREAM CONTRACT VALIDATION
@@ -378,15 +383,12 @@ def run_full_pipeline():
 
         action = route_action(cluster_output)   
         #log_data("action_logs.json", "ACTION", action)
+        
 
 
 
         #log_data("pattern_logs.json", "CLUSTER_ANALYSIS", cluster_output)
-        emit_bucket_artifact(
-            "pattern_logs.json",
-            "CLUSTER_ANALYSIS",
-            cluster_output
-        )
+        
         return {
             "cluster_result": cluster_output,
             "action": action,

@@ -5,9 +5,16 @@ from replay_engine import (
 )
 
 
-def detect_replay_divergence(trace_id):
+def detect_replay_divergence(
+    trace_id,
+    replay_entries=None
+):
 
-    entries = find_trace_entries(trace_id)
+    entries = (
+        replay_entries
+        if replay_entries is not None
+        else find_trace_entries(trace_id)
+    )
 
     divergence = []
 
@@ -16,9 +23,13 @@ def detect_replay_divergence(trace_id):
     # ---------------------------------
     if not entries:
 
-        divergence.append(
+        '''divergence.append(
             "No replay entries found"
-        )
+        )'''
+        divergence.append({
+            "failure_type": "EMPTY_REPLAY",
+            "metadata": FAILURE_MATRIX["EMPTY_REPLAY"]
+        })
 
         return {
             "trace_id": trace_id,

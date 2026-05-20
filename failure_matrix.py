@@ -29,7 +29,11 @@ FAILURE_MATRIX = {
         "recoverable": False,
         "category": "TRACE_FAILURE"
     },
-
+    "EMPTY_REPLAY": {
+        "severity": "HIGH",
+        "recoverable": False,
+        "category": "REPLAY_FAILURE"
+    },
     "UNKNOWN_FAILURE": {
         "severity": "LOW",
         "recoverable": True,

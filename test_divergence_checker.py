@@ -1,3 +1,9 @@
+from replay_corruption_simulator import (
+    simulate_missing_stage,
+    simulate_duplicate_stage,
+    simulate_sequence_corruption
+)
+
 from telemetry_emitter import (
     generate_governance_metrics
 )
@@ -9,7 +15,37 @@ from replay_divergence_checker import (
 
 trace_id = input("Enter trace_id: ")
 
-result = detect_replay_divergence(trace_id)
+
+mode = input(
+    "Simulation mode (none/missing/duplicate/sequence): "
+).strip().lower()
+
+simulated_entries = None
+
+if mode == "missing":
+
+    simulated_entries = simulate_missing_stage(
+        trace_id,
+        "ACTION"
+    )
+
+elif mode == "duplicate":
+
+    simulated_entries = simulate_duplicate_stage(
+        trace_id,
+        "ACTION"
+    )
+
+elif mode == "sequence":
+
+    simulated_entries = simulate_sequence_corruption(
+        trace_id
+    )
+
+result = detect_replay_divergence(
+    trace_id,
+    replay_entries=simulated_entries
+)
 
 print("\nDIVERGENCE RESULT\n")
 print(result)

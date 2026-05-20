@@ -37,9 +37,13 @@ def find_trace_entries(trace_id):
 
         for entry in logs:
 
-            if entry.get("trace_id") == trace_id:
-                collected.append(entry)
+            entry_trace = (
+            entry.get("trace_id")
+            or entry.get("data", {}).get("trace_id")
+            )
 
+            if entry_trace == trace_id:
+                collected.append(entry)
     #return collected
         # ---------------------------------
     # IMMUTABLE ORDER RECONSTRUCTION
