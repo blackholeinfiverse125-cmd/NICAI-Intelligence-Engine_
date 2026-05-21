@@ -8,6 +8,9 @@
   "orchestration_freeze_protection": true,
   "replay_integrity_verified": true,
   "operational_observability": true,
+  "downstream_acknowledgment_enabled": true,
+  "lineage_export_enabled": true,
+  "contract_validation_enforced": true,
   "governance_ready": true,
   "system_state": "OPERATIONALLY_RESILIENT"
 }

@@ -44,6 +44,36 @@ def detect_replay_divergence(
         entry.get("type")
         for entry in entries
     ]
+    
+    # ---------------------------------
+# CHECK — TRACE BREAK DETECTION
+# ---------------------------------
+
+    trace_ids = list(set(
+        entry.get("trace_id")
+        for entry in entries
+    ))
+
+    if len(trace_ids) > 1:
+
+        divergence.append({
+            "failure_type": "TRACE_BREAK",
+            "metadata": FAILURE_MATRIX["TRACE_BREAK"]
+        })
+
+# ---------------------------------
+# CHECK — ORPHAN EVENT DETECTION
+# ---------------------------------
+
+    for entry in entries:
+
+        if not entry.get("sequence_id"):
+
+            divergence.append({
+                "failure_type": "ORPHAN_EVENT",
+                "metadata": FAILURE_MATRIX["ORPHAN_EVENT"]
+            })
+
 
     for stage in REQUIRED_STAGES:
 

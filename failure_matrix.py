@@ -34,6 +34,17 @@ FAILURE_MATRIX = {
         "recoverable": False,
         "category": "REPLAY_FAILURE"
     },
+    "TRACE_BREAK": {
+        "severity": "HIGH",
+        "recoverable": False,
+        "category": "TRACE_FAILURE"
+    },
+
+    "ORPHAN_EVENT": {
+        "severity": "MEDIUM",
+        "recoverable": True,
+        "category": "ORCHESTRATION_FAILURE"
+    },
     "UNKNOWN_FAILURE": {
         "severity": "LOW",
         "recoverable": True,

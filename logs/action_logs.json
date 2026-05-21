@@ -244,5 +244,115 @@
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
+  },
+  {
+    "sequence_id": 415,
+    "trace_id": "trace_5f6937f4",
+    "timestamp": "2026-05-19T05:58:17.872337+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_5f6937f4",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 416,
+    "trace_id": "trace_5f6937f4",
+    "timestamp": "2026-05-19T05:58:17.879411+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_5f6937f4",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 519,
+    "trace_id": "trace_ca1a9544",
+    "timestamp": "2026-05-19T06:17:00.457912+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_ca1a9544",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 622,
+    "trace_id": "trace_61e3e153",
+    "timestamp": "2026-05-20T07:05:10.801048+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_61e3e153",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 725,
+    "trace_id": "trace_91623076",
+    "timestamp": "2026-05-20T07:08:58.180210+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_91623076",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 828,
+    "trace_id": "trace_c28835d3",
+    "timestamp": "2026-05-20T07:11:00.989012+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_c28835d3",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 931,
+    "trace_id": "trace_a45b7e96",
+    "timestamp": "2026-05-20T07:13:13.500667+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_a45b7e96",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1034,
+    "trace_id": "trace_75d3159a",
+    "timestamp": "2026-05-20T07:36:55.711837+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_75d3159a",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1137,
+    "trace_id": "trace_29d4fe0d",
+    "timestamp": "2026-05-20T07:38:51.916004+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_29d4fe0d",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1342,
+    "trace_id": "trace_79f79c25",
+    "timestamp": "2026-05-20T07:42:12.214834+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_79f79c25",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
   }
 ]

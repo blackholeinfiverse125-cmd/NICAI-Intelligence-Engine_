@@ -32,6 +32,9 @@ from cluster_intelligence import analyze_signal_cluster
 from action_router import route_action
 from contract_validator import validate_contract
 from bucket_emitter import emit_bucket_artifact
+from orchestration_telemetry import (
+    emit_orchestration_event
+)
 # -------------------------------------------------------
 # Ensure log directory exists
 # -------------------------------------------------------
@@ -317,9 +320,14 @@ def run_full_pipeline():
                 "VALIDATION",
                 validation
             )
+            
             if validation is None:
                 continue
-
+            emit_orchestration_event(
+                validation.get("trace_id"),
+                "VALIDATION",
+                "COMPLETED"
+            )
             if validation.get("status") == "ERROR":
                 continue
             trace_ids.append(validation.get("trace_id"))
@@ -329,6 +337,8 @@ def run_full_pipeline():
                 continue
 
             analytics["trace_id"] = validation.get("trace_id")
+
+            
             #log_data(
              #   "anomaly_logs.json",
               #  "ANALYSIS",
@@ -339,7 +349,12 @@ def run_full_pipeline():
                 "ANALYSIS",
                 analytics
             )
-            processed.append(analytics)  
+            emit_orchestration_event(
+                analytics.get("trace_id"),
+                "ANALYSIS",
+                "COMPLETED"
+            )
+            processed.append(analytics) 
 
         
 # ---------------------------------
@@ -351,6 +366,11 @@ def run_full_pipeline():
             "pattern_logs.json",
             "CLUSTER_ANALYSIS",
             cluster_output
+        )
+        emit_orchestration_event(
+            cluster_output.get("trace_id"),
+            "CLUSTER_ANALYSIS",
+            "COMPLETED"
         )
 
 # ---------------------------------
@@ -369,7 +389,11 @@ def run_full_pipeline():
             "CONTRACT_VALIDATION",
             contract_result
         )
-
+        emit_orchestration_event(
+            contract_result.get("trace_id"),
+            "CONTRACT_VALIDATION",
+            "COMPLETED"
+        )
         if contract_result.get("contract_status") != "VALID":
             return {
                 "status": "ERROR",
@@ -383,7 +407,11 @@ def run_full_pipeline():
 
         action = route_action(cluster_output)   
         #log_data("action_logs.json", "ACTION", action)
-        
+        emit_orchestration_event(
+            action.get("trace_id"),
+            "ACTION",
+            "COMPLETED"
+        )
 
 
 
