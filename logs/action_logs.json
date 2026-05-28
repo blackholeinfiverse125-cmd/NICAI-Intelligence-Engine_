@@ -354,5 +354,355 @@
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
+  },
+  {
+    "sequence_id": 1548,
+    "trace_id": "trace_6ff65141",
+    "timestamp": "2026-05-26T08:07:37.028695+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_6ff65141",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1754,
+    "trace_id": "trace_0961ebf8",
+    "timestamp": "2026-05-26T08:28:30.138255+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_0961ebf8",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1960,
+    "trace_id": "trace_43f741e3",
+    "timestamp": "2026-05-28T05:34:30.524824+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_43f741e3",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 2166,
+    "trace_id": "trace_f8cfbdfd",
+    "timestamp": "2026-05-28T05:37:13.112029+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_f8cfbdfd",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:37:13.104956+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 1
+      },
+      "signal_id": "S_0"
+    }
+  },
+  {
+    "sequence_id": 2167,
+    "trace_id": "trace_344fdcfc",
+    "timestamp": "2026-05-28T05:37:13.132435+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_344fdcfc",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 2169,
+    "trace_id": "trace_4752bcdb",
+    "timestamp": "2026-05-28T05:37:14.174987+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_4752bcdb",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:37:14.166921+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 2
+      },
+      "signal_id": "S_1"
+    }
+  },
+  {
+    "sequence_id": 2170,
+    "trace_id": "trace_aafe9856",
+    "timestamp": "2026-05-28T05:38:32.879828+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_aafe9856",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:38:32.871787+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 3
+      },
+      "signal_id": "S_2"
+    }
+  },
+  {
+    "sequence_id": 2171,
+    "trace_id": "trace_3748d82e",
+    "timestamp": "2026-05-28T05:38:33.925648+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_3748d82e",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:38:33.918254+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 4
+      },
+      "signal_id": "S_3"
+    }
+  },
+  {
+    "sequence_id": 2172,
+    "trace_id": "trace_a9b5e95a",
+    "timestamp": "2026-05-28T05:39:14.005957+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_a9b5e95a",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:39:13.998238+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 1
+      },
+      "signal_id": "S_0"
+    }
+  },
+  {
+    "sequence_id": 2173,
+    "trace_id": "trace_54eb1cb9",
+    "timestamp": "2026-05-28T05:39:15.021722+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_54eb1cb9",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:39:15.014103+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 3
+      },
+      "signal_id": "S_2"
+    }
+  },
+  {
+    "sequence_id": 2174,
+    "trace_id": "trace_fa57727f",
+    "timestamp": "2026-05-28T05:39:16.068835+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_fa57727f",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:39:16.062041+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 5
+      },
+      "signal_id": "S_4"
+    }
+  },
+  {
+    "sequence_id": 2175,
+    "trace_id": "trace_404ebb07",
+    "timestamp": "2026-05-28T05:40:32.086421+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_404ebb07",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:40:32.077877+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 1
+      },
+      "signal_id": "S_0"
+    }
+  },
+  {
+    "sequence_id": 2176,
+    "trace_id": "trace_ecacae9c",
+    "timestamp": "2026-05-28T05:40:33.356421+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_ecacae9c",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:40:33.349327+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 5
+      },
+      "signal_id": "S_4"
+    }
+  },
+  {
+    "sequence_id": 2177,
+    "trace_id": "trace_0d578d6a",
+    "timestamp": "2026-05-28T05:41:51.276117+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_0d578d6a",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:41:51.268988+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 1
+      },
+      "signal_id": "S_0"
+    }
+  },
+  {
+    "sequence_id": 2178,
+    "trace_id": "trace_80b08b58",
+    "timestamp": "2026-05-28T05:42:10.850150+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_80b08b58",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:10.843629+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 2
+      },
+      "signal_id": "S_1"
+    }
+  },
+  {
+    "sequence_id": 2179,
+    "trace_id": "trace_95cf3fd8",
+    "timestamp": "2026-05-28T05:42:11.388369+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_95cf3fd8",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:11.380777+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 3
+      },
+      "signal_id": "S_2"
+    }
+  },
+  {
+    "sequence_id": 2180,
+    "trace_id": "trace_f50894e9",
+    "timestamp": "2026-05-28T05:42:12.691895+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_f50894e9",
+      "action_type": "requires_review",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:12.683861+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 4
+      },
+      "signal_id": "S_3"
+    }
+  },
+  {
+    "sequence_id": 2181,
+    "trace_id": "trace_aaa35d69",
+    "timestamp": "2026-05-28T05:42:13.643433+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_aaa35d69",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:13.635913+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 5
+      },
+      "signal_id": "S_4"
+    }
+  },
+  {
+    "sequence_id": 2182,
+    "trace_id": "trace_527d24fa",
+    "timestamp": "2026-05-28T05:42:14.266800+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_527d24fa",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:14.260260+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 6
+      },
+      "signal_id": "S_5"
+    }
+  },
+  {
+    "sequence_id": 2183,
+    "trace_id": "trace_dee019f2",
+    "timestamp": "2026-05-28T05:42:14.810768+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_dee019f2",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:14.803722+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 7
+      },
+      "signal_id": "S_6"
+    }
+  },
+  {
+    "sequence_id": 2184,
+    "trace_id": "trace_5d5735e1",
+    "timestamp": "2026-05-28T05:42:15.562687+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_5d5735e1",
+      "action_type": "eligible_for_escalation",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:15.555678+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 8
+      },
+      "signal_id": "S_7"
+    }
+  },
+  {
+    "sequence_id": 2185,
+    "trace_id": "trace_864d6f19",
+    "timestamp": "2026-05-28T05:42:17.019103+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_864d6f19",
+      "action_type": "monitor",
+      "target_role": "authority",
+      "timestamp": "2026-05-28T05:42:17.011541+00:00",
+      "context": {
+        "source": "dashboard",
+        "row": 10
+      },
+      "signal_id": "S_9"
+    }
   }
 ]
