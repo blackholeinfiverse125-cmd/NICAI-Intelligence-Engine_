@@ -35,6 +35,8 @@ from bucket_emitter import emit_bucket_artifact
 from orchestration_telemetry import (
     emit_orchestration_event
 )
+from tantra_participation import emit_tantra_participation
+from ttg_simulation import emit_ttg_consume
 # -------------------------------------------------------
 # Ensure log directory exists
 # -------------------------------------------------------
@@ -313,8 +315,14 @@ def run_full_pipeline():
         trace_ids = []
 
         for signal in signals[:50]:
+            emit_bucket_artifact(
+                "ingestion_logs.json",
+                "INGESTION",
+                signal
+            )
             validation = validate_signal(signal)
             #log_data("validation_logs.json", "VALIDATION", validation)
+            
             emit_bucket_artifact(
                 "validation_logs.json",
                 "VALIDATION",
@@ -412,7 +420,13 @@ def run_full_pipeline():
             "ACTION",
             "COMPLETED"
         )
+        tantra_result = emit_tantra_participation(
+            cluster_output
+        )
 
+        ttg_result = emit_ttg_consume(
+            tantra_result
+        )
 
 
         #log_data("pattern_logs.json", "CLUSTER_ANALYSIS", cluster_output)
@@ -420,6 +434,8 @@ def run_full_pipeline():
         return {
             "cluster_result": cluster_output,
             "action": action,
+            "tantra_participation": tantra_result,
+            "ttg_consume": ttg_result,
             "total_signals": len(processed)
         }
 

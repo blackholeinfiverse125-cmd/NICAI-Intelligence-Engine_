@@ -1,6 +1,7 @@
 import pandas as pd
 from datetime import datetime, timedelta  
-
+from bucket_emitter import emit_bucket_artifact
+import uuid
 
 # -----------------------------
 # 1️ LOAD DATA
@@ -45,8 +46,28 @@ def convert_to_signals(weather, aqi):
         # 🔥 ADD TIME VARIATION
         base_date = datetime.strptime(str(row.get("date", "2024-01-01")), "%Y-%m-%d")
         timestamp = base_date + timedelta(minutes=i)
+        
+        trace_id = f"trace_{uuid.uuid4().hex[:8]}"
 
-        signals.append({
+        signal = {
+            "signal_id": f"S_{i}",
+            "trace_id": trace_id,
+            "timestamp": str(timestamp),
+            "value": {
+                "temperature": float(temp),
+                "aqi": float(aqi_val)
+            },
+            "location": row.get("city", "unknown")
+        }
+
+        '''emit_bucket_artifact(
+            "ingestion_logs.json",
+            "INGESTION",
+            signal
+        )'''
+
+        signals.append(signal)
+        '''signals.append({
             "signal_id": f"S_{i}",
             "timestamp": str(timestamp),
             "value": {
@@ -54,7 +75,7 @@ def convert_to_signals(weather, aqi):
                 "aqi": float(aqi_val)
             },
             "location": row.get("city", "unknown")
-        })
+        })'''
 
     print(f" Combined Signals Created: {len(signals)}")
     # ✅ PHASE 2 VALIDATION CHECKS

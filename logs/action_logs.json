@@ -704,5 +704,60 @@
       },
       "signal_id": "S_9"
     }
+  },
+  {
+    "sequence_id": 2390,
+    "trace_id": "trace_ea598bb4",
+    "timestamp": "2026-05-29T05:42:41.913889+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_ea598bb4",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 19540,
+    "trace_id": "trace_4c1cf7e9",
+    "timestamp": "2026-05-29T07:13:57.866487+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_4c1cf7e9",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 19796,
+    "trace_id": "trace_a1c62310",
+    "timestamp": "2026-05-29T07:25:02.301879+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_a1c62310",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 20052,
+    "trace_id": "trace_236edc23",
+    "timestamp": "2026-05-29T07:38:23.110802+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_236edc23",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 20309,
+    "trace_id": "trace_72efe81a",
+    "timestamp": "2026-05-29T08:56:50.518018+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_72efe81a",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
   }
 ]

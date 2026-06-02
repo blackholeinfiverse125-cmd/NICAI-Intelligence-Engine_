@@ -2,19 +2,26 @@ import json
 import os
 
 LOG_FILES = [
+    "logs/ingestion_logs.json",
+    "logs/tantra_logs.json",
     "logs/validation_logs.json",
     "logs/anomaly_logs.json",
     "logs/pattern_logs.json",
     "logs/contract_logs.json",
-    "logs/action_logs.json"
+    "logs/action_logs.json",
+    "logs/ttg_logs.json"
 ]
 REQUIRED_STAGES = [
+    "INGESTION",
+    "TANTRA_PARTICIPATION",
     "VALIDATION",
     "ANALYSIS",
     "CLUSTER_ANALYSIS",
     "CONTRACT_VALIDATION",
-    "ACTION"
+    "ACTION",
+    "TTG_CONSUME"
 ]
+
 
 def load_logs(filepath):
 
