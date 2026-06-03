@@ -122,15 +122,56 @@ def detect_replay_divergence(
                 "failed_stage": stage,
                 "metadata": FAILURE_MATRIX["DUPLICATE_STAGE"]
             })
+    
+    # ---------------------------------
+    # REPLAY STATUS CLASSIFICATION
+    # ---------------------------------
+
+    if not divergence:
+
+        replay_status = "PASS"
+
+    else:
+
+        severities = [
+
+            issue.get(
+                "metadata",
+                {}
+            ).get(
+                "severity"
+            )
+
+            for issue in divergence
+
+            if isinstance(issue, dict)
+
+        ]
+
+        if "HIGH" in severities:
+
+            replay_status = "FAIL"
+
+        else:
+
+            replay_status = "WARNING"
     # ---------------------------------
     # FINAL RESULT
     # ---------------------------------
     return {
         "trace_id": trace_id,
+
+        "replay_status": replay_status,
+
         "divergence_detected": (
             len(divergence) > 0
         ),
-        "issues": divergence if divergence else [
+
+        "issues": (
+        divergence
+        if divergence
+        else [
             "Replay integrity verified"
         ]
+        )
     }

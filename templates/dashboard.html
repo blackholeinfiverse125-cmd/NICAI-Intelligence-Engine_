@@ -96,6 +96,8 @@
             font-size: 0.85rem;
         }
 
+        
+
         thead tr {
             background: #1a1a2e;
             border-bottom: 2px solid #0f3460;
@@ -111,6 +113,7 @@
         }
 
         td {
+
             padding: 12px 14px;
             border-bottom: 1px solid #1a1a2e;
             vertical-align: top;
@@ -247,7 +250,55 @@
             <div class="label">Low Risk</div>
         </div>
     </div>
+    <h2>Operational Execution Status</h2>
 
+    <div class="stats">
+        <div class="stat-card">
+            <div class="num">{{ replay_status }}</div>
+            <div class="label">Replay Status</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="num">{{ contract_status }}</div>
+            <div class="label">Contract Status</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="num">{{ tantra_status }}</div>
+            <div class="label">TANTRA Status</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="num">{{ ttg_status }}</div>
+            <div class="label">TTG Status</div>
+        </div>
+    </div>
+
+    
+
+    <h2>Trace Explorer</h2>
+
+    <div class="stat-card" style="margin-bottom:20px;">
+        <div class="label">Execution Trace</div>
+        <div class="num" style="font-size:1rem;">
+            {{ execution_trace }}
+        </div>
+    </div>
+
+    <h2>Execution Timeline</h2>
+
+    <div class="stat-card" style="margin-bottom:20px; text-align:left;">
+        {% for stage in execution_timeline %}
+            <p style="margin:8px 0;">✓ {{ stage }}</p>
+        {% endfor %}
+    </div>
+
+    <h2>Failure Alerts</h2>
+
+    <div class="stat-card" style="margin-bottom:20px;">
+        <div class="num">{{ failure_alerts }}</div>
+        <div class="label">Active Alerts</div>
+    </div>
     <h2>Signal Analysis — Powered by Sanskar Engine</h2>
 
     <table>

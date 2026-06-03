@@ -6,3 +6,5 @@ venv/
 .vscode/
 
 logs/*.json
+
+proof_assets/Demo_flow.mp4

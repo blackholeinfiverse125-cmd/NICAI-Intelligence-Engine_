@@ -75,3 +75,24 @@ orphan_result = detect_orphan_acknowledgment(
 print("\nORPHAN ACKNOWLEDGMENT RESULT\n")
 
 print(orphan_result)
+
+# ---------------------------------
+# INVALID CONSUMER
+# ---------------------------------
+
+invalid_consumer_ack = {
+    "trace_id": "trace_demo",
+    "ack_status": "ACCEPTED",
+    "consumer": "UNKNOWN_SYSTEM"
+}
+
+invalid_consumer_result = (
+    validate_downstream_acknowledgment(
+        "trace_demo",
+        invalid_consumer_ack
+    )
+)
+
+print("\nINVALID CONSUMER RESULT\n")
+
+print(invalid_consumer_result)

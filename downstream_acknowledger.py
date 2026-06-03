@@ -1,9 +1,27 @@
+
+
+import json
+
 REQUIRED_ACK_FIELDS = [
     "trace_id",
     "ack_status",
     "consumer"
 ]
 
+def load_consumer_registry():
+
+    try:
+
+        with open(
+            "consumer_registry.json",
+            "r"
+        ) as f:
+
+            return json.load(f)
+
+    except Exception:
+
+        return {}
 
 def validate_downstream_acknowledgment(
     original_trace_id,
@@ -31,6 +49,22 @@ def validate_downstream_acknowledgment(
                 "ack_valid": False,
                 "reason": f"Missing acknowledgment field: {field}"
             }
+        
+    # ---------------------------------
+    # CONSUMER REGISTRY VALIDATION
+    # ---------------------------------
+
+    registry = load_consumer_registry()
+
+    consumer = acknowledgment.get("consumer")
+
+    if consumer not in registry:
+
+        return {
+            "ack_valid": False,
+            "reason": "INVALID_CONSUMER"
+        }
+    
 
     # ---------------------------------
     # TRACE CONTINUITY VALIDATION
