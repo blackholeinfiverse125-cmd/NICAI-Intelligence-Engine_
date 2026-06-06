@@ -1,0 +1,33 @@
+[33mcommit bb789d0fb05da8e7466a77ac831556ff96f61524[m
+Author: blackholeinfiverse61-boop <blackholeinfiverse61@gmail.com>
+Date:   Thu May 28 15:09:55 2026 +0530
+
+    final submition of the proof_assets and demo videos
+
+ FULL_PRODUCT_PROOF.md                              |     0
+ .../EXECUTION_SPINE_VALIDATION.md                  |     0
+ Latest_md_files/FULL_PRODUCT_PROOF.md              |   270 [32m+[m
+ .../IMPLEMENTATION_AUDIT.md                        |     0
+ Latest_md_files/KNOWN_LIMITATIONS.md               |   273 [32m+[m
+ Latest_md_files/NICAI_PRE_AIAIC_TEST_PACKET.md     |   298 [32m+[m
+ .../REPLAY_CONTRACT_PROOF.md                       |     0
+ Latest_md_files/RUNBOOK.md                         |   270 [32m+[m
+ Latest_md_files/START_HERE.md                      |   166 [32m+[m
+ Latest_md_files/SYSTEM_FAQ.md                      |   232 [32m+[m
+ exported_lineage.json                              |    42 [32m+[m[31m-[m
+ logs/action_logs.json                              |   350 [32m+[m
+ logs/anomaly_logs.json                             | 23166 [31m-------------------[m
+ logs/pattern_logs.json                             |    64 [32m+[m
+ logs/validation_logs.json                          |  4000 [32m++++[m
+ proof_assets/01_canonical_execution.png            |   Bin [31m0[m -> [32m115660[m bytes
+ proof_assets/02_replay_reconstruction_1.png        |   Bin [31m0[m -> [32m143457[m bytes
+ proof_assets/02_replay_reconstruction_2.png        |   Bin [31m0[m -> [32m144284[m bytes
+ proof_assets/02_replay_reconstruction_3.png        |   Bin [31m0[m -> [32m123853[m bytes
+ proof_assets/03_contract_governance.png            |   Bin [31m0[m -> [32m22314[m bytes
+ proof_assets/04_divergence_detection.png           |   Bin [31m0[m -> [32m31442[m bytes
+ proof_assets/05_lineage_export.png                 |   Bin [31m0[m -> [32m260049[m bytes
+ proof_assets/06_dashboard_proof.png                |   Bin [31m0[m -> [32m260838[m bytes
+ proof_assets/07_persistence_logs.png               |   Bin [31m0[m -> [32m11404[m bytes
+ proof_assets/Demo_video.mp4                        |   Bin [31m0[m -> [32m38960576[m bytes
+ review_packets/task_pre_aiaic_consolidation.md     |   253 [32m+[m
+ 26 files changed, 6197 insertions(+), 23187 deletions(-)
