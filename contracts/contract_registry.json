@@ -1,0 +1,36 @@
+{
+  "contracts": [
+    {
+      "contract_id": "NICAI_ANALYSIS_V1",
+      "version": "1.0",
+      "owner": "NICAI",
+      "producer": "NICAI",
+      "consumer": "TANTRA",
+      "schema": {
+        "trace_id": "string",
+        "risk_level": "string",
+        "anomaly_type": "string",
+        "explanation": "string",
+        "temporal_context": "string",
+        "spatial_context": "string",
+        "confidence": "float",
+        "recommendation_signal": "string"
+      },
+      "required_fields": [
+        "trace_id",
+        "risk_level",
+        "anomaly_type",
+        "explanation",
+        "temporal_context",
+        "spatial_context",
+        "confidence",
+        "recommendation_signal"
+      ],
+      "validation_rules": [
+        "risk_level in [LOW, MEDIUM, HIGH]",
+        "confidence between 0 and 1",
+        "recommendation_signal must be valid"
+      ]
+    }
+  ]
+}

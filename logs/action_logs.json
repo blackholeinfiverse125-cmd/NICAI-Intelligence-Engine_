@@ -1,45 +1,11 @@
 [
   {
-    "sequence_id": 20849,
-    "trace_id": "trace_91cfea1b",
-    "timestamp": "2026-06-03T10:19:46.783778+00:00",
+    "sequence_id": 1089,
+    "trace_id": "trace_06d37c78",
+    "timestamp": "2026-06-06T11:51:44.947585+00:00",
     "type": "ACTION",
     "data": {
-      "trace_id": "trace_91cfea1b",
-      "action_type": "requires_review",
-      "target_role": "authority",
-      "timestamp": "2026-06-03T10:19:46.776160+00:00",
-      "context": {
-        "source": "dashboard",
-        "row": 1
-      },
-      "signal_id": "S_0"
-    }
-  },
-  {
-    "sequence_id": 20850,
-    "trace_id": "trace_0cb25b7d",
-    "timestamp": "2026-06-03T10:19:48.150977+00:00",
-    "type": "ACTION",
-    "data": {
-      "trace_id": "trace_0cb25b7d",
-      "action_type": "monitor",
-      "target_role": "authority",
-      "timestamp": "2026-06-03T10:19:48.143459+00:00",
-      "context": {
-        "source": "dashboard",
-        "row": 2
-      },
-      "signal_id": "S_1"
-    }
-  },
-  {
-    "sequence_id": 21105,
-    "trace_id": "trace_1fe35802",
-    "timestamp": "2026-06-03T10:24:57.734153+00:00",
-    "type": "ACTION",
-    "data": {
-      "trace_id": "trace_1fe35802",
+      "trace_id": "trace_06d37c78",
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
