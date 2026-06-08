@@ -1,0 +1,27 @@
+CONTRACT VALIDATION TEST
+
+Command:
+python test_contract_validator.py
+
+Output:
+
+{
+  'trace_id': 'trace_test',
+  'contract_status': 'INVALID',
+  'errors': [
+    'Missing field: anomaly_type',
+    'Missing field: explanation',
+    'Missing field: temporal_context',
+    'Missing field: spatial_context',
+    'Invalid risk_level',
+    'Invalid recommendation_signal',
+    'Invalid temporal_context',
+    'Confidence out of range',
+    'Explanation must be string'
+  ]
+}
+
+Result:
+PASS
+
+Validator correctly rejected malformed contract.

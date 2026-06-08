@@ -1,0 +1,19 @@
+VALID ACKNOWLEDGMENT
+
+{'ack_valid': True, 'acknowledgment': {'trace_id': 'trace_demo', 'ack_status': 'ACCEPTED', 'consumer': 'TANTRA'}}
+
+TRACE MISMATCH RESULT
+
+{'ack_valid': False, 'reason': 'TRACE_MISMATCH'}
+
+SCHEMA FAILURE RESULT
+
+{'ack_valid': False, 'reason': 'Missing acknowledgment field: ack_status'}
+
+ORPHAN ACKNOWLEDGMENT RESULT
+
+{'orphan_detected': True, 'reason': 'ORPHAN_ACKNOWLEDGMENT'}
+
+INVALID CONSUMER RESULT
+
+{'ack_valid': False, 'reason': 'INVALID_CONSUMER'}

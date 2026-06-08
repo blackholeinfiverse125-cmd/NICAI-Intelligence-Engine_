@@ -9,5 +9,38 @@
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
+  },
+  {
+    "sequence_id": 1347,
+    "trace_id": "trace_4df4f425",
+    "timestamp": "2026-06-08T07:24:53.686530+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_4df4f425",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1605,
+    "trace_id": "trace_5cbfaeb6",
+    "timestamp": "2026-06-08T08:14:31.524038+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_5cbfaeb6",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 1863,
+    "trace_id": "trace_3384ab78",
+    "timestamp": "2026-06-08T09:45:04.491463+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_3384ab78",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
   }
 ]

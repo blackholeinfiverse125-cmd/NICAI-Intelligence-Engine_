@@ -14,5 +14,53 @@
       "confidence": 0.9,
       "recommendation_signal": "requires_review"
     }
+  },
+  {
+    "sequence_id": 1343,
+    "trace_id": "trace_4df4f425",
+    "timestamp": "2026-06-08T07:24:53.426930+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_4df4f425",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 1601,
+    "trace_id": "trace_5cbfaeb6",
+    "timestamp": "2026-06-08T08:14:31.233946+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_5cbfaeb6",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 1859,
+    "trace_id": "trace_3384ab78",
+    "timestamp": "2026-06-08T09:45:04.215063+00:00",
+    "type": "CLUSTER_ANALYSIS",
+    "data": {
+      "trace_id": "trace_3384ab78",
+      "risk_level": "MEDIUM",
+      "anomaly_type": "clustered_moderate_environmental_risk",
+      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
+      "temporal_context": "CLUSTERED",
+      "spatial_context": "Mumbai",
+      "confidence": 0.9,
+      "recommendation_signal": "requires_review"
+    }
   }
 ]
