@@ -22,7 +22,9 @@ from samachar_input_adapter import load_data, convert_to_signals
 from validator import validate_signal
 from sanskar_engine import analyze_patterns
 from integration_adapter import run_engine
+from lineage_exporter import export_replay_lineage
 from error_handler import error_response, validate_basic_input
+
 
 # Ensure required folders
 os.makedirs("logs", exist_ok=True)
@@ -105,17 +107,20 @@ def run_demo():
 
         # STEP 3: Validation
         validation = validate_signal(signal)
+        print("VALIDATION TRACE:", validation.get("trace_id"))
         if validation is None:
             continue
+
         if validation.get("status") == "ERROR":
             errors += 1
             continue
 
+        signal["trace_id"] = validation.get("trace_id")
+        print("SIGNAL TRACE:", signal.get("trace_id"))
         log_data("validation_logs.json", "VALIDATION", validation)
 
-        # STEP 4: SanskarEngine execution
         analysis = run_engine(signal)
-
+        print("ANALYSIS TRACE:", analysis.get("trace_id"))
         if not isinstance(analysis, dict) or analysis.get("status") == "ERROR":
             errors += 1
             continue
@@ -147,6 +152,12 @@ def run_demo():
     if processed_outputs:
         print(json.dumps(processed_outputs[0], indent=2, default=str))
 
+        export_replay_lineage(processed_outputs[0]["trace_id"])
+
+        print(
+            f"\n  Lineage exported for: "
+            f"{processed_outputs[0]['trace_id']}"
+        )
     print(f"\n  SUMMARY: LOW={low}, MEDIUM={medium}, HIGH={high}, ERRORS={errors}\n")
 
     # ------------------------------------------------

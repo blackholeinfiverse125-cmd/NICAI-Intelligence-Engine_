@@ -1,11 +1,11 @@
 [
   {
-    "sequence_id": 1085,
-    "trace_id": "trace_06d37c78",
-    "timestamp": "2026-06-06T11:51:44.830763+00:00",
+    "sequence_id": 2951,
+    "trace_id": "trace_27bef6b6",
+    "timestamp": "2026-06-09T07:17:10.922152+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "trace_id": "trace_06d37c78",
+      "trace_id": "trace_27bef6b6",
       "risk_level": "MEDIUM",
       "anomaly_type": "clustered_moderate_environmental_risk",
       "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
@@ -16,12 +16,12 @@
     }
   },
   {
-    "sequence_id": 1343,
-    "trace_id": "trace_4df4f425",
-    "timestamp": "2026-06-08T07:24:53.426930+00:00",
+    "sequence_id": 3209,
+    "trace_id": "trace_0cf85396",
+    "timestamp": "2026-06-09T07:37:24.700789+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "trace_id": "trace_4df4f425",
+      "trace_id": "trace_0cf85396",
       "risk_level": "MEDIUM",
       "anomaly_type": "clustered_moderate_environmental_risk",
       "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
@@ -32,28 +32,12 @@
     }
   },
   {
-    "sequence_id": 1601,
-    "trace_id": "trace_5cbfaeb6",
-    "timestamp": "2026-06-08T08:14:31.233946+00:00",
+    "sequence_id": 3467,
+    "trace_id": "trace_920f17a4",
+    "timestamp": "2026-06-09T07:49:54.433126+00:00",
     "type": "CLUSTER_ANALYSIS",
     "data": {
-      "trace_id": "trace_5cbfaeb6",
-      "risk_level": "MEDIUM",
-      "anomaly_type": "clustered_moderate_environmental_risk",
-      "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
-      "temporal_context": "CLUSTERED",
-      "spatial_context": "Mumbai",
-      "confidence": 0.9,
-      "recommendation_signal": "requires_review"
-    }
-  },
-  {
-    "sequence_id": 1859,
-    "trace_id": "trace_3384ab78",
-    "timestamp": "2026-06-08T09:45:04.215063+00:00",
-    "type": "CLUSTER_ANALYSIS",
-    "data": {
-      "trace_id": "trace_3384ab78",
+      "trace_id": "trace_920f17a4",
       "risk_level": "MEDIUM",
       "anomaly_type": "clustered_moderate_environmental_risk",
       "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
@@ -63,4 +47,9 @@
       "recommendation_signal": "requires_review"
     }
   }
-]
+]{"trace_id": "N/A", "timestamp": "2026-06-09T07:53:20.715965+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}
+{"trace_id": "N/A", "timestamp": "2026-06-09T08:10:58.259441+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}
+{"trace_id": "N/A", "timestamp": "2026-06-09T08:13:04.997494+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}
+{"trace_id": "N/A", "timestamp": "2026-06-09T08:28:55.557104+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}
+{"trace_id": "N/A", "timestamp": "2026-06-09T08:46:29.848238+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}
+{"trace_id": "N/A", "timestamp": "2026-06-09T08:57:38.251401+00:00", "type": "PATTERN", "data": {"pattern_id": "pattern_auto", "count": 20, "type": "risk_distribution", "pattern_type": "CLUSTER_ANOMALY", "severity_trend": "INCREASING", "summary": "HIGH: 7, MEDIUM: 8, LOW: 5"}}

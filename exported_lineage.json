@@ -1,120 +1,22 @@
 {
-  "trace_id": "trace_4df4f425",
+  "trace_id": "trace_2d027127",
   "replay_safe": true,
-  "total_events": 8,
+  "total_events": 1,
   "lineage": [
     {
-      "sequence_id": 1093,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:35.767575+00:00",
-      "type": "INGESTION",
-      "data": {
-        "signal_id": "S_0",
-        "trace_id": "trace_4df4f425",
-        "timestamp": "2024-01-01 00:00:00",
-        "value": {
-          "temperature": 25.2,
-          "aqi": 259.0
-        },
-        "location": "Mumbai"
-      }
-    },
-    {
-      "sequence_id": 1094,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:35.841722+00:00",
-      "type": "VALIDATION",
-      "data": {
-        "signal_id": "S_0",
-        "status": "VALID",
-        "confidence_score": 0.9,
-        "trace_id": "trace_4df4f425",
-        "reason": "",
-        "value": {
-          "temperature": 25.2,
-          "aqi": 259.0
-        },
-        "timestamp": "2024-01-01 00:00:00",
-        "location": "Mumbai",
-        "signal_type": "environment"
-      }
-    },
-    {
-      "sequence_id": 1096,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:35.985128+00:00",
+      "trace_id": "trace_2d027127",
+      "timestamp": "2026-06-09T08:57:37.390822+00:00",
       "type": "ANALYSIS",
       "data": {
-        "trace_id": "trace_4df4f425",
+        "signal_id": "S_0",
+        "trace_id": "trace_2d027127",
         "risk_level": "MEDIUM",
         "anomaly_type": "high_pollution",
-        "explanation": "Conditions in Mumbai show AQI 259 (high pollution). Currently stable but should be monitored. | Context: Mumbai classified as polluted_zone, stable climate.",
+        "explanation": "Conditions in Mumbai show AQI 259 (high pollution). Currently stable but should be monitored.",
         "temporal_context": "STABLE",
         "spatial_context": "Mumbai",
-        "confidence": 0.85,
+        "confidence_score": null,
         "recommendation_signal": "requires_review"
-      }
-    },
-    {
-      "sequence_id": 1343,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:53.426930+00:00",
-      "type": "CLUSTER_ANALYSIS",
-      "data": {
-        "trace_id": "trace_4df4f425",
-        "risk_level": "MEDIUM",
-        "anomaly_type": "clustered_moderate_environmental_risk",
-        "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.",
-        "temporal_context": "CLUSTERED",
-        "spatial_context": "Mumbai",
-        "confidence": 0.9,
-        "recommendation_signal": "requires_review"
-      }
-    },
-    {
-      "sequence_id": 1345,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:53.554074+00:00",
-      "type": "CONTRACT_VALIDATION",
-      "data": {
-        "trace_id": "trace_4df4f425",
-        "contract_status": "VALID",
-        "errors": []
-      }
-    },
-    {
-      "sequence_id": 1347,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:53.686530+00:00",
-      "type": "ACTION",
-      "data": {
-        "trace_id": "trace_4df4f425",
-        "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
-        "status": "EMITTED"
-      }
-    },
-    {
-      "sequence_id": 1349,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:53.820232+00:00",
-      "type": "TANTRA_PARTICIPATION",
-      "data": {
-        "trace_id": "trace_4df4f425",
-        "consumer": "TANTRA",
-        "ack_status": "ACCEPTED",
-        "participation_type": "DOWNSTREAM_CONTRACT"
-      }
-    },
-    {
-      "sequence_id": 1350,
-      "trace_id": "trace_4df4f425",
-      "timestamp": "2026-06-08T07:24:53.860932+00:00",
-      "type": "TTG_CONSUME",
-      "data": {
-        "trace_id": "trace_4df4f425",
-        "consumer": "TTG",
-        "simulation_pack": "RUDRA_ATHARVA",
-        "consume_status": "CONSUMED"
       }
     }
   ]

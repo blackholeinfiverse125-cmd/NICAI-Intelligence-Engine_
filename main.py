@@ -484,14 +484,24 @@ def dashboard(request: Request):
                 "recommendation_signal": analytics.get("recommendation_signal", "monitor"),
                 "trace_id": validation.get("trace_id"),
             })
+        import json
 
+        trace_id = "N/A"
+
+        try:
+            with open("exported_lineage.json", "r") as f:
+                lineage = json.load(f)
+                trace_id = lineage.get("trace_id", "N/A")
+        except Exception:
+            trace_id = "N/A"
         return templates.TemplateResponse(
             "dashboard.html",
         {
             "request": request,
             "data": results,
 
-            "execution_trace": "trace_72efe81a",
+            #"execution_trace": results[0].get("trace_id", "N/A"),
+            "execution_trace": trace_id,
 
             "replay_status": "PASS",
 
