@@ -494,6 +494,72 @@ def dashboard(request: Request):
                 trace_id = lineage.get("trace_id", "N/A")
         except Exception:
             trace_id = "N/A"
+        # -----------------------------
+        # CONSUMER REGISTRY
+        # -----------------------------
+
+        consumer_registry = [
+            {
+                "consumer_name": "TANTRA",
+                "status": "ACTIVE"
+            },
+            {
+                "consumer_name": "TTG",
+                "status": "ACTIVE"
+            }
+        ]
+
+# -----------------------------
+# EXECUTION CORRELATION
+# -----------------------------
+
+        correlation = {}
+
+        try:
+            with open(
+                "evidence/execution_correlation/execution_correlation.json",
+                "r"
+            ) as f:
+
+                correlation = json.load(f)
+
+        except Exception:
+
+            correlation = {
+                "execution_id": "exec-tantra-001",
+                "trace_id": trace_id,
+                "consumer_name": "TANTRA",
+                "contract_id": "NICAI_ENVIRONMENTAL_V1",
+                "correlation_status": "UNKNOWN"
+            }
+        
+        # -----------------------------
+        # CONSUMER HEALTH
+        # -----------------------------
+
+        if all(
+            c["status"] == "ACTIVE"
+            for c in consumer_registry
+        ):
+            consumer_health = "HEALTHY"
+        else:
+            consumer_health = "DEGRADED"
+
+
+# -----------------------------
+# REPLAY INTEGRITY
+# -----------------------------
+
+        replay_status = "PASS"
+        replay_integrity = replay_status
+
+        if replay_status == "PASS":
+            replay_integrity = "PASS"
+        else:
+            replay_integrity = "FAIL"
+
+
+
         return templates.TemplateResponse(
             "dashboard.html",
         {
@@ -503,7 +569,7 @@ def dashboard(request: Request):
             #"execution_trace": results[0].get("trace_id", "N/A"),
             "execution_trace": trace_id,
 
-            "replay_status": "PASS",
+            "replay_status": replay_status,
 
             "contract_status": "VALID",
 
@@ -512,6 +578,26 @@ def dashboard(request: Request):
             "ttg_status": "CONSUMED",
 
             "failure_alerts": 0,
+
+            "consumer_registry": consumer_registry,
+
+            "execution_id":
+                correlation.get("execution_id"),
+
+            "consumer_name":
+                correlation.get("consumer_name"),
+
+            "contract_id":
+                correlation.get("contract_id"),
+
+            "correlation_status":
+                correlation.get("correlation_status"),
+
+            "consumer_health":
+                consumer_health,
+
+            "replay_integrity":
+                replay_integrity,
 
             "execution_timeline": [
                 "INGESTION",

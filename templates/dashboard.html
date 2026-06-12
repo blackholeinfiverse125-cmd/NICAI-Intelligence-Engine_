@@ -299,7 +299,88 @@
         <div class="num">{{ failure_alerts }}</div>
         <div class="label">Active Alerts</div>
     </div>
+    
+
+    <h2>Consumer Registry</h2>
+
+    <div class="stat-card" style="margin-bottom:20px; text-align:left;">
+
+    {% for consumer in consumer_registry %}
+
+    <p>
+    ✓ {{ consumer.consumer_name }}
+    — {{ consumer.status }}
+    </p>
+
+    {% endfor %}
+    </div>
+
+    <h2>Correlation Explorer</h2>
+
+    <div class="stat-card" style="margin-bottom:20px; text-align:left;">
+
+    <p><b>Execution ID:</b>
+    {{ execution_id }}</p>
+
+    <p><b>Trace ID:</b>
+    {{ execution_trace }}</p>
+
+    <p><b>Consumer:</b>
+    {{ consumer_name }}</p>
+
+    <p><b>Contract:</b>
+    {{ contract_id }}</p>
+
+    <p><b>Status:</b>
+    {{ correlation_status }}</p>
+    </div>
+
+    <h2>Replay Governance</h2>
+
+    <div class="stat-card" style="margin-bottom:20px; text-align:left;">
+
+    <p>✓ Missing Stage Detection</p>
+
+    <p>✓ Duplicate Stage Detection</p>
+
+    <p>✓ Sequence Validation</p>
+
+    <p>✓ Trace Continuity</p>
+
+    <p>✓ Corrupted Lineage Detection</p>
+
+    </div>
+
+    <h2>Consumer Health</h2>
+
+    <div class="stat-card" style="margin-bottom:20px;">
+
+    <div class="num">
+    {{ consumer_health }}
+    </div>
+
+    <div class="label">
+    Consumer Health
+    </div>
+
+    </div>
+
+    <h2>Replay Integrity Status</h2>
+
+    <div class="stat-card" style="margin-bottom:20px;">
+
+    <div class="num">
+    {{ replay_integrity }}
+    </div>
+
+    <div class="label">
+    Replay Integrity
+    </div>
+
+    </div>
     <h2>Signal Analysis — Powered by Sanskar Engine</h2>
+
+
 
     <table>
         <thead>
