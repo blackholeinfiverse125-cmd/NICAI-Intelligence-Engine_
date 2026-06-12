@@ -1,0 +1,7 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> python test_execution_correlation.py
+
+EXECUTION CORRELATION TEST
+
+{'execution_id': 'exec-tantra-001', 'trace_id': 'trace_ccea9ad2', 'contract_id': 'NICAI_ENVIRONMENTAL_V1', 'consumer_id': 'CONS_001', 'consumer_name': 'TANTRA', 'correlation_status': 'COMPLETE'}
+
+EXPORTED
