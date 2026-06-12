@@ -1,0 +1,28 @@
+{
+  "consumers": [
+    {
+      "consumer_id": "CONS_001",
+      "consumer_name": "TANTRA",
+      "consumer_type": "DOWNSTREAM_CONTRACT",
+      "status": "ACTIVE",
+      "contract_version": "1.0",
+      "ack_mode": "REQUIRED",
+      "last_seen": null,
+      "allowed_contracts": [
+        "NICAI_ENVIRONMENTAL_V1"
+      ]
+    },
+    {
+      "consumer_id": "CONS_002",
+      "consumer_name": "TTG",
+      "consumer_type": "SIMULATION_CONSUMER",
+      "status": "ACTIVE",
+      "contract_version": "1.0",
+      "ack_mode": "OPTIONAL",
+      "last_seen": null,
+      "allowed_contracts": [
+        "NICAI_ENVIRONMENTAL_V1"
+      ]
+    }
+  ]
+}

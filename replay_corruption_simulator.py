@@ -54,3 +54,23 @@ def simulate_sequence_corruption(
         )
 
     return corrupted
+
+def simulate_unknown_stage(trace_id):
+
+    entries = find_trace_entries(trace_id)
+
+    if entries:
+
+        entries[0]["type"] = "ALIEN_STAGE"
+
+    return entries
+
+def simulate_corrupted_lineage(trace_id):
+
+    entries = find_trace_entries(trace_id)
+
+    if entries:
+
+        entries[0].pop("trace_id", None)
+
+    return entries

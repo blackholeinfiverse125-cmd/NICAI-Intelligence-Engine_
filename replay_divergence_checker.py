@@ -44,6 +44,19 @@ def detect_replay_divergence(
         entry.get("type")
         for entry in entries
     ]
+    # ---------------------------------
+    # CHECK 5 — UNKNOWN STAGE
+    # ---------------------------------
+
+    for stage in found_stages:
+
+        if stage not in REQUIRED_STAGES:
+
+            divergence.append({
+                "failure_type": "UNKNOWN_STAGE",
+                "failed_stage": stage,
+                "metadata": FAILURE_MATRIX["UNKNOWN_STAGE"]
+            })
     
     # ---------------------------------
 # CHECK — TRACE BREAK DETECTION
@@ -106,7 +119,24 @@ def detect_replay_divergence(
             "failure_type": "SEQUENCE_CORRUPTION",
             "metadata": FAILURE_MATRIX["SEQUENCE_CORRUPTION"]
         })
+    # ---------------------------------
+    # CHECK 6 — CORRUPTED LINEAGE
+    # ---------------------------------
 
+    for entry in entries:
+
+        if (
+            not entry.get("trace_id")
+            or not entry.get("timestamp")
+            or not entry.get("type")
+        ):
+
+            divergence.append({
+                "failure_type": "CORRUPTED_LINEAGE",
+                "metadata": FAILURE_MATRIX["CORRUPTED_LINEAGE"]
+            })
+
+            break
     # ---------------------------------
     # CHECK 4 — DUPLICATE STAGES
     # ---------------------------------

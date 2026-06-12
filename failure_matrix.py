@@ -49,5 +49,16 @@ FAILURE_MATRIX = {
         "severity": "LOW",
         "recoverable": True,
         "category": "GENERIC_FAILURE"
+    },
+    "UNKNOWN_STAGE": {
+        "severity": "MEDIUM",
+        "recoverable": True,
+        "category": "REPLAY_FAILURE"
+    },
+
+    "CORRUPTED_LINEAGE": {
+        "severity": "HIGH",
+        "recoverable": False,
+        "category": "LINEAGE_FAILURE"
     }
 }

@@ -1,0 +1,25 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> python test_divergence_checker.py
+Enter trace_id: trace_ccea9ad2
+Simulation mode (none/missing/duplicate/sequence/unknown/corrupted): unknown
+TRACE SEARCH: trace_ccea9ad2
+logs/ingestion_logs.json => 700
+logs/tantra_logs.json => 14
+logs/validation_logs.json => 50
+logs/anomaly_logs.json => 50
+logs/pattern_logs.json => 1
+logs/contract_logs.json => 14
+logs/action_logs.json => 1
+logs/ttg_logs.json => 14
+
+DIVERGENCE RESULT
+
+{'trace_id': 'trace_ccea9ad2', 'replay_status': 'FAIL', 'divergence_detected': True, 'issues': [{'failure_type': 'UNKNOWN_STAGE', 'failed_stage': 'ALIEN_STAGE', 'metadata': {'severity': 'MEDIUM', 'recoverable': True, 'category': 'REPLAY_FAILURE'}}, {'failure_type': 'MISSING_STAGE', 'failed_stage': 'INGESTION', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'REPLAY_FAILURE'}}]}
+
+RECOVERY ACTIONS
+
+{'failure': {'failure_type': 'UNKNOWN_STAGE', 'failed_stage': 'ALIEN_STAGE', 'metadata': {'severity': 'MEDIUM', 'recoverable': True, 'category': 'REPLAY_FAILURE'}}, 'recovery': {'recovery_action': 'RETRY', 'orchestration_status': 'ACTIVE'}}
+{'failure': {'failure_type': 'MISSING_STAGE', 'failed_stage': 'INGESTION', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'REPLAY_FAILURE'}}, 'recovery': {'recovery_action': 'ESCALATE', 'orchestration_status': 'FROZEN'}}
+
+GOVERNANCE TELEMETRY
+
+{'total_failures': 2, 'severity_breakdown': {'MEDIUM': 1, 'HIGH': 1}, 'category_breakdown': {'REPLAY_FAILURE': 2}, 'recoverable_failures': 1, 'non_recoverable_failures': 1}

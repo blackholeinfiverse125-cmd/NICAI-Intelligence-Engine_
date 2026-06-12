@@ -2,6 +2,9 @@
 
 import json
 
+from consumer_registry import (
+    validate_consumer
+)
 REQUIRED_ACK_FIELDS = [
     "trace_id",
     "ack_status",
@@ -54,17 +57,20 @@ def validate_downstream_acknowledgment(
     # CONSUMER REGISTRY VALIDATION
     # ---------------------------------
 
-    registry = load_consumer_registry()
-
     consumer = acknowledgment.get("consumer")
 
-    if consumer not in registry:
+    consumer_result = validate_consumer(
+        consumer
+    )
+
+    if not consumer_result.get(
+        "consumer_valid"
+    ):
 
         return {
             "ack_valid": False,
             "reason": "INVALID_CONSUMER"
         }
-    
 
     # ---------------------------------
     # TRACE CONTINUITY VALIDATION

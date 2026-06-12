@@ -1,40 +1,13 @@
 [
   {
-    "sequence_id": 2955,
-    "trace_id": "trace_27bef6b6",
-    "timestamp": "2026-06-09T07:17:11.163474+00:00",
+    "sequence_id": 3849,
+    "trace_id": "trace_ccea9ad2",
+    "timestamp": "2026-06-12T07:17:17.445979+00:00",
     "type": "ACTION",
     "data": {
-      "trace_id": "trace_27bef6b6",
-      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
-      "status": "EMITTED"
-    }
-  },
-  {
-    "sequence_id": 3213,
-    "trace_id": "trace_0cf85396",
-    "timestamp": "2026-06-09T07:37:24.900499+00:00",
-    "type": "ACTION",
-    "data": {
-      "trace_id": "trace_0cf85396",
-      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
-      "status": "EMITTED"
-    }
-  },
-  {
-    "sequence_id": 3471,
-    "trace_id": "trace_920f17a4",
-    "timestamp": "2026-06-09T07:49:54.687171+00:00",
-    "type": "ACTION",
-    "data": {
-      "trace_id": "trace_920f17a4",
+      "trace_id": "trace_ccea9ad2",
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
   }
-]{"trace_id": "trace_3bf5337a", "timestamp": "2026-06-09T07:53:20.715283+00:00", "type": "ACTION", "data": {"trace_id": "trace_3bf5337a", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T07:53:20.715271+00:00", "context": {"demo": true}}}
-{"trace_id": "trace_da3b3eed", "timestamp": "2026-06-09T08:10:58.258431+00:00", "type": "ACTION", "data": {"trace_id": "trace_da3b3eed", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T08:10:58.258413+00:00", "context": {"demo": true}}}
-{"trace_id": "trace_d1524ddf", "timestamp": "2026-06-09T08:13:04.996761+00:00", "type": "ACTION", "data": {"trace_id": "trace_d1524ddf", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T08:13:04.996746+00:00", "context": {"demo": true}}}
-{"trace_id": "trace_931e7d5f", "timestamp": "2026-06-09T08:28:55.556256+00:00", "type": "ACTION", "data": {"trace_id": "trace_931e7d5f", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T08:28:55.556240+00:00", "context": {"demo": true}}}
-{"trace_id": "trace_4c37ce61", "timestamp": "2026-06-09T08:46:29.844643+00:00", "type": "ACTION", "data": {"trace_id": "trace_4c37ce61", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T08:46:29.844619+00:00", "context": {"demo": true}}}
-{"trace_id": "trace_2d027127", "timestamp": "2026-06-09T08:57:38.250401+00:00", "type": "ACTION", "data": {"trace_id": "trace_2d027127", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-09T08:57:38.250366+00:00", "context": {"demo": true}}}
+]

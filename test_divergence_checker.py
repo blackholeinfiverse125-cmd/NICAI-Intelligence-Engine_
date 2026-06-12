@@ -1,7 +1,9 @@
 from replay_corruption_simulator import (
     simulate_missing_stage,
     simulate_duplicate_stage,
-    simulate_sequence_corruption
+    simulate_sequence_corruption,
+    simulate_unknown_stage,
+    simulate_corrupted_lineage
 )
 
 from telemetry_emitter import (
@@ -17,10 +19,45 @@ trace_id = input("Enter trace_id: ")
 
 
 mode = input(
-    "Simulation mode (none/missing/duplicate/sequence): "
+    "Simulation mode (none/missing/duplicate/sequence/unknown/corrupted): "
 ).strip().lower()
 
 simulated_entries = None
+
+if mode == "missing":
+
+    simulated_entries = simulate_missing_stage(
+        trace_id,
+        "ACTION"
+    )
+
+elif mode == "duplicate":
+
+    simulated_entries = simulate_duplicate_stage(
+        trace_id,
+        "ACTION"
+    )
+
+elif mode == "sequence":
+
+    simulated_entries = simulate_sequence_corruption(
+        trace_id
+    )
+
+elif mode == "unknown":
+
+    simulated_entries = (
+        simulate_unknown_stage(trace_id)
+    )
+
+elif mode == "corrupted":
+
+    simulated_entries = (
+        simulate_corrupted_lineage(trace_id)
+    )
+
+    print("\nSIMULATION LOADED\n")
+    print(simulated_entries)
 
 if mode == "missing":
 

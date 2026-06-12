@@ -1,0 +1,30 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> python test_divergence_checker.py
+Enter trace_id: trace_ccea9ad2
+Simulation mode (none/missing/duplicate/sequence/unknown/corrupted): corrupted
+TRACE SEARCH: trace_ccea9ad2
+logs/ingestion_logs.json => 700
+logs/tantra_logs.json => 14
+logs/validation_logs.json => 50
+logs/anomaly_logs.json => 50
+logs/pattern_logs.json => 1
+logs/contract_logs.json => 14
+logs/action_logs.json => 1
+logs/ttg_logs.json => 14
+
+SIMULATION LOADED
+
+[{'sequence_id': 3595, 'timestamp': '2026-06-12T07:16:48.830195+00:00', 'type': 'INGESTION', 'data': {'signal_id': 'S_0', 'trace_id': 'trace_ccea9ad2', 'timestamp': '2024-01-01 00:00:00', 'value': {'temperature': 25.2, 'aqi': 259.0}, 'location': 'Mumbai'}}, {'sequence_id': 3596, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:16:48.941795+00:00', 'type': 'VALIDATION', 'data': {'signal_id': 'S_0', 'status': 'VALID', 'confidence_score': 0.9, 'trace_id': 'trace_ccea9ad2', 'reason': '', 'value': {'temperature': 25.2, 'aqi': 259.0}, 'timestamp': '2024-01-01 00:00:00', 'location': 'Mumbai', 'signal_type': 'environment'}}, {'sequence_id': 3598, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:16:49.127241+00:00', 'type': 'ANALYSIS', 'data': {'trace_id': 'trace_ccea9ad2', 'risk_level': 'MEDIUM', 'anomaly_type': 'high_pollution', 'explanation': 'Conditions in Mumbai show AQI 259 (high pollution). Currently stable but should be monitored. | Context: Mumbai classified as polluted_zone, stable climate.', 'temporal_context': 'STABLE', 'spatial_context': 'Mumbai', 'confidence': 0.85, 'recommendation_signal': 'requires_review'}}, {'sequence_id': 3845, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:17:16.910624+00:00', 'type': 'CLUSTER_ANALYSIS', 'data': {'trace_id': 'trace_ccea9ad2', 'risk_level': 'MEDIUM', 'anomaly_type': 'clustered_moderate_environmental_risk', 'explanation': 'Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions.', 'temporal_context': 'CLUSTERED', 'spatial_context': 'Mumbai', 'confidence': 0.9, 'recommendation_signal': 'requires_review'}}, {'sequence_id': 3847, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:17:17.233510+00:00', 'type': 'CONTRACT_VALIDATION', 'data': {'trace_id': 'trace_ccea9ad2', 'contract_status': 'VALID', 'errors': []}}, {'sequence_id': 3849, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:17:17.445979+00:00', 'type': 'ACTION', 'data': {'trace_id': 'trace_ccea9ad2', 'action': 'RECOMMEND_ENVIRONMENTAL_REVIEW', 'status': 'EMITTED'}}, {'sequence_id': 3851, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:17:17.644104+00:00', 'type': 'TANTRA_PARTICIPATION', 'data': {'trace_id': 'trace_ccea9ad2', 'consumer': 'TANTRA', 'ack_status': 'ACCEPTED', 'participation_type': 'DOWNSTREAM_CONTRACT'}}, {'sequence_id': 3852, 'trace_id': 'trace_ccea9ad2', 'timestamp': '2026-06-12T07:17:17.678631+00:00', 'type': 'TTG_CONSUME', 'data': {'trace_id': 'trace_ccea9ad2', 'consumer': 'TTG', 'simulation_pack': 'RUDRA_ATHARVA', 'consume_status': 'CONSUMED'}}]
+
+DIVERGENCE RESULT
+
+{'trace_id': 'trace_ccea9ad2', 'replay_status': 'FAIL', 'divergence_detected': True, 'issues': [{'failure_type': 'TRACE_BREAK', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'TRACE_FAILURE'}}, {'failure_type': 'CORRUPTED_LINEAGE', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'LINEAGE_FAILURE'}}]}
+
+RECOVERY ACTIONS
+
+{'failure': {'failure_type': 'TRACE_BREAK', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'TRACE_FAILURE'}}, 'recovery': {'recovery_action': 'ESCALATE', 'orchestration_status': 'FROZEN'}}
+{'failure': {'failure_type': 'CORRUPTED_LINEAGE', 'metadata': {'severity': 'HIGH', 'recoverable': False, 'category': 'LINEAGE_FAILURE'}}, 'recovery': {'recovery_action': 'ESCALATE', 'orchestration_status': 'FROZEN'}}
+
+GOVERNANCE TELEMETRY
+
+{'total_failures': 2, 'severity_breakdown': {'HIGH': 2}, 'category_breakdown': {'TRACE_FAILURE': 1, 'LINEAGE_FAILURE': 1}, 'recoverable_failures': 0, 'non_recoverable_failures': 2}
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> 

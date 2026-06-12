@@ -28,25 +28,22 @@ def load_logs(filepath):
     if not os.path.exists(filepath):
         return []
 
-    entries = []
-
     try:
+
         with open(filepath, "r") as f:
-            for line in f:
-                line = line.strip()
 
-                if not line:
-                    continue
+            data = json.load(f)
 
-                try:
-                    entries.append(json.loads(line))
-                except Exception:
-                    pass
+            if isinstance(data, list):
+                return data
 
-    except Exception:
+            return [data]
+
+    except Exception as e:
+
+        print("LOAD ERROR:", filepath, str(e))
+
         return []
-
-    return entries
     
 def find_trace_entries(trace_id):
 
