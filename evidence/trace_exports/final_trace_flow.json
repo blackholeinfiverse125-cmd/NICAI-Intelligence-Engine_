@@ -1,0 +1,14 @@
+{
+  "execution_flow": [
+    "VALIDATION",
+    "ANALYSIS",
+    "CLUSTER_ANALYSIS",
+    "CONTRACT_VALIDATION",
+    "ACTION"
+  ],
+  "deterministic": true,
+  "traceable": true,
+  "replayable": true,
+  "failure_contained": true,
+  "downstream_compatible": true
+}

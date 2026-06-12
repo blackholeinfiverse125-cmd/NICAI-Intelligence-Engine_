@@ -1,0 +1,13 @@
+[
+  {
+    "sequence_id": 3849,
+    "trace_id": "trace_ccea9ad2",
+    "timestamp": "2026-06-12T07:17:17.445979+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_ccea9ad2",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  }
+]{"trace_id": "trace_f57cf858", "timestamp": "2026-06-12T10:05:08.288036+00:00", "type": "ACTION", "data": {"trace_id": "trace_f57cf858", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-12T10:05:08.288003+00:00", "context": {"demo": true}}}

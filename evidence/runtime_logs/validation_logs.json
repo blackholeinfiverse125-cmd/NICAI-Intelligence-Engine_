@@ -1,0 +1,15 @@
+[
+  {
+    "sequence_id": 3872,
+    "trace_id": "trace_22f091ce",
+    "timestamp": "2026-06-12T10:05:08.243647+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_19",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_22f091ce",
+      "reason": "Valid signal"
+    }
+  }
+]{"trace_id": "trace_22f091ce", "timestamp": "2026-06-12T10:05:08.253891+00:00", "type": "VALIDATION", "data": {"signal_id": "S_19", "status": "VALID", "confidence_score": 0.9, "trace_id": "trace_22f091ce", "reason": "Valid signal"}}

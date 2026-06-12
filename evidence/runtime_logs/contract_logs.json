@@ -1,0 +1,156 @@
+[
+  {
+    "sequence_id": 253,
+    "trace_id": "trace_d96d6546",
+    "timestamp": "2026-06-06T08:09:27.892717+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_d96d6546",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 551,
+    "trace_id": "trace_52301c0a",
+    "timestamp": "2026-06-06T10:17:28.268493+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_52301c0a",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 809,
+    "trace_id": "trace_ccd1b231",
+    "timestamp": "2026-06-06T11:38:32.252496+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_ccd1b231",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 1087,
+    "trace_id": "trace_06d37c78",
+    "timestamp": "2026-06-06T11:51:44.892927+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_06d37c78",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 1345,
+    "trace_id": "trace_4df4f425",
+    "timestamp": "2026-06-08T07:24:53.554074+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_4df4f425",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 1603,
+    "trace_id": "trace_5cbfaeb6",
+    "timestamp": "2026-06-08T08:14:31.386536+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_5cbfaeb6",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 1861,
+    "trace_id": "trace_3384ab78",
+    "timestamp": "2026-06-08T09:45:04.358956+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_3384ab78",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 2119,
+    "trace_id": "trace_2804650a",
+    "timestamp": "2026-06-09T06:40:18.592880+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_2804650a",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 2397,
+    "trace_id": "trace_d189a8b5",
+    "timestamp": "2026-06-09T06:47:00.736749+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_d189a8b5",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 2655,
+    "trace_id": "trace_1a3fec31",
+    "timestamp": "2026-06-09T06:54:42.222516+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_1a3fec31",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 2953,
+    "trace_id": "trace_27bef6b6",
+    "timestamp": "2026-06-09T07:17:11.030242+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_27bef6b6",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 3211,
+    "trace_id": "trace_0cf85396",
+    "timestamp": "2026-06-09T07:37:24.789596+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_0cf85396",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 3469,
+    "trace_id": "trace_920f17a4",
+    "timestamp": "2026-06-09T07:49:54.574722+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_920f17a4",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 3847,
+    "trace_id": "trace_ccea9ad2",
+    "timestamp": "2026-06-12T07:17:17.233510+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_ccea9ad2",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  }
+]

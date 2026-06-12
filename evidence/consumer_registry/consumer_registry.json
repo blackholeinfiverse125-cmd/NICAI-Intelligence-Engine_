@@ -1,0 +1,10 @@
+{
+    "TANTRA": {
+        "consumer_type": "DOWNSTREAM_CONTRACT",
+        "status": "ACTIVE"
+    },
+    "TTG": {
+        "consumer_type": "SIMULATION_CONSUMER",
+        "status": "ACTIVE"
+    }
+}
