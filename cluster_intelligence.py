@@ -23,11 +23,14 @@ def analyze_signal_cluster(processed: list) -> dict:
 
     for item in data_list:
 
-        explanation_text = item.get("explanation", "").lower()
+        anomaly_type = item.get(
+            "anomaly_type",
+            ""
+        ).lower()
 
         if (
-            "pollution" in explanation_text
-            and "heat" in explanation_text
+            "pollution" in anomaly_type
+            or "heat" in anomaly_type
         ):
             composite_heat_pollution += 1
 
@@ -143,7 +146,7 @@ def analyze_signal_cluster(processed: list) -> dict:
     else:
         recommendation = "monitor"
 
-    # 🔥 TRACE CONTINUITY (CRITICAL)
+    #  TRACE CONTINUITY (CRITICAL)
     trace_id = next(
         (item.get("trace_id") for item in processed if item.get("trace_id")),
         "unknown"

@@ -5,17 +5,40 @@ import uuid
 def generate_trace_id(signal):
     return f"trace_{uuid.uuid4().hex[:8]}"
 
-def validate_output_schema(x):
-    return True
+def validate_output_schema(output):
 
+    required_fields = [
+        "signal_id",
+        "status",
+        "confidence_score",
+        "trace_id",
+        "reason"
+    ]
+
+    if not isinstance(output, dict):
+        raise ValueError(
+            "Output schema must be dictionary"
+        )
+
+    for field in required_fields:
+
+        if field not in output:
+
+            raise ValueError(
+                f"Output schema missing field: {field}"
+            )
+
+    return True
 # SAFE OPTIONAL IMPORTS
 try:
     from bucket_emitter import emit_bucket_artifact
     from telemetry_emitter import emit_telemetry
-except ImportError:
-    def emit_bucket_artifact(x): pass
-    def emit_telemetry(a, b): pass
 
+except ImportError as e:
+
+    raise ImportError(
+        f"Critical dependency missing: {e}"
+    )
 
 def build_error(reason, trace_id=None, signal=None):
     return {
@@ -123,6 +146,9 @@ def get_validated_signals(signals):
 
     except Exception as e:
         return {"status": "ERROR", "reason": str(e), "trace_id": None}
+    
+
+
 '''from schemas import required_top_fields
 
 import uuid

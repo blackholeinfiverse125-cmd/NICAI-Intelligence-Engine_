@@ -43,4 +43,66 @@ def emit_bucket_artifact(filename: str, event_type: str, data: dict):
             json.dump(logs, f, indent=2)
 
     except Exception as e:
-        print(f"[BUCKET ERROR] {e}")
+
+        failure_log = {
+            "timestamp": datetime.now(
+            timezone.utc
+            ).isoformat(),
+
+            "failed_file": filename,
+
+            "event_type": event_type,
+
+            "error": str(e)
+        }
+
+        try:
+
+            os.makedirs(
+                LOG_DIR,
+                exist_ok=True
+            )
+
+            failure_path = os.path.join(
+                LOG_DIR,
+                "bucket_failures.json"
+            )
+
+            if os.path.exists(failure_path):
+
+                with open(
+                    failure_path,
+                    "r"
+                ) as f:
+
+                    try:
+                        failures = json.load(f)
+
+                    except:
+                        failures = []
+
+            else:
+
+                failures = []
+
+            failures.append(
+                failure_log
+            )
+
+            with open(
+                failure_path,
+                "w"
+            ) as f:
+
+                json.dump(
+                    failures,
+                    f,
+                    indent=2
+                )
+
+        except Exception:
+            pass
+
+        print(
+            f"[BUCKET ERROR] {e}"
+        )

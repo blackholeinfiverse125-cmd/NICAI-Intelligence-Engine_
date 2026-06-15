@@ -16,12 +16,19 @@ def orchestrate_intelligence(signal: dict) -> dict:
 
     # Step 2: Nupur context
     try:
+
         nupur_output = get_context_intelligence(signal)
-    except Exception:
+
+        nupur_output["context_status"] = "ACTIVE"
+
+    except Exception as e:
+
         nupur_output = {
-            "region_insight": "unknown",
+            "region_insight": "fallback_region",
             "spatial_risk": "unknown",
-            "domain_note": "no context available"
+            "domain_note": "structured_context_fallback",
+            "context_status": "FALLBACK",
+            "context_error": str(e)
         }
 
     # -------------------------------
@@ -62,14 +69,32 @@ def orchestrate_intelligence(signal: dict) -> dict:
     #  PHASE 5 — CONTRACT LOCK
     # -------------------------------
     final_output = {
-        "trace_id": trace_id,  #  REQUIRED
+        "trace_id": trace_id,
+
+        "context_status":
+            nupur_output.get("context_status"),
+
+        "context_error":
+            nupur_output.get("context_error"),
+
         "risk_level": risk,
-        "anomaly_type": sanskar_output.get("anomaly_type"),
+
+        "anomaly_type":
+            sanskar_output.get("anomaly_type"),
+
         "explanation": explanation,
-        "temporal_context": sanskar_output.get("temporal_context"),
-        "spatial_context": sanskar_output.get("spatial_context"),
-        "confidence": sanskar_output.get("confidence", 0.5),
-        "recommendation_signal": recommendation,
+
+        "temporal_context":
+            sanskar_output.get("temporal_context"),
+
+        "spatial_context":
+            sanskar_output.get("spatial_context"),
+
+        "confidence":
+            sanskar_output.get("confidence", 0.5),
+
+        "recommendation_signal":
+            recommendation,
     }
 
     return final_output

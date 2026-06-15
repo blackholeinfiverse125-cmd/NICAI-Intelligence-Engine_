@@ -110,6 +110,24 @@ def validate_signal(signal: dict):
         "signal_type": signal.get("signal_type", "environment"),
     }
 
+def execute_signal(signal):
+
+    validation = validate_signal(signal)
+
+    if validation is None:
+        return {"status": "IGNORED"}
+
+    if validation.get("status") == "ERROR":
+        return validation
+
+    signal["trace_id"] = validation.get("trace_id")
+
+    analytics = orchestrate_intelligence(signal)
+
+    return {
+        "validation": validation,
+        "analytics": analytics
+    }
 
 # -------------------------------------------------------
 # INTERNAL: Logging
@@ -204,20 +222,16 @@ def run_pipeline(signal: dict):
         if not isinstance(signal, dict) or not signal:
             return error_response("Invalid or empty input")
 
-        validation = validate_signal(signal)
+        result = execute_signal(signal)
 
-        if validation is None:
-            return {"status": "IGNORED"}
+        if result.get("status") == "IGNORED":
+            return result
 
-        if validation.get("status") == "ERROR":
-            return validation
+        if result.get("status") == "ERROR":
+            return result
 
-        # FIXED: was checking ALLOW/FLAG — now correctly passes VALID
-        #analytics = run_engine(validation)
-        signal["trace_id"] = validation.get("trace_id")
-        analytics = orchestrate_intelligence(signal)
-        if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
-            return analytics
+        validation = result["validation"]
+        analytics = result["analytics"]
 
         return {
             "signal_id": validation.get("signal_id"),
@@ -250,19 +264,16 @@ def evaluate_signal(signal: dict):
         if not isinstance(signal, dict) or not signal:
             return error_response("Invalid or empty input")
 
-        validation = validate_signal(signal)
+        result = execute_signal(signal)
 
-        if validation is None:
-            return {"status": "IGNORED"}
+        if result.get("status") == "IGNORED":
+            return result
 
-        if validation.get("status") == "ERROR":
-            return validation
+        if result.get("status") == "ERROR":
+            return result
 
-        #analytics = run_engine(validation)
-        signal["trace_id"] = validation.get("trace_id")
-        analytics = orchestrate_intelligence(signal)
-        if isinstance(analytics, dict) and analytics.get("status") == "ERROR":
-            return analytics
+        validation = result["validation"]
+        analytics = result["analytics"]
 
         # NICAI output contract (Phase 3 — all 6 required fields)
         output = {
