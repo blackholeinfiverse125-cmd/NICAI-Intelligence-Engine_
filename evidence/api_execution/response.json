@@ -1,0 +1,11 @@
+{
+  "signal_id": "SIG_TEST_001",
+  "trace_id": "trace_d4972f1f",
+  "risk_level": "HIGH",
+  "anomaly_type": "severe_environmental_risk",
+  "explanation": "Air quality in Delhi is extremely poor (AQI 310), combined with high temperature (42°C). This poses a serious health risk. Immediate attention is recommended. | Context: Delhi classified as critical_zone, extreme heat zone.",
+  "temporal_context": "STABLE",
+  "spatial_context": "Delhi",
+  "confidence": 0.95,
+  "recommendation_signal": "eligible_for_escalation"
+}

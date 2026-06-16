@@ -1,0 +1,9 @@
+{
+  "signal_id": "SIG_TEST_001",
+  "timestamp": "2026-06-16T10:00:00Z",
+  "location": "Delhi",
+  "value": {
+    "temperature": 42,
+    "aqi": 310
+  }
+}

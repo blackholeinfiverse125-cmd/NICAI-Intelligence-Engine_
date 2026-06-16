@@ -1,13 +1,35 @@
 [
   {
-    "sequence_id": 3849,
-    "trace_id": "trace_ccea9ad2",
-    "timestamp": "2026-06-12T07:17:17.445979+00:00",
+    "sequence_id": 4127,
+    "trace_id": "trace_e38f53f8",
+    "timestamp": "2026-06-16T03:02:15.910399+00:00",
     "type": "ACTION",
     "data": {
-      "trace_id": "trace_ccea9ad2",
+      "trace_id": "trace_e38f53f8",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 4386,
+    "trace_id": "trace_3112e116",
+    "timestamp": "2026-06-16T03:14:41.052142+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_3112e116",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 4644,
+    "trace_id": "trace_4ef2bcd5",
+    "timestamp": "2026-06-16T03:41:30.331238+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_4ef2bcd5",
       "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
       "status": "EMITTED"
     }
   }
-]{"trace_id": "trace_f57cf858", "timestamp": "2026-06-12T10:05:08.288036+00:00", "type": "ACTION", "data": {"trace_id": "trace_f57cf858", "action_type": "requires_review", "target_role": "authority", "timestamp": "2026-06-12T10:05:08.288003+00:00", "context": {"demo": true}}}
+]

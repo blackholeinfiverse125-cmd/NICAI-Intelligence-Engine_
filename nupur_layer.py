@@ -30,3 +30,8 @@ def get_context_intelligence(signal: dict) -> dict:
         "spatial_risk": spatial_risk,
         "domain_note": domain_note
     }
+    '''return {
+        "region_insight": "disabled",
+        "spatial_risk": "normal_zone",
+        "domain_note": "disabled"
+    }'''
