@@ -1,0 +1,30 @@
+{
+  "cluster_result": {
+    "trace_id": "trace_739de6a7",
+    "risk_level": "MEDIUM",
+    "anomaly_type": "clustered_moderate_environmental_risk",
+    "explanation": "Cluster analysis: 17/50 HIGH risk signals, 14/50 MEDIUM. Situation classified as MEDIUM. Context: Elevated environmental risk observed in Mumbai. Multi-region spread detected across 10 regions. Composite environmental stress detected from interacting pollution and heat indicators.",
+    "temporal_context": "CLUSTERED",
+    "spatial_context": "Mumbai",
+    "confidence": 0.9,
+    "recommendation_signal": "eligible_for_escalation"
+  },
+  "action": {
+    "trace_id": "trace_739de6a7",
+    "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+    "status": "EMITTED"
+  },
+  "tantra_participation": {
+    "trace_id": "trace_739de6a7",
+    "consumer": "TANTRA",
+    "ack_status": "ACCEPTED",
+    "participation_type": "DOWNSTREAM_CONTRACT"
+  },
+  "ttg_consume": {
+    "trace_id": "trace_739de6a7",
+    "consumer": "TTG",
+    "simulation_pack": "RUDRA_ATHARVA",
+    "consume_status": "CONSUMED"
+  },
+  "total_signals": 50
+}

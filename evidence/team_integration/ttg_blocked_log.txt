@@ -1,0 +1,21 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> Get-Content logs\ttg_logs.json -Tail 20
+    "data": {
+      "trace_id": "trace_739de6a7",
+      "consumer": "TTG",
+      "simulation_pack": "RUDRA_ATHARVA",
+      "consume_status": "CONSUMED"
+    }
+  },
+  {
+    "sequence_id": 5169,
+    "trace_id": "trace_49f27b7f",
+    "timestamp": "2026-06-17T07:34:30.321791+00:00",
+    "type": "TTG_CONSUME",
+    "data": {
+      "trace_id": "trace_49f27b7f",
+      "consumer": "TTG",
+      "simulation_pack": "RUDRA_ATHARVA",
+      "consume_status": "CONSUMED"
+    }
+  }
+]

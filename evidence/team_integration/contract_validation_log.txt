@@ -1,0 +1,24 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> Get-Content logs\contract_logs.json -Tail 20
+    "data": {
+      "trace_id": "trace_49f27b7f",
+      "contract_status": "VALID",
+      "errors": []
+    }
+  },
+  {
+    "sequence_id": 5422,
+    "trace_id": "trace_16074313",
+    "timestamp": "2026-06-17T07:51:57.962509+00:00",
+    "type": "CONTRACT_VALIDATION",
+    "data": {
+      "trace_id": "trace_16074313",
+      "contract_status": "INVALID",
+      "errors": [
+        "Invalid risk_level"
+      ]
+    }
+  }
+]
+
+
+

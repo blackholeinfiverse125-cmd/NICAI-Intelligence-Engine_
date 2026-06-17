@@ -1,0 +1,30 @@
+{
+  "cluster_result": {
+    "trace_id": "trace_49f27b7f",
+    "risk_level": "LOW",
+    "anomaly_type": "cluster_disabled",
+    "explanation": "Cluster layer disabled for integration testing.",
+    "temporal_context": "CLUSTERED",
+    "spatial_context": "disabled",
+    "confidence": 0,
+    "recommendation_signal": "monitor"
+  },
+  "action": {
+    "trace_id": "trace_49f27b7f",
+    "action": "CONTINUE_MONITORING",
+    "status": "EMITTED"
+  },
+  "tantra_participation": {
+    "trace_id": "trace_49f27b7f",
+    "consumer": "TANTRA",
+    "ack_status": "ACCEPTED",
+    "participation_type": "DOWNSTREAM_CONTRACT"
+  },
+  "ttg_consume": {
+    "trace_id": "trace_49f27b7f",
+    "consumer": "TTG",
+    "simulation_pack": "RUDRA_ATHARVA",
+    "consume_status": "CONSUMED"
+  },
+  "total_signals": 50
+}

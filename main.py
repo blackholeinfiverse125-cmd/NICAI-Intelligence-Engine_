@@ -381,6 +381,7 @@ def run_full_pipeline():
 # ---------------------------------
 
         cluster_output = analyze_signal_cluster(processed)
+        
         emit_bucket_artifact(
             "pattern_logs.json",
             "CLUSTER_ANALYSIS",

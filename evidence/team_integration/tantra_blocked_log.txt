@@ -1,0 +1,21 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> Get-Content logs\tantra_logs.json -Tail 20
+    "data": {
+      "trace_id": "trace_739de6a7",
+      "consumer": "TANTRA",
+      "ack_status": "ACCEPTED",
+      "participation_type": "DOWNSTREAM_CONTRACT"
+    }
+  },
+  {
+    "sequence_id": 5168,
+    "trace_id": "trace_49f27b7f",
+    "timestamp": "2026-06-17T07:34:30.315097+00:00",
+    "type": "TANTRA_PARTICIPATION",
+    "data": {
+      "trace_id": "trace_49f27b7f",
+      "consumer": "TANTRA",
+      "ack_status": "ACCEPTED",
+      "participation_type": "DOWNSTREAM_CONTRACT"
+    }
+  }
+]

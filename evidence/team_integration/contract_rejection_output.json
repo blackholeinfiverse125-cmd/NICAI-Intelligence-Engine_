@@ -1,0 +1,7 @@
+{
+  "status": "ERROR",
+  "reason": "Invalid downstream contract",
+  "contract_errors": [
+    "Invalid risk_level"
+  ]
+}

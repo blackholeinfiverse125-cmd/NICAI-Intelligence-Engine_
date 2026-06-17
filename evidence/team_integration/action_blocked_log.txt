@@ -1,0 +1,21 @@
+PS C:\Users\sansk\Downloads\NICAI-Intelligence-Engine_-main\NICAI-Intelligence-Engine_-main> Get-Content logs\action_logs.json -Tail 20
+    "timestamp": "2026-06-17T07:28:21.639592+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_739de6a7",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 5166,
+    "trace_id": "trace_49f27b7f",
+    "timestamp": "2026-06-17T07:34:30.073093+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_49f27b7f",
+      "action": "CONTINUE_MONITORING",
+      "status": "EMITTED"
+    }
+  }
+]

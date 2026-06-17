@@ -2938,5 +2938,3005 @@
       "location": "Bhopal",
       "signal_type": "environment"
     }
+  },
+  {
+    "sequence_id": 4655,
+    "trace_id": "trace_739de6a7",
+    "timestamp": "2026-06-17T07:28:01.124205+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_0",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_739de6a7",
+      "reason": "",
+      "value": {
+        "temperature": 25.2,
+        "aqi": 259.0
+      },
+      "timestamp": "2024-01-01 00:00:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4660,
+    "trace_id": "trace_b13fa8b9",
+    "timestamp": "2026-06-17T07:28:01.599743+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_1",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b13fa8b9",
+      "reason": "",
+      "value": {
+        "temperature": 18.1,
+        "aqi": 130.0
+      },
+      "timestamp": "2024-01-01 00:01:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4665,
+    "trace_id": "trace_038fd9b9",
+    "timestamp": "2026-06-17T07:28:02.024137+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_2",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_038fd9b9",
+      "reason": "",
+      "value": {
+        "temperature": 40.0,
+        "aqi": 54.0
+      },
+      "timestamp": "2024-01-01 00:02:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4670,
+    "trace_id": "trace_e13d0242",
+    "timestamp": "2026-06-17T07:28:02.432272+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_3",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_e13d0242",
+      "reason": "",
+      "value": {
+        "temperature": 33.8,
+        "aqi": 176.0
+      },
+      "timestamp": "2024-01-01 00:03:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4675,
+    "trace_id": "trace_127e206d",
+    "timestamp": "2026-06-17T07:28:02.850256+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_4",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_127e206d",
+      "reason": "",
+      "value": {
+        "temperature": 22.5,
+        "aqi": 97.0
+      },
+      "timestamp": "2024-01-01 00:04:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4680,
+    "trace_id": "trace_b0d60c85",
+    "timestamp": "2026-06-17T07:28:03.270357+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_5",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b0d60c85",
+      "reason": "",
+      "value": {
+        "temperature": 42.0,
+        "aqi": 140.0
+      },
+      "timestamp": "2024-01-01 00:05:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4685,
+    "trace_id": "trace_5f8df7a4",
+    "timestamp": "2026-06-17T07:28:03.647078+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_6",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_5f8df7a4",
+      "reason": "",
+      "value": {
+        "temperature": 28.9,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-01 00:06:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4690,
+    "trace_id": "trace_ed6218f3",
+    "timestamp": "2026-06-17T07:28:04.030859+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_7",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ed6218f3",
+      "reason": "",
+      "value": {
+        "temperature": 45.0,
+        "aqi": 75.0
+      },
+      "timestamp": "2024-01-01 00:07:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4695,
+    "trace_id": "trace_770ae467",
+    "timestamp": "2026-06-17T07:28:04.421128+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_8",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_770ae467",
+      "reason": "",
+      "value": {
+        "temperature": 36.6,
+        "aqi": 186.0
+      },
+      "timestamp": "2024-01-01 00:08:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4700,
+    "trace_id": "trace_999a93cc",
+    "timestamp": "2026-06-17T07:28:04.913920+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_9",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_999a93cc",
+      "reason": "",
+      "value": {
+        "temperature": 21.3,
+        "aqi": 73.0
+      },
+      "timestamp": "2024-01-01 00:09:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4705,
+    "trace_id": "trace_9f5a3858",
+    "timestamp": "2026-06-17T07:28:05.273249+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_10",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_9f5a3858",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 63.0
+      },
+      "timestamp": "2024-01-02 00:10:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4710,
+    "trace_id": "trace_c358c32e",
+    "timestamp": "2026-06-17T07:28:05.584017+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_11",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_c358c32e",
+      "reason": "",
+      "value": {
+        "temperature": 27.5,
+        "aqi": 207.0
+      },
+      "timestamp": "2024-01-02 00:11:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4715,
+    "trace_id": "trace_444a3bbe",
+    "timestamp": "2026-06-17T07:28:05.893988+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_12",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_444a3bbe",
+      "reason": "",
+      "value": {
+        "temperature": 34.2,
+        "aqi": 198.0
+      },
+      "timestamp": "2024-01-02 00:12:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4720,
+    "trace_id": "trace_d2bba04c",
+    "timestamp": "2026-06-17T07:28:06.222412+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_13",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d2bba04c",
+      "reason": "",
+      "value": {
+        "temperature": 29.7,
+        "aqi": 341.0
+      },
+      "timestamp": "2024-01-02 00:13:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4725,
+    "trace_id": "trace_4928dc25",
+    "timestamp": "2026-06-17T07:28:06.510580+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_14",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_4928dc25",
+      "reason": "",
+      "value": {
+        "temperature": 40.5,
+        "aqi": 126.0
+      },
+      "timestamp": "2024-01-02 00:14:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4730,
+    "trace_id": "trace_73e53d33",
+    "timestamp": "2026-06-17T07:28:06.790996+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_15",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_73e53d33",
+      "reason": "",
+      "value": {
+        "temperature": 39.5,
+        "aqi": 265.0
+      },
+      "timestamp": "2024-01-02 00:15:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4735,
+    "trace_id": "trace_5bfba68e",
+    "timestamp": "2026-06-17T07:28:07.089983+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_16",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_5bfba68e",
+      "reason": "",
+      "value": {
+        "temperature": 26.7,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-02 00:16:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4740,
+    "trace_id": "trace_76ad570c",
+    "timestamp": "2026-06-17T07:28:07.445407+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_17",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_76ad570c",
+      "reason": "",
+      "value": {
+        "temperature": 36.0,
+        "aqi": 82.0
+      },
+      "timestamp": "2024-01-02 00:17:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4745,
+    "trace_id": "trace_472225f5",
+    "timestamp": "2026-06-17T07:28:07.869362+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_18",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_472225f5",
+      "reason": "",
+      "value": {
+        "temperature": 28.8,
+        "aqi": 114.0
+      },
+      "timestamp": "2024-01-02 00:18:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4750,
+    "trace_id": "trace_548878b6",
+    "timestamp": "2026-06-17T07:28:08.231338+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_19",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_548878b6",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 281.0
+      },
+      "timestamp": "2024-01-02 00:19:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4755,
+    "trace_id": "trace_2ef4165d",
+    "timestamp": "2026-06-17T07:28:08.603537+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_20",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_2ef4165d",
+      "reason": "",
+      "value": {
+        "temperature": 34.9,
+        "aqi": 89.0
+      },
+      "timestamp": "2024-01-03 00:20:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4760,
+    "trace_id": "trace_07c50016",
+    "timestamp": "2026-06-17T07:28:08.994932+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_21",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_07c50016",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 303.0
+      },
+      "timestamp": "2024-01-03 00:21:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4765,
+    "trace_id": "trace_ac1e29a9",
+    "timestamp": "2026-06-17T07:28:09.354555+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_22",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ac1e29a9",
+      "reason": "",
+      "value": {
+        "temperature": 32.8,
+        "aqi": 235.0
+      },
+      "timestamp": "2024-01-03 00:22:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4770,
+    "trace_id": "trace_3c9369ec",
+    "timestamp": "2026-06-17T07:28:09.697896+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_23",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_3c9369ec",
+      "reason": "",
+      "value": {
+        "temperature": 35.9,
+        "aqi": 94.0
+      },
+      "timestamp": "2024-01-03 00:23:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4775,
+    "trace_id": "trace_4cdb168a",
+    "timestamp": "2026-06-17T07:28:09.955152+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_24",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_4cdb168a",
+      "reason": "",
+      "value": {
+        "temperature": 36.5,
+        "aqi": 304.0
+      },
+      "timestamp": "2024-01-03 00:24:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4780,
+    "trace_id": "trace_b2cc2c32",
+    "timestamp": "2026-06-17T07:28:10.221585+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_25",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b2cc2c32",
+      "reason": "",
+      "value": {
+        "temperature": 26.5,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-03 00:25:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4785,
+    "trace_id": "trace_a6615ae3",
+    "timestamp": "2026-06-17T07:28:10.526530+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_26",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a6615ae3",
+      "reason": "",
+      "value": {
+        "temperature": 29.8,
+        "aqi": 131.0
+      },
+      "timestamp": "2024-01-03 00:26:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4790,
+    "trace_id": "trace_0c473277",
+    "timestamp": "2026-06-17T07:28:10.844190+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_27",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0c473277",
+      "reason": "",
+      "value": {
+        "temperature": 34.6,
+        "aqi": 286.0
+      },
+      "timestamp": "2024-01-03 00:27:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4795,
+    "trace_id": "trace_7617c0c6",
+    "timestamp": "2026-06-17T07:28:11.219780+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_28",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7617c0c6",
+      "reason": "",
+      "value": {
+        "temperature": 38.6,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-03 00:28:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4800,
+    "trace_id": "trace_7dabc998",
+    "timestamp": "2026-06-17T07:28:11.537497+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_29",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7dabc998",
+      "reason": "",
+      "value": {
+        "temperature": 22.9,
+        "aqi": 66.0
+      },
+      "timestamp": "2024-01-03 00:29:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4805,
+    "trace_id": "trace_41667318",
+    "timestamp": "2026-06-17T07:28:11.896893+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_30",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_41667318",
+      "reason": "",
+      "value": {
+        "temperature": 20.9,
+        "aqi": 123.0
+      },
+      "timestamp": "2024-01-04 00:30:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4810,
+    "trace_id": "trace_a4d78b17",
+    "timestamp": "2026-06-17T07:28:12.315167+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_31",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a4d78b17",
+      "reason": "",
+      "value": {
+        "temperature": 30.9,
+        "aqi": 117.0
+      },
+      "timestamp": "2024-01-04 00:31:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4815,
+    "trace_id": "trace_7f2cdeda",
+    "timestamp": "2026-06-17T07:28:12.791585+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_32",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7f2cdeda",
+      "reason": "",
+      "value": {
+        "temperature": 29.9,
+        "aqi": 116.0
+      },
+      "timestamp": "2024-01-04 00:32:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4820,
+    "trace_id": "trace_43690a2c",
+    "timestamp": "2026-06-17T07:28:13.327525+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_33",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_43690a2c",
+      "reason": "",
+      "value": {
+        "temperature": 25.8,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-04 00:33:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4825,
+    "trace_id": "trace_0179e907",
+    "timestamp": "2026-06-17T07:28:13.865490+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_34",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0179e907",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 234.0
+      },
+      "timestamp": "2024-01-04 00:34:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4830,
+    "trace_id": "trace_cafc6e20",
+    "timestamp": "2026-06-17T07:28:14.344437+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_35",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_cafc6e20",
+      "reason": "",
+      "value": {
+        "temperature": 28.3,
+        "aqi": 218.0
+      },
+      "timestamp": "2024-01-04 00:35:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4835,
+    "trace_id": "trace_f3cad013",
+    "timestamp": "2026-06-17T07:28:14.801469+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_36",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_f3cad013",
+      "reason": "",
+      "value": {
+        "temperature": 27.0,
+        "aqi": 61.0
+      },
+      "timestamp": "2024-01-04 00:36:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4840,
+    "trace_id": "trace_21636948",
+    "timestamp": "2026-06-17T07:28:15.291628+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_37",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_21636948",
+      "reason": "",
+      "value": {
+        "temperature": 24.4,
+        "aqi": 127.0
+      },
+      "timestamp": "2024-01-04 00:37:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4845,
+    "trace_id": "trace_6cc80ca9",
+    "timestamp": "2026-06-17T07:28:15.756174+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_38",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_6cc80ca9",
+      "reason": "",
+      "value": {
+        "temperature": 21.4,
+        "aqi": 290.0
+      },
+      "timestamp": "2024-01-04 00:38:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4850,
+    "trace_id": "trace_3b892ddd",
+    "timestamp": "2026-06-17T07:28:16.147762+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_39",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_3b892ddd",
+      "reason": "",
+      "value": {
+        "temperature": 40.2,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-04 00:39:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4855,
+    "trace_id": "trace_2aee5578",
+    "timestamp": "2026-06-17T07:28:16.534995+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_40",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_2aee5578",
+      "reason": "",
+      "value": {
+        "temperature": 20.0,
+        "aqi": 68.0
+      },
+      "timestamp": "2024-01-05 00:40:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4860,
+    "trace_id": "trace_e96def40",
+    "timestamp": "2026-06-17T07:28:16.897025+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_41",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_e96def40",
+      "reason": "",
+      "value": {
+        "temperature": 24.1,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-05 00:41:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4865,
+    "trace_id": "trace_3ef6f2a7",
+    "timestamp": "2026-06-17T07:28:17.161894+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_42",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_3ef6f2a7",
+      "reason": "",
+      "value": {
+        "temperature": 34.4,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:42:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4870,
+    "trace_id": "trace_9b068dca",
+    "timestamp": "2026-06-17T07:28:17.654171+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_43",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_9b068dca",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:43:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4875,
+    "trace_id": "trace_ae445b3f",
+    "timestamp": "2026-06-17T07:28:18.254327+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_44",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ae445b3f",
+      "reason": "",
+      "value": {
+        "temperature": 19.3,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:44:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4880,
+    "trace_id": "trace_8bc36c88",
+    "timestamp": "2026-06-17T07:28:18.864085+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_45",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_8bc36c88",
+      "reason": "",
+      "value": {
+        "temperature": 35.3,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:45:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4885,
+    "trace_id": "trace_825b61c0",
+    "timestamp": "2026-06-17T07:28:19.390920+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_46",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_825b61c0",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 338.0
+      },
+      "timestamp": "2024-01-05 00:46:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4890,
+    "trace_id": "trace_54dd9cc6",
+    "timestamp": "2026-06-17T07:28:19.973559+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_47",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_54dd9cc6",
+      "reason": "",
+      "value": {
+        "temperature": 17.9,
+        "aqi": 202.0
+      },
+      "timestamp": "2024-01-05 00:47:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4895,
+    "trace_id": "trace_75480220",
+    "timestamp": "2026-06-17T07:28:20.539686+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_48",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_75480220",
+      "reason": "",
+      "value": {
+        "temperature": 31.6,
+        "aqi": 315.0
+      },
+      "timestamp": "2024-01-05 00:48:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4900,
+    "trace_id": "trace_ecea93f3",
+    "timestamp": "2026-06-17T07:28:20.977246+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_49",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ecea93f3",
+      "reason": "",
+      "value": {
+        "temperature": 28.5,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-05 00:49:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4913,
+    "trace_id": "trace_49f27b7f",
+    "timestamp": "2026-06-17T07:33:56.672295+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_0",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_49f27b7f",
+      "reason": "",
+      "value": {
+        "temperature": 25.2,
+        "aqi": 259.0
+      },
+      "timestamp": "2024-01-01 00:00:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4918,
+    "trace_id": "trace_7eebc0cf",
+    "timestamp": "2026-06-17T07:33:57.338014+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_1",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7eebc0cf",
+      "reason": "",
+      "value": {
+        "temperature": 18.1,
+        "aqi": 130.0
+      },
+      "timestamp": "2024-01-01 00:01:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4923,
+    "trace_id": "trace_9d7b3c74",
+    "timestamp": "2026-06-17T07:33:58.039669+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_2",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_9d7b3c74",
+      "reason": "",
+      "value": {
+        "temperature": 40.0,
+        "aqi": 54.0
+      },
+      "timestamp": "2024-01-01 00:02:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4928,
+    "trace_id": "trace_356b0fdb",
+    "timestamp": "2026-06-17T07:33:58.764397+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_3",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_356b0fdb",
+      "reason": "",
+      "value": {
+        "temperature": 33.8,
+        "aqi": 176.0
+      },
+      "timestamp": "2024-01-01 00:03:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4933,
+    "trace_id": "trace_85526231",
+    "timestamp": "2026-06-17T07:33:59.391550+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_4",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_85526231",
+      "reason": "",
+      "value": {
+        "temperature": 22.5,
+        "aqi": 97.0
+      },
+      "timestamp": "2024-01-01 00:04:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4938,
+    "trace_id": "trace_a63230e5",
+    "timestamp": "2026-06-17T07:34:00.117186+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_5",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a63230e5",
+      "reason": "",
+      "value": {
+        "temperature": 42.0,
+        "aqi": 140.0
+      },
+      "timestamp": "2024-01-01 00:05:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4943,
+    "trace_id": "trace_b7b8a95b",
+    "timestamp": "2026-06-17T07:34:00.704673+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_6",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b7b8a95b",
+      "reason": "",
+      "value": {
+        "temperature": 28.9,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-01 00:06:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4948,
+    "trace_id": "trace_ca1d2865",
+    "timestamp": "2026-06-17T07:34:01.351024+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_7",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ca1d2865",
+      "reason": "",
+      "value": {
+        "temperature": 45.0,
+        "aqi": 75.0
+      },
+      "timestamp": "2024-01-01 00:07:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4953,
+    "trace_id": "trace_47b3380a",
+    "timestamp": "2026-06-17T07:34:02.148189+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_8",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_47b3380a",
+      "reason": "",
+      "value": {
+        "temperature": 36.6,
+        "aqi": 186.0
+      },
+      "timestamp": "2024-01-01 00:08:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4958,
+    "trace_id": "trace_c86fbf94",
+    "timestamp": "2026-06-17T07:34:02.825680+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_9",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_c86fbf94",
+      "reason": "",
+      "value": {
+        "temperature": 21.3,
+        "aqi": 73.0
+      },
+      "timestamp": "2024-01-01 00:09:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4963,
+    "trace_id": "trace_c332fb35",
+    "timestamp": "2026-06-17T07:34:03.555800+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_10",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_c332fb35",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 63.0
+      },
+      "timestamp": "2024-01-02 00:10:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4968,
+    "trace_id": "trace_7ec9f438",
+    "timestamp": "2026-06-17T07:34:04.188719+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_11",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7ec9f438",
+      "reason": "",
+      "value": {
+        "temperature": 27.5,
+        "aqi": 207.0
+      },
+      "timestamp": "2024-01-02 00:11:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4973,
+    "trace_id": "trace_d35623af",
+    "timestamp": "2026-06-17T07:34:04.899850+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_12",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d35623af",
+      "reason": "",
+      "value": {
+        "temperature": 34.2,
+        "aqi": 198.0
+      },
+      "timestamp": "2024-01-02 00:12:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4978,
+    "trace_id": "trace_b22eb599",
+    "timestamp": "2026-06-17T07:34:05.524812+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_13",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b22eb599",
+      "reason": "",
+      "value": {
+        "temperature": 29.7,
+        "aqi": 341.0
+      },
+      "timestamp": "2024-01-02 00:13:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4983,
+    "trace_id": "trace_974ad2dc",
+    "timestamp": "2026-06-17T07:34:06.151577+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_14",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_974ad2dc",
+      "reason": "",
+      "value": {
+        "temperature": 40.5,
+        "aqi": 126.0
+      },
+      "timestamp": "2024-01-02 00:14:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4988,
+    "trace_id": "trace_32331a53",
+    "timestamp": "2026-06-17T07:34:06.764645+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_15",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_32331a53",
+      "reason": "",
+      "value": {
+        "temperature": 39.5,
+        "aqi": 265.0
+      },
+      "timestamp": "2024-01-02 00:15:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4993,
+    "trace_id": "trace_1f856369",
+    "timestamp": "2026-06-17T07:34:07.379752+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_16",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_1f856369",
+      "reason": "",
+      "value": {
+        "temperature": 26.7,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-02 00:16:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 4998,
+    "trace_id": "trace_51634287",
+    "timestamp": "2026-06-17T07:34:08.032834+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_17",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_51634287",
+      "reason": "",
+      "value": {
+        "temperature": 36.0,
+        "aqi": 82.0
+      },
+      "timestamp": "2024-01-02 00:17:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5003,
+    "trace_id": "trace_863b55f3",
+    "timestamp": "2026-06-17T07:34:08.605069+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_18",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_863b55f3",
+      "reason": "",
+      "value": {
+        "temperature": 28.8,
+        "aqi": 114.0
+      },
+      "timestamp": "2024-01-02 00:18:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5008,
+    "trace_id": "trace_80f3b3e3",
+    "timestamp": "2026-06-17T07:34:09.273984+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_19",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_80f3b3e3",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 281.0
+      },
+      "timestamp": "2024-01-02 00:19:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5013,
+    "trace_id": "trace_8d4c28a9",
+    "timestamp": "2026-06-17T07:34:09.945475+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_20",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_8d4c28a9",
+      "reason": "",
+      "value": {
+        "temperature": 34.9,
+        "aqi": 89.0
+      },
+      "timestamp": "2024-01-03 00:20:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5018,
+    "trace_id": "trace_7dabec20",
+    "timestamp": "2026-06-17T07:34:10.572908+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_21",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7dabec20",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 303.0
+      },
+      "timestamp": "2024-01-03 00:21:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5023,
+    "trace_id": "trace_3f676552",
+    "timestamp": "2026-06-17T07:34:11.179432+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_22",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_3f676552",
+      "reason": "",
+      "value": {
+        "temperature": 32.8,
+        "aqi": 235.0
+      },
+      "timestamp": "2024-01-03 00:22:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5028,
+    "trace_id": "trace_b30b816a",
+    "timestamp": "2026-06-17T07:34:11.800569+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_23",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b30b816a",
+      "reason": "",
+      "value": {
+        "temperature": 35.9,
+        "aqi": 94.0
+      },
+      "timestamp": "2024-01-03 00:23:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5033,
+    "trace_id": "trace_02d5dcae",
+    "timestamp": "2026-06-17T07:34:12.417086+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_24",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_02d5dcae",
+      "reason": "",
+      "value": {
+        "temperature": 36.5,
+        "aqi": 304.0
+      },
+      "timestamp": "2024-01-03 00:24:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5038,
+    "trace_id": "trace_9be11938",
+    "timestamp": "2026-06-17T07:34:13.044760+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_25",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_9be11938",
+      "reason": "",
+      "value": {
+        "temperature": 26.5,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-03 00:25:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5043,
+    "trace_id": "trace_f334406b",
+    "timestamp": "2026-06-17T07:34:13.659677+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_26",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_f334406b",
+      "reason": "",
+      "value": {
+        "temperature": 29.8,
+        "aqi": 131.0
+      },
+      "timestamp": "2024-01-03 00:26:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5048,
+    "trace_id": "trace_d4304d89",
+    "timestamp": "2026-06-17T07:34:14.258868+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_27",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d4304d89",
+      "reason": "",
+      "value": {
+        "temperature": 34.6,
+        "aqi": 286.0
+      },
+      "timestamp": "2024-01-03 00:27:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5053,
+    "trace_id": "trace_7df783c4",
+    "timestamp": "2026-06-17T07:34:14.973306+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_28",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7df783c4",
+      "reason": "",
+      "value": {
+        "temperature": 38.6,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-03 00:28:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5058,
+    "trace_id": "trace_a0b5a41a",
+    "timestamp": "2026-06-17T07:34:15.596167+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_29",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a0b5a41a",
+      "reason": "",
+      "value": {
+        "temperature": 22.9,
+        "aqi": 66.0
+      },
+      "timestamp": "2024-01-03 00:29:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5063,
+    "trace_id": "trace_766e6c41",
+    "timestamp": "2026-06-17T07:34:16.251158+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_30",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_766e6c41",
+      "reason": "",
+      "value": {
+        "temperature": 20.9,
+        "aqi": 123.0
+      },
+      "timestamp": "2024-01-04 00:30:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5068,
+    "trace_id": "trace_376ecaf5",
+    "timestamp": "2026-06-17T07:34:16.957404+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_31",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_376ecaf5",
+      "reason": "",
+      "value": {
+        "temperature": 30.9,
+        "aqi": 117.0
+      },
+      "timestamp": "2024-01-04 00:31:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5073,
+    "trace_id": "trace_508c73ae",
+    "timestamp": "2026-06-17T07:34:17.583062+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_32",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_508c73ae",
+      "reason": "",
+      "value": {
+        "temperature": 29.9,
+        "aqi": 116.0
+      },
+      "timestamp": "2024-01-04 00:32:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5078,
+    "trace_id": "trace_df0f3615",
+    "timestamp": "2026-06-17T07:34:18.272606+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_33",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_df0f3615",
+      "reason": "",
+      "value": {
+        "temperature": 25.8,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-04 00:33:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5083,
+    "trace_id": "trace_bcd93f6d",
+    "timestamp": "2026-06-17T07:34:18.905340+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_34",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_bcd93f6d",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 234.0
+      },
+      "timestamp": "2024-01-04 00:34:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5088,
+    "trace_id": "trace_5b2914c4",
+    "timestamp": "2026-06-17T07:34:19.559005+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_35",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_5b2914c4",
+      "reason": "",
+      "value": {
+        "temperature": 28.3,
+        "aqi": 218.0
+      },
+      "timestamp": "2024-01-04 00:35:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5093,
+    "trace_id": "trace_d2944a4e",
+    "timestamp": "2026-06-17T07:34:20.208236+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_36",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d2944a4e",
+      "reason": "",
+      "value": {
+        "temperature": 27.0,
+        "aqi": 61.0
+      },
+      "timestamp": "2024-01-04 00:36:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5098,
+    "trace_id": "trace_d4e289c7",
+    "timestamp": "2026-06-17T07:34:20.864459+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_37",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d4e289c7",
+      "reason": "",
+      "value": {
+        "temperature": 24.4,
+        "aqi": 127.0
+      },
+      "timestamp": "2024-01-04 00:37:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5103,
+    "trace_id": "trace_23e5e4d6",
+    "timestamp": "2026-06-17T07:34:21.536806+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_38",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_23e5e4d6",
+      "reason": "",
+      "value": {
+        "temperature": 21.4,
+        "aqi": 290.0
+      },
+      "timestamp": "2024-01-04 00:38:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5108,
+    "trace_id": "trace_7d0be03d",
+    "timestamp": "2026-06-17T07:34:22.170510+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_39",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7d0be03d",
+      "reason": "",
+      "value": {
+        "temperature": 40.2,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-04 00:39:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5113,
+    "trace_id": "trace_dd735d30",
+    "timestamp": "2026-06-17T07:34:22.835242+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_40",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_dd735d30",
+      "reason": "",
+      "value": {
+        "temperature": 20.0,
+        "aqi": 68.0
+      },
+      "timestamp": "2024-01-05 00:40:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5118,
+    "trace_id": "trace_6937e278",
+    "timestamp": "2026-06-17T07:34:23.458539+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_41",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_6937e278",
+      "reason": "",
+      "value": {
+        "temperature": 24.1,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-05 00:41:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5123,
+    "trace_id": "trace_e019cdf6",
+    "timestamp": "2026-06-17T07:34:24.125961+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_42",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_e019cdf6",
+      "reason": "",
+      "value": {
+        "temperature": 34.4,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:42:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5128,
+    "trace_id": "trace_e132f76c",
+    "timestamp": "2026-06-17T07:34:24.992622+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_43",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_e132f76c",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:43:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5133,
+    "trace_id": "trace_bab9b287",
+    "timestamp": "2026-06-17T07:34:25.707991+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_44",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_bab9b287",
+      "reason": "",
+      "value": {
+        "temperature": 19.3,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:44:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5138,
+    "trace_id": "trace_23d607d9",
+    "timestamp": "2026-06-17T07:34:26.402530+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_45",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_23d607d9",
+      "reason": "",
+      "value": {
+        "temperature": 35.3,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:45:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5143,
+    "trace_id": "trace_136c2b13",
+    "timestamp": "2026-06-17T07:34:27.070065+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_46",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_136c2b13",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 338.0
+      },
+      "timestamp": "2024-01-05 00:46:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5148,
+    "trace_id": "trace_157cec46",
+    "timestamp": "2026-06-17T07:34:27.696711+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_47",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_157cec46",
+      "reason": "",
+      "value": {
+        "temperature": 17.9,
+        "aqi": 202.0
+      },
+      "timestamp": "2024-01-05 00:47:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5153,
+    "trace_id": "trace_40fd2ace",
+    "timestamp": "2026-06-17T07:34:28.343504+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_48",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_40fd2ace",
+      "reason": "",
+      "value": {
+        "temperature": 31.6,
+        "aqi": 315.0
+      },
+      "timestamp": "2024-01-05 00:48:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5158,
+    "trace_id": "trace_985e18f1",
+    "timestamp": "2026-06-17T07:34:29.034272+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_49",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_985e18f1",
+      "reason": "",
+      "value": {
+        "temperature": 28.5,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-05 00:49:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5171,
+    "trace_id": "trace_16074313",
+    "timestamp": "2026-06-17T07:51:23.525131+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_0",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_16074313",
+      "reason": "",
+      "value": {
+        "temperature": 25.2,
+        "aqi": 259.0
+      },
+      "timestamp": "2024-01-01 00:00:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5176,
+    "trace_id": "trace_b174a8b9",
+    "timestamp": "2026-06-17T07:51:24.272483+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_1",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b174a8b9",
+      "reason": "",
+      "value": {
+        "temperature": 18.1,
+        "aqi": 130.0
+      },
+      "timestamp": "2024-01-01 00:01:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5181,
+    "trace_id": "trace_3e3f6b97",
+    "timestamp": "2026-06-17T07:51:25.025884+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_2",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_3e3f6b97",
+      "reason": "",
+      "value": {
+        "temperature": 40.0,
+        "aqi": 54.0
+      },
+      "timestamp": "2024-01-01 00:02:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5186,
+    "trace_id": "trace_1577ffe0",
+    "timestamp": "2026-06-17T07:51:25.807573+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_3",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_1577ffe0",
+      "reason": "",
+      "value": {
+        "temperature": 33.8,
+        "aqi": 176.0
+      },
+      "timestamp": "2024-01-01 00:03:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5191,
+    "trace_id": "trace_84c8f4c8",
+    "timestamp": "2026-06-17T07:51:26.554909+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_4",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_84c8f4c8",
+      "reason": "",
+      "value": {
+        "temperature": 22.5,
+        "aqi": 97.0
+      },
+      "timestamp": "2024-01-01 00:04:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5196,
+    "trace_id": "trace_09f87270",
+    "timestamp": "2026-06-17T07:51:27.329547+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_5",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_09f87270",
+      "reason": "",
+      "value": {
+        "temperature": 42.0,
+        "aqi": 140.0
+      },
+      "timestamp": "2024-01-01 00:05:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5201,
+    "trace_id": "trace_97b256da",
+    "timestamp": "2026-06-17T07:51:28.087137+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_6",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_97b256da",
+      "reason": "",
+      "value": {
+        "temperature": 28.9,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-01 00:06:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5206,
+    "trace_id": "trace_10ccd359",
+    "timestamp": "2026-06-17T07:51:28.846306+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_7",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_10ccd359",
+      "reason": "",
+      "value": {
+        "temperature": 45.0,
+        "aqi": 75.0
+      },
+      "timestamp": "2024-01-01 00:07:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5211,
+    "trace_id": "trace_87ec20b9",
+    "timestamp": "2026-06-17T07:51:29.435654+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_8",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_87ec20b9",
+      "reason": "",
+      "value": {
+        "temperature": 36.6,
+        "aqi": 186.0
+      },
+      "timestamp": "2024-01-01 00:08:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5216,
+    "trace_id": "trace_7611fd37",
+    "timestamp": "2026-06-17T07:51:30.024256+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_9",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7611fd37",
+      "reason": "",
+      "value": {
+        "temperature": 21.3,
+        "aqi": 73.0
+      },
+      "timestamp": "2024-01-01 00:09:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5221,
+    "trace_id": "trace_51500658",
+    "timestamp": "2026-06-17T07:51:30.662816+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_10",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_51500658",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 63.0
+      },
+      "timestamp": "2024-01-02 00:10:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5226,
+    "trace_id": "trace_f7a449ae",
+    "timestamp": "2026-06-17T07:51:31.319545+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_11",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_f7a449ae",
+      "reason": "",
+      "value": {
+        "temperature": 27.5,
+        "aqi": 207.0
+      },
+      "timestamp": "2024-01-02 00:11:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5231,
+    "trace_id": "trace_1fc6340e",
+    "timestamp": "2026-06-17T07:51:31.971489+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_12",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_1fc6340e",
+      "reason": "",
+      "value": {
+        "temperature": 34.2,
+        "aqi": 198.0
+      },
+      "timestamp": "2024-01-02 00:12:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5236,
+    "trace_id": "trace_f6ce519a",
+    "timestamp": "2026-06-17T07:51:32.607825+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_13",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_f6ce519a",
+      "reason": "",
+      "value": {
+        "temperature": 29.7,
+        "aqi": 341.0
+      },
+      "timestamp": "2024-01-02 00:13:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5241,
+    "trace_id": "trace_afc427b5",
+    "timestamp": "2026-06-17T07:51:33.261537+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_14",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_afc427b5",
+      "reason": "",
+      "value": {
+        "temperature": 40.5,
+        "aqi": 126.0
+      },
+      "timestamp": "2024-01-02 00:14:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5246,
+    "trace_id": "trace_fa1e1aa3",
+    "timestamp": "2026-06-17T07:51:33.942849+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_15",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_fa1e1aa3",
+      "reason": "",
+      "value": {
+        "temperature": 39.5,
+        "aqi": 265.0
+      },
+      "timestamp": "2024-01-02 00:15:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5251,
+    "trace_id": "trace_7088e6a6",
+    "timestamp": "2026-06-17T07:51:34.577574+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_16",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_7088e6a6",
+      "reason": "",
+      "value": {
+        "temperature": 26.7,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-02 00:16:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5256,
+    "trace_id": "trace_52936b7f",
+    "timestamp": "2026-06-17T07:51:35.283722+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_17",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_52936b7f",
+      "reason": "",
+      "value": {
+        "temperature": 36.0,
+        "aqi": 82.0
+      },
+      "timestamp": "2024-01-02 00:17:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5261,
+    "trace_id": "trace_a0335b50",
+    "timestamp": "2026-06-17T07:51:35.927312+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_18",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a0335b50",
+      "reason": "",
+      "value": {
+        "temperature": 28.8,
+        "aqi": 114.0
+      },
+      "timestamp": "2024-01-02 00:18:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5266,
+    "trace_id": "trace_59197084",
+    "timestamp": "2026-06-17T07:51:36.597210+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_19",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_59197084",
+      "reason": "",
+      "value": {
+        "temperature": 19.9,
+        "aqi": 281.0
+      },
+      "timestamp": "2024-01-02 00:19:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5271,
+    "trace_id": "trace_fa759b70",
+    "timestamp": "2026-06-17T07:51:37.296356+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_20",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_fa759b70",
+      "reason": "",
+      "value": {
+        "temperature": 34.9,
+        "aqi": 89.0
+      },
+      "timestamp": "2024-01-03 00:20:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5276,
+    "trace_id": "trace_0da63ab1",
+    "timestamp": "2026-06-17T07:51:37.941301+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_21",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0da63ab1",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 303.0
+      },
+      "timestamp": "2024-01-03 00:21:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5281,
+    "trace_id": "trace_64b32cd5",
+    "timestamp": "2026-06-17T07:51:38.601787+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_22",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_64b32cd5",
+      "reason": "",
+      "value": {
+        "temperature": 32.8,
+        "aqi": 235.0
+      },
+      "timestamp": "2024-01-03 00:22:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5286,
+    "trace_id": "trace_f1513548",
+    "timestamp": "2026-06-17T07:51:39.324235+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_23",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_f1513548",
+      "reason": "",
+      "value": {
+        "temperature": 35.9,
+        "aqi": 94.0
+      },
+      "timestamp": "2024-01-03 00:23:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5291,
+    "trace_id": "trace_309e938e",
+    "timestamp": "2026-06-17T07:51:39.987743+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_24",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_309e938e",
+      "reason": "",
+      "value": {
+        "temperature": 36.5,
+        "aqi": 304.0
+      },
+      "timestamp": "2024-01-03 00:24:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5296,
+    "trace_id": "trace_9b61c428",
+    "timestamp": "2026-06-17T07:51:40.785439+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_25",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_9b61c428",
+      "reason": "",
+      "value": {
+        "temperature": 26.5,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-03 00:25:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5301,
+    "trace_id": "trace_e7ecc3d2",
+    "timestamp": "2026-06-17T07:51:41.456534+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_26",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_e7ecc3d2",
+      "reason": "",
+      "value": {
+        "temperature": 29.8,
+        "aqi": 131.0
+      },
+      "timestamp": "2024-01-03 00:26:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5306,
+    "trace_id": "trace_ef08718e",
+    "timestamp": "2026-06-17T07:51:42.100341+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_27",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_ef08718e",
+      "reason": "",
+      "value": {
+        "temperature": 34.6,
+        "aqi": 286.0
+      },
+      "timestamp": "2024-01-03 00:27:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5311,
+    "trace_id": "trace_0a4294ff",
+    "timestamp": "2026-06-17T07:51:42.784152+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_28",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0a4294ff",
+      "reason": "",
+      "value": {
+        "temperature": 38.6,
+        "aqi": 223.0
+      },
+      "timestamp": "2024-01-03 00:28:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5316,
+    "trace_id": "trace_0396d5fc",
+    "timestamp": "2026-06-17T07:51:43.414770+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_29",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0396d5fc",
+      "reason": "",
+      "value": {
+        "temperature": 22.9,
+        "aqi": 66.0
+      },
+      "timestamp": "2024-01-03 00:29:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5321,
+    "trace_id": "trace_c47d62cb",
+    "timestamp": "2026-06-17T07:51:44.076721+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_30",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_c47d62cb",
+      "reason": "",
+      "value": {
+        "temperature": 20.9,
+        "aqi": 123.0
+      },
+      "timestamp": "2024-01-04 00:30:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5326,
+    "trace_id": "trace_63191838",
+    "timestamp": "2026-06-17T07:51:44.797950+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_31",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_63191838",
+      "reason": "",
+      "value": {
+        "temperature": 30.9,
+        "aqi": 117.0
+      },
+      "timestamp": "2024-01-04 00:31:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5331,
+    "trace_id": "trace_60eb4456",
+    "timestamp": "2026-06-17T07:51:45.509089+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_32",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_60eb4456",
+      "reason": "",
+      "value": {
+        "temperature": 29.9,
+        "aqi": 116.0
+      },
+      "timestamp": "2024-01-04 00:32:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5336,
+    "trace_id": "trace_76f0a22f",
+    "timestamp": "2026-06-17T07:51:46.185680+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_33",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_76f0a22f",
+      "reason": "",
+      "value": {
+        "temperature": 25.8,
+        "aqi": 70.0
+      },
+      "timestamp": "2024-01-04 00:33:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5341,
+    "trace_id": "trace_a6fa3799",
+    "timestamp": "2026-06-17T07:51:46.873199+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_34",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a6fa3799",
+      "reason": "",
+      "value": {
+        "temperature": 30.0,
+        "aqi": 234.0
+      },
+      "timestamp": "2024-01-04 00:34:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5346,
+    "trace_id": "trace_b85cc9c3",
+    "timestamp": "2026-06-17T07:51:47.556106+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_35",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_b85cc9c3",
+      "reason": "",
+      "value": {
+        "temperature": 28.3,
+        "aqi": 218.0
+      },
+      "timestamp": "2024-01-04 00:35:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5351,
+    "trace_id": "trace_11cd6a4f",
+    "timestamp": "2026-06-17T07:51:48.226579+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_36",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_11cd6a4f",
+      "reason": "",
+      "value": {
+        "temperature": 27.0,
+        "aqi": 61.0
+      },
+      "timestamp": "2024-01-04 00:36:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5356,
+    "trace_id": "trace_d8be5491",
+    "timestamp": "2026-06-17T07:51:48.900481+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_37",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d8be5491",
+      "reason": "",
+      "value": {
+        "temperature": 24.4,
+        "aqi": 127.0
+      },
+      "timestamp": "2024-01-04 00:37:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5361,
+    "trace_id": "trace_0d9fe760",
+    "timestamp": "2026-06-17T07:51:49.541793+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_38",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0d9fe760",
+      "reason": "",
+      "value": {
+        "temperature": 21.4,
+        "aqi": 290.0
+      },
+      "timestamp": "2024-01-04 00:38:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5366,
+    "trace_id": "trace_a465378a",
+    "timestamp": "2026-06-17T07:51:50.196862+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_39",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_a465378a",
+      "reason": "",
+      "value": {
+        "temperature": 40.2,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-04 00:39:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5371,
+    "trace_id": "trace_016ce8bf",
+    "timestamp": "2026-06-17T07:51:50.911158+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_40",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_016ce8bf",
+      "reason": "",
+      "value": {
+        "temperature": 20.0,
+        "aqi": 68.0
+      },
+      "timestamp": "2024-01-05 00:40:00",
+      "location": "Mumbai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5376,
+    "trace_id": "trace_0894ce11",
+    "timestamp": "2026-06-17T07:51:51.646651+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_41",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_0894ce11",
+      "reason": "",
+      "value": {
+        "temperature": 24.1,
+        "aqi": 273.0
+      },
+      "timestamp": "2024-01-05 00:41:00",
+      "location": "Delhi",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5381,
+    "trace_id": "trace_8dcd1962",
+    "timestamp": "2026-06-17T07:51:52.361483+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_42",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_8dcd1962",
+      "reason": "",
+      "value": {
+        "temperature": 34.4,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:42:00",
+      "location": "Bengaluru",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5386,
+    "trace_id": "trace_5423ce80",
+    "timestamp": "2026-06-17T07:51:53.028158+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_43",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_5423ce80",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:43:00",
+      "location": "Chennai",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5391,
+    "trace_id": "trace_eca4f333",
+    "timestamp": "2026-06-17T07:51:53.715833+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_44",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_eca4f333",
+      "reason": "",
+      "value": {
+        "temperature": 19.3,
+        "aqi": 65.0
+      },
+      "timestamp": "2024-01-05 00:44:00",
+      "location": "Kolkata",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5396,
+    "trace_id": "trace_4d297c63",
+    "timestamp": "2026-06-17T07:51:54.422146+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_45",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_4d297c63",
+      "reason": "",
+      "value": {
+        "temperature": 35.3,
+        "aqi": 76.0
+      },
+      "timestamp": "2024-01-05 00:45:00",
+      "location": "Hyderabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5401,
+    "trace_id": "trace_1372e9c5",
+    "timestamp": "2026-06-17T07:51:55.152238+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_46",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_1372e9c5",
+      "reason": "",
+      "value": {
+        "temperature": 21.6,
+        "aqi": 338.0
+      },
+      "timestamp": "2024-01-05 00:46:00",
+      "location": "Ahmedabad",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5406,
+    "trace_id": "trace_d4ee2403",
+    "timestamp": "2026-06-17T07:51:55.843973+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_47",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_d4ee2403",
+      "reason": "",
+      "value": {
+        "temperature": 17.9,
+        "aqi": 202.0
+      },
+      "timestamp": "2024-01-05 00:47:00",
+      "location": "Jaipur",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5411,
+    "trace_id": "trace_2f0b964d",
+    "timestamp": "2026-06-17T07:51:56.510493+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_48",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_2f0b964d",
+      "reason": "",
+      "value": {
+        "temperature": 31.6,
+        "aqi": 315.0
+      },
+      "timestamp": "2024-01-05 00:48:00",
+      "location": "Lucknow",
+      "signal_type": "environment"
+    }
+  },
+  {
+    "sequence_id": 5416,
+    "trace_id": "trace_68e4dc66",
+    "timestamp": "2026-06-17T07:51:57.185378+00:00",
+    "type": "VALIDATION",
+    "data": {
+      "signal_id": "S_49",
+      "status": "VALID",
+      "confidence_score": 0.9,
+      "trace_id": "trace_68e4dc66",
+      "reason": "",
+      "value": {
+        "temperature": 28.5,
+        "aqi": 345.0
+      },
+      "timestamp": "2024-01-05 00:49:00",
+      "location": "Bhopal",
+      "signal_type": "environment"
+    }
   }
 ]
