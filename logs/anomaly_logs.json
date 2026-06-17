@@ -5463,5 +5463,1805 @@
       "confidence": 0.85,
       "recommendation_signal": "eligible_for_escalation"
     }
+  },
+  {
+    "sequence_id": 5427,
+    "trace_id": "trace_cc8f77c3",
+    "timestamp": "2026-06-17T11:09:02.572706+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_cc8f77c3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Mumbai show AQI 259 (high pollution). Currently stable but should be monitored. | Context: Mumbai classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5432,
+    "trace_id": "trace_57f17dbc",
+    "timestamp": "2026-06-17T11:09:03.259758+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_57f17dbc",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Delhi show normal conditions. Currently stable but should be monitored. | Context: Delhi classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5437,
+    "trace_id": "trace_8e3c53a5",
+    "timestamp": "2026-06-17T11:09:03.861640+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_8e3c53a5",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Bengaluru (40\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Bengaluru classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5442,
+    "trace_id": "trace_d9fb0f0d",
+    "timestamp": "2026-06-17T11:09:04.668807+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_d9fb0f0d",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Chennai show AQI 176 (high pollution). Currently stable but should be monitored. | Context: Chennai classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5447,
+    "trace_id": "trace_dd42dbb5",
+    "timestamp": "2026-06-17T11:09:05.363703+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_dd42dbb5",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Kolkata show normal conditions. Currently stable but should be monitored. | Context: Kolkata classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5452,
+    "trace_id": "trace_752334d0",
+    "timestamp": "2026-06-17T11:09:05.883456+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_752334d0",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Hyderabad (42\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Hyderabad classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5457,
+    "trace_id": "trace_01650b09",
+    "timestamp": "2026-06-17T11:09:06.595061+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_01650b09",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 345 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5462,
+    "trace_id": "trace_893237c7",
+    "timestamp": "2026-06-17T11:09:07.256595+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_893237c7",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Jaipur (45\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Jaipur classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5467,
+    "trace_id": "trace_2db7760a",
+    "timestamp": "2026-06-17T11:09:08.003613+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_2db7760a",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Lucknow show AQI 186 (high pollution), 36\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Lucknow classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5472,
+    "trace_id": "trace_0ae6a9c3",
+    "timestamp": "2026-06-17T11:09:10.410273+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_0ae6a9c3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bhopal show normal conditions. Currently stable but should be monitored. | Context: Bhopal classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5477,
+    "trace_id": "trace_b2b536ae",
+    "timestamp": "2026-06-17T11:09:10.957481+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_b2b536ae",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5482,
+    "trace_id": "trace_21cec289",
+    "timestamp": "2026-06-17T11:09:11.553948+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_21cec289",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Delhi show AQI 207 (high pollution). Currently stable but should be monitored. | Context: Delhi classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5487,
+    "trace_id": "trace_e553a119",
+    "timestamp": "2026-06-17T11:09:12.203712+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e553a119",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Bengaluru show AQI 198 (high pollution). Currently stable but should be monitored. | Context: Bengaluru classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5492,
+    "trace_id": "trace_9b7bcbe9",
+    "timestamp": "2026-06-17T11:09:12.967177+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9b7bcbe9",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Chennai show AQI 341 (high pollution). Currently stable but should be monitored. | Context: Chennai classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5497,
+    "trace_id": "trace_17cf15d3",
+    "timestamp": "2026-06-17T11:09:13.649489+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_17cf15d3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Kolkata (40\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Kolkata classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5502,
+    "trace_id": "trace_dd7d04c6",
+    "timestamp": "2026-06-17T11:09:14.230407+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_dd7d04c6",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Hyderabad is unhealthy (AQI 265) along with high temperature (39\u00b0C). This combination can impact health. Caution is advised. | Context: Hyderabad classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5507,
+    "trace_id": "trace_39ced4a7",
+    "timestamp": "2026-06-17T11:09:14.939593+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_39ced4a7",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 223 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5512,
+    "trace_id": "trace_d4b78715",
+    "timestamp": "2026-06-17T11:09:15.687660+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_d4b78715",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Jaipur show 36\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Jaipur classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5517,
+    "trace_id": "trace_c688ec7e",
+    "timestamp": "2026-06-17T11:09:16.354471+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c688ec7e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Lucknow show normal conditions. Currently stable but should be monitored. | Context: Lucknow classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5522,
+    "trace_id": "trace_4ec54ebf",
+    "timestamp": "2026-06-17T11:09:16.830982+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_4ec54ebf",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Bhopal show AQI 281 (high pollution). Currently stable but should be monitored. | Context: Bhopal classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5527,
+    "trace_id": "trace_9e38080e",
+    "timestamp": "2026-06-17T11:09:17.534431+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9e38080e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5532,
+    "trace_id": "trace_d6ebe993",
+    "timestamp": "2026-06-17T11:09:18.192547+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_d6ebe993",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Delhi is unhealthy (AQI 303) along with high temperature (30\u00b0C). This combination can impact health. Caution is advised. | Context: Delhi classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5537,
+    "trace_id": "trace_0fd74681",
+    "timestamp": "2026-06-17T11:09:18.809326+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_0fd74681",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Bengaluru is unhealthy (AQI 235) along with high temperature (32\u00b0C). This combination can impact health. Caution is advised. | Context: Bengaluru classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5542,
+    "trace_id": "trace_c6b7a9ac",
+    "timestamp": "2026-06-17T11:09:19.507938+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c6b7a9ac",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Chennai show 35\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Chennai classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5547,
+    "trace_id": "trace_f7fa09c3",
+    "timestamp": "2026-06-17T11:09:20.154334+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_f7fa09c3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_environmental_risk",
+      "explanation": "Air quality in Kolkata is extremely poor (AQI 304), combined with high temperature (36\u00b0C). This poses a serious health risk. Immediate attention is recommended. | Context: Kolkata classified as critical_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.95,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5552,
+    "trace_id": "trace_561bf3a8",
+    "timestamp": "2026-06-17T11:09:20.864128+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_561bf3a8",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Hyderabad show normal conditions. Currently stable but should be monitored. | Context: Hyderabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5557,
+    "trace_id": "trace_50869709",
+    "timestamp": "2026-06-17T11:09:21.450694+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_50869709",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Ahmedabad show normal conditions. Currently stable but should be monitored. | Context: Ahmedabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5562,
+    "trace_id": "trace_b9759c84",
+    "timestamp": "2026-06-17T11:09:22.140848+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_b9759c84",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Jaipur is unhealthy (AQI 286) along with high temperature (34\u00b0C). This combination can impact health. Caution is advised. | Context: Jaipur classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5567,
+    "trace_id": "trace_cc9c642e",
+    "timestamp": "2026-06-17T11:09:22.914615+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_cc9c642e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Lucknow is unhealthy (AQI 223) along with high temperature (38\u00b0C). This combination can impact health. Caution is advised. | Context: Lucknow classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5572,
+    "trace_id": "trace_b4f44411",
+    "timestamp": "2026-06-17T11:09:23.587743+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_b4f44411",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bhopal show normal conditions. Currently stable but should be monitored. | Context: Bhopal classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5577,
+    "trace_id": "trace_e5f17486",
+    "timestamp": "2026-06-17T11:09:24.282680+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e5f17486",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5582,
+    "trace_id": "trace_78072ab1",
+    "timestamp": "2026-06-17T11:09:24.997172+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_78072ab1",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Delhi show normal conditions. Currently stable but should be monitored. | Context: Delhi classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5587,
+    "trace_id": "trace_835c1942",
+    "timestamp": "2026-06-17T11:09:25.694972+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_835c1942",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bengaluru show normal conditions. Currently stable but should be monitored. | Context: Bengaluru classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5592,
+    "trace_id": "trace_034d758c",
+    "timestamp": "2026-06-17T11:09:26.434558+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_034d758c",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Chennai show normal conditions. Currently stable but should be monitored. | Context: Chennai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5597,
+    "trace_id": "trace_a0e0cfff",
+    "timestamp": "2026-06-17T11:09:27.156765+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_a0e0cfff",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Kolkata is unhealthy (AQI 234) along with high temperature (30\u00b0C). This combination can impact health. Caution is advised. | Context: Kolkata classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5602,
+    "trace_id": "trace_fb2ee1ac",
+    "timestamp": "2026-06-17T11:09:27.912890+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_fb2ee1ac",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Hyderabad show AQI 218 (high pollution). Currently stable but should be monitored. | Context: Hyderabad classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5607,
+    "trace_id": "trace_cf890182",
+    "timestamp": "2026-06-17T11:09:28.658091+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_cf890182",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Ahmedabad show normal conditions. Currently stable but should be monitored. | Context: Ahmedabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5612,
+    "trace_id": "trace_cb3a8d55",
+    "timestamp": "2026-06-17T11:09:29.371847+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_cb3a8d55",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Jaipur show normal conditions. Currently stable but should be monitored. | Context: Jaipur classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5617,
+    "trace_id": "trace_e09ea942",
+    "timestamp": "2026-06-17T11:09:30.089363+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e09ea942",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Lucknow show AQI 290 (high pollution). Currently stable but should be monitored. | Context: Lucknow classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5622,
+    "trace_id": "trace_c96cf4b4",
+    "timestamp": "2026-06-17T11:09:30.782728+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c96cf4b4",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Bhopal is unhealthy (AQI 273) along with high temperature (40\u00b0C). This combination can impact health. Caution is advised. | Context: Bhopal classified as polluted_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5627,
+    "trace_id": "trace_f9113cd1",
+    "timestamp": "2026-06-17T11:09:31.482724+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_f9113cd1",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5632,
+    "trace_id": "trace_8f74cd50",
+    "timestamp": "2026-06-17T11:09:32.220499+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_8f74cd50",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Delhi show AQI 273 (high pollution). Currently stable but should be monitored. | Context: Delhi classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5637,
+    "trace_id": "trace_153be429",
+    "timestamp": "2026-06-17T11:09:32.901889+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_153be429",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bengaluru show normal conditions. Currently stable but should be monitored. | Context: Bengaluru classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5642,
+    "trace_id": "trace_537948f3",
+    "timestamp": "2026-06-17T11:09:33.608739+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_537948f3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Chennai show normal conditions. Currently stable but should be monitored. | Context: Chennai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5647,
+    "trace_id": "trace_c71bd07e",
+    "timestamp": "2026-06-17T11:09:34.310577+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c71bd07e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Kolkata show normal conditions. Currently stable but should be monitored. | Context: Kolkata classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5652,
+    "trace_id": "trace_95159f63",
+    "timestamp": "2026-06-17T11:09:35.060119+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_95159f63",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Hyderabad show 35\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Hyderabad classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5657,
+    "trace_id": "trace_c99b001e",
+    "timestamp": "2026-06-17T11:09:35.772253+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c99b001e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 338 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5662,
+    "trace_id": "trace_aed5e245",
+    "timestamp": "2026-06-17T11:09:36.478722+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_aed5e245",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Jaipur show AQI 202 (high pollution). Currently stable but should be monitored. | Context: Jaipur classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5667,
+    "trace_id": "trace_5a74f990",
+    "timestamp": "2026-06-17T11:09:37.207746+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_5a74f990",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Lucknow is unhealthy (AQI 315) along with high temperature (31\u00b0C). This combination can impact health. Caution is advised. | Context: Lucknow classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5672,
+    "trace_id": "trace_e99ad72a",
+    "timestamp": "2026-06-17T11:09:37.867147+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e99ad72a",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Bhopal show AQI 345 (high pollution). Currently stable but should be monitored. | Context: Bhopal classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5685,
+    "trace_id": "trace_4997dd28",
+    "timestamp": "2026-06-17T11:15:34.583212+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_4997dd28",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Mumbai show AQI 259 (high pollution). Currently stable but should be monitored. | Context: Mumbai classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5690,
+    "trace_id": "trace_49cb1e55",
+    "timestamp": "2026-06-17T11:15:35.453078+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_49cb1e55",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Delhi show normal conditions. Currently stable but should be monitored. | Context: Delhi classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5695,
+    "trace_id": "trace_7150365e",
+    "timestamp": "2026-06-17T11:15:36.249963+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_7150365e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Bengaluru (40\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Bengaluru classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5700,
+    "trace_id": "trace_9855dc55",
+    "timestamp": "2026-06-17T11:15:37.104752+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9855dc55",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Chennai show AQI 176 (high pollution). Currently stable but should be monitored. | Context: Chennai classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5705,
+    "trace_id": "trace_efd27e5d",
+    "timestamp": "2026-06-17T11:15:37.969767+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_efd27e5d",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Kolkata show normal conditions. Currently stable but should be monitored. | Context: Kolkata classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5710,
+    "trace_id": "trace_ff08ee50",
+    "timestamp": "2026-06-17T11:15:38.782224+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_ff08ee50",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Hyderabad (42\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Hyderabad classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5715,
+    "trace_id": "trace_cd083d0e",
+    "timestamp": "2026-06-17T11:15:39.718728+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_cd083d0e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 345 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5720,
+    "trace_id": "trace_9b89fca5",
+    "timestamp": "2026-06-17T11:15:40.681823+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9b89fca5",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Jaipur (45\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Jaipur classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5725,
+    "trace_id": "trace_898cc7b5",
+    "timestamp": "2026-06-17T11:15:41.583100+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_898cc7b5",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Lucknow show AQI 186 (high pollution), 36\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Lucknow classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5730,
+    "trace_id": "trace_70946cf8",
+    "timestamp": "2026-06-17T11:15:42.470759+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_70946cf8",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bhopal show normal conditions. Currently stable but should be monitored. | Context: Bhopal classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5735,
+    "trace_id": "trace_1d629cbb",
+    "timestamp": "2026-06-17T11:15:43.423955+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_1d629cbb",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5740,
+    "trace_id": "trace_dda2db3b",
+    "timestamp": "2026-06-17T11:15:44.327404+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_dda2db3b",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Delhi show AQI 207 (high pollution). Currently stable but should be monitored. | Context: Delhi classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5745,
+    "trace_id": "trace_1290802b",
+    "timestamp": "2026-06-17T11:15:45.242398+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_1290802b",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "moderate_pollution",
+      "explanation": "Conditions in Bengaluru show AQI 198 (high pollution). Currently stable but should be monitored. | Context: Bengaluru classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.75,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5750,
+    "trace_id": "trace_bdc8d903",
+    "timestamp": "2026-06-17T11:15:46.145675+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_bdc8d903",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Chennai show AQI 341 (high pollution). Currently stable but should be monitored. | Context: Chennai classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5755,
+    "trace_id": "trace_0932a05c",
+    "timestamp": "2026-06-17T11:15:47.135973+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_0932a05c",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "heat_risk",
+      "explanation": "Extreme heat in Kolkata (40\u00b0C) may cause health stress. Stay hydrated and limit outdoor exposure. | Context: Kolkata classified as normal_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5760,
+    "trace_id": "trace_a44ecd2e",
+    "timestamp": "2026-06-17T11:15:48.057345+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_a44ecd2e",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Hyderabad is unhealthy (AQI 265) along with high temperature (39\u00b0C). This combination can impact health. Caution is advised. | Context: Hyderabad classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5765,
+    "trace_id": "trace_bca43ff2",
+    "timestamp": "2026-06-17T11:15:48.976445+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_bca43ff2",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 223 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5770,
+    "trace_id": "trace_90b8a2dd",
+    "timestamp": "2026-06-17T11:15:49.866338+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_90b8a2dd",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Jaipur show 36\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Jaipur classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5775,
+    "trace_id": "trace_9ae2e286",
+    "timestamp": "2026-06-17T11:15:50.737093+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9ae2e286",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Lucknow show normal conditions. Currently stable but should be monitored. | Context: Lucknow classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5780,
+    "trace_id": "trace_4cbdbd77",
+    "timestamp": "2026-06-17T11:15:51.591110+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_4cbdbd77",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Bhopal show AQI 281 (high pollution). Currently stable but should be monitored. | Context: Bhopal classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5785,
+    "trace_id": "trace_41fcccf0",
+    "timestamp": "2026-06-17T11:15:52.541209+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_41fcccf0",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5790,
+    "trace_id": "trace_030f8e84",
+    "timestamp": "2026-06-17T11:15:53.366958+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_030f8e84",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Delhi is unhealthy (AQI 303) along with high temperature (30\u00b0C). This combination can impact health. Caution is advised. | Context: Delhi classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5795,
+    "trace_id": "trace_3c598b21",
+    "timestamp": "2026-06-17T11:15:54.218261+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_3c598b21",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Bengaluru is unhealthy (AQI 235) along with high temperature (32\u00b0C). This combination can impact health. Caution is advised. | Context: Bengaluru classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5800,
+    "trace_id": "trace_bb23d5e8",
+    "timestamp": "2026-06-17T11:15:55.009591+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_bb23d5e8",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Chennai show 35\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Chennai classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5805,
+    "trace_id": "trace_0510e0e9",
+    "timestamp": "2026-06-17T11:15:55.804864+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_0510e0e9",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_environmental_risk",
+      "explanation": "Air quality in Kolkata is extremely poor (AQI 304), combined with high temperature (36\u00b0C). This poses a serious health risk. Immediate attention is recommended. | Context: Kolkata classified as critical_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.95,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5810,
+    "trace_id": "trace_8cb282ed",
+    "timestamp": "2026-06-17T11:15:56.665798+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_8cb282ed",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Hyderabad show normal conditions. Currently stable but should be monitored. | Context: Hyderabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5815,
+    "trace_id": "trace_e93f04a9",
+    "timestamp": "2026-06-17T11:15:57.525037+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e93f04a9",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Ahmedabad show normal conditions. Currently stable but should be monitored. | Context: Ahmedabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5820,
+    "trace_id": "trace_7c039955",
+    "timestamp": "2026-06-17T11:15:58.291599+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_7c039955",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Jaipur is unhealthy (AQI 286) along with high temperature (34\u00b0C). This combination can impact health. Caution is advised. | Context: Jaipur classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5825,
+    "trace_id": "trace_4f3c666b",
+    "timestamp": "2026-06-17T11:15:59.201391+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_4f3c666b",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Lucknow is unhealthy (AQI 223) along with high temperature (38\u00b0C). This combination can impact health. Caution is advised. | Context: Lucknow classified as polluted_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5830,
+    "trace_id": "trace_84abecc0",
+    "timestamp": "2026-06-17T11:16:00.036340+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_84abecc0",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bhopal show normal conditions. Currently stable but should be monitored. | Context: Bhopal classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5835,
+    "trace_id": "trace_98ff81e1",
+    "timestamp": "2026-06-17T11:16:00.758085+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_98ff81e1",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5840,
+    "trace_id": "trace_812bb6d4",
+    "timestamp": "2026-06-17T11:16:01.594851+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_812bb6d4",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Delhi show normal conditions. Currently stable but should be monitored. | Context: Delhi classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5845,
+    "trace_id": "trace_c66f77c1",
+    "timestamp": "2026-06-17T11:16:02.389639+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_c66f77c1",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bengaluru show normal conditions. Currently stable but should be monitored. | Context: Bengaluru classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5850,
+    "trace_id": "trace_2a9b6af3",
+    "timestamp": "2026-06-17T11:16:03.203330+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_2a9b6af3",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Chennai show normal conditions. Currently stable but should be monitored. | Context: Chennai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5855,
+    "trace_id": "trace_d4818ecf",
+    "timestamp": "2026-06-17T11:16:04.018747+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_d4818ecf",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Kolkata is unhealthy (AQI 234) along with high temperature (30\u00b0C). This combination can impact health. Caution is advised. | Context: Kolkata classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5860,
+    "trace_id": "trace_b04f1aee",
+    "timestamp": "2026-06-17T11:16:04.836268+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_b04f1aee",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Hyderabad show AQI 218 (high pollution). Currently stable but should be monitored. | Context: Hyderabad classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5865,
+    "trace_id": "trace_91735bab",
+    "timestamp": "2026-06-17T11:16:05.657118+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_91735bab",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Ahmedabad show normal conditions. Currently stable but should be monitored. | Context: Ahmedabad classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5870,
+    "trace_id": "trace_481ec5b0",
+    "timestamp": "2026-06-17T11:16:06.455884+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_481ec5b0",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Jaipur show normal conditions. Currently stable but should be monitored. | Context: Jaipur classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5875,
+    "trace_id": "trace_36fd600a",
+    "timestamp": "2026-06-17T11:16:07.258025+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_36fd600a",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Lucknow show AQI 290 (high pollution). Currently stable but should be monitored. | Context: Lucknow classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5880,
+    "trace_id": "trace_1cdd5f3a",
+    "timestamp": "2026-06-17T11:16:08.050193+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_1cdd5f3a",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Bhopal is unhealthy (AQI 273) along with high temperature (40\u00b0C). This combination can impact health. Caution is advised. | Context: Bhopal classified as polluted_zone, extreme heat zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5885,
+    "trace_id": "trace_e161d868",
+    "timestamp": "2026-06-17T11:16:08.872257+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_e161d868",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Mumbai show normal conditions. Currently stable but should be monitored. | Context: Mumbai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Mumbai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5890,
+    "trace_id": "trace_9d61e428",
+    "timestamp": "2026-06-17T11:16:09.684184+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_9d61e428",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Delhi show AQI 273 (high pollution). Currently stable but should be monitored. | Context: Delhi classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Delhi",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5895,
+    "trace_id": "trace_755e5fc7",
+    "timestamp": "2026-06-17T11:16:10.507028+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_755e5fc7",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Bengaluru show normal conditions. Currently stable but should be monitored. | Context: Bengaluru classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bengaluru",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5900,
+    "trace_id": "trace_fd5e9970",
+    "timestamp": "2026-06-17T11:16:11.420621+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_fd5e9970",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Chennai show normal conditions. Currently stable but should be monitored. | Context: Chennai classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Chennai",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5905,
+    "trace_id": "trace_90bcd3ea",
+    "timestamp": "2026-06-17T11:16:12.186908+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_90bcd3ea",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "LOW",
+      "anomaly_type": "normal",
+      "explanation": "Conditions in Kolkata show normal conditions. Currently stable but should be monitored. | Context: Kolkata classified as normal_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Kolkata",
+      "confidence": 0.6,
+      "recommendation_signal": "monitor"
+    }
+  },
+  {
+    "sequence_id": 5910,
+    "trace_id": "trace_956cea87",
+    "timestamp": "2026-06-17T11:16:12.987208+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_956cea87",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "elevated_temperature",
+      "explanation": "Conditions in Hyderabad show 35\u00b0C (elevated temperature). Currently stable but should be monitored. | Context: Hyderabad classified as normal_zone, heat stress zone.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Hyderabad",
+      "confidence": 0.6,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5915,
+    "trace_id": "trace_8fb9a28b",
+    "timestamp": "2026-06-17T11:16:13.793571+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_8fb9a28b",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Ahmedabad show AQI 338 (high pollution). Currently stable but should be monitored. | Context: Ahmedabad classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Ahmedabad",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5920,
+    "trace_id": "trace_16cc0aa4",
+    "timestamp": "2026-06-17T11:16:14.607980+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_16cc0aa4",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "MEDIUM",
+      "anomaly_type": "high_pollution",
+      "explanation": "Conditions in Jaipur show AQI 202 (high pollution). Currently stable but should be monitored. | Context: Jaipur classified as polluted_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Jaipur",
+      "confidence": 0.85,
+      "recommendation_signal": "requires_review"
+    }
+  },
+  {
+    "sequence_id": 5925,
+    "trace_id": "trace_7076142d",
+    "timestamp": "2026-06-17T11:16:15.459293+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_7076142d",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "high_pollution_with_heat",
+      "explanation": "Air quality in Lucknow is unhealthy (AQI 315) along with high temperature (31\u00b0C). This combination can impact health. Caution is advised. | Context: Lucknow classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Lucknow",
+      "confidence": 0.9,
+      "recommendation_signal": "eligible_for_escalation"
+    }
+  },
+  {
+    "sequence_id": 5930,
+    "trace_id": "trace_5b5a5be6",
+    "timestamp": "2026-06-17T11:16:16.336365+00:00",
+    "type": "ANALYSIS",
+    "data": {
+      "trace_id": "trace_5b5a5be6",
+      "context_status": "ACTIVE",
+      "context_error": null,
+      "risk_level": "HIGH",
+      "anomaly_type": "severe_pollution",
+      "explanation": "Conditions in Bhopal show AQI 345 (high pollution). Currently stable but should be monitored. | Context: Bhopal classified as critical_zone, stable climate.",
+      "temporal_context": "STABLE",
+      "spatial_context": "Bhopal",
+      "confidence": 0.85,
+      "recommendation_signal": "eligible_for_escalation"
+    }
   }
 ]

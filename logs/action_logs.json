@@ -53,5 +53,27 @@
       "action": "CONTINUE_MONITORING",
       "status": "EMITTED"
     }
+  },
+  {
+    "sequence_id": 5678,
+    "trace_id": "trace_cc8f77c3",
+    "timestamp": "2026-06-17T11:09:38.660698+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_cc8f77c3",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
+  },
+  {
+    "sequence_id": 5936,
+    "trace_id": "trace_4997dd28",
+    "timestamp": "2026-06-17T11:16:17.246341+00:00",
+    "type": "ACTION",
+    "data": {
+      "trace_id": "trace_4997dd28",
+      "action": "RECOMMEND_ENVIRONMENTAL_REVIEW",
+      "status": "EMITTED"
+    }
   }
 ]
